@@ -1,14 +1,15 @@
 {
     "name": "cecon-interfaces",
-    "version": "1.0.0",
+    "version": "1.0.11",
     "description": "Interfaces de Projetos Cecon",
     "dependencies": {},
-    "peerDependencies": {
-    },
+    "peerDependencies": {},
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "private": false,
     "scripts": {
+        "packagr": "ng-packagr -p ng-package.json",
+        "build": "tsc src/index.ts --outDir dist",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

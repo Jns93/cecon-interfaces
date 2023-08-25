@@ -1,12 +1,4 @@
-import { DocTypeEnum } from '../enums/doc-type.enum';
-import { IAddress } from './i-address';
-import { IDeliveryArea } from './i-delivery-area';
-import { IDeliveryAreaFixed } from './i-delivery-area-fixed';
-import { IMessagerChannel } from './i-messager-channel';
-import { IMobyoApiConfig } from './i-mobyo-server-api';
-import { IOrigin } from './i-origin';
-import { IPaymentMethod } from './i-payment-method';
-import { IPaymentProvider } from './i-payment-provider';
+import { DocTypeEnum, IAddress, IDeliveryArea, IDeliveryAreaFixed, IMessagerChannel, IMobyoApiConfig, IOrigin, IPaymentMethod, IPaymentProvider } from '../../general';
 
 export interface ICompany {
     // #region Properties (27)

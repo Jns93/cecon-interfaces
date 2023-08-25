@@ -10,11 +10,11 @@ export interface IPaymentProvider {
     customerId: string;
     liveApiToken: string;
     name: string;
-    paymentTokens: IPaymentToken;
+    paymentTokens: IPaymentToken[];
     subscriptionId: string;
     subscriptions?: string;
     testApiToken: string;
-    userToken: string;
+    userApiToken: string;
     verified: boolean;
     verifiedAt: number;
 
