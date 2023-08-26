@@ -16,15 +16,15 @@
                 "purchase/*"
             ]
         },
-        "target": "es5",
+        "target": "es6",
         "declaration": true,
         "declarationDir": "./dist",
         "experimentalDecorators": true,
         "esModuleInterop": true,
         "outDir": "./dist",
         "lib": [
-            "ES2015",
-            "DOM"
+            "es6",
+            "dom"
         ],
         "strict": true
     },

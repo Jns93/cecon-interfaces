@@ -1,5 +1,5 @@
 import { IPaymentProviderAgent } from './i-payment-provider-agent';
-import { IPaymentToken } from './i-payment-tokens';
+import { IPaymentToken } from './i-payment-token';
 
 export interface IPaymentProvider {
     // #region Properties (13)

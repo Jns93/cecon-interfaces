@@ -11,9 +11,10 @@ export interface IDevice {
     metadata: IDeviceMetadata;
     id: string;
     key: string;
-    lastAccess: Date;
+    lastAccess: number;
     mode: DeviceModeEnum;
     name: string;
+    topicSubscriptions: string[];
     updatedAt: number;
 
     // #endregion Properties (14)

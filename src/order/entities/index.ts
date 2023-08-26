@@ -1,0 +1,20 @@
+export { OrderAdditionalFeeEntity } from './order-additional-fees.entity';
+export { SponsorshipValuesEntity } from './order-benefits-sponsor-ship.entity';
+export { OrderBenefitsEntity } from './order-benefits.entity';
+export { OrderCancellationEntity } from './order-cancellation.entity';
+export { OrdersCustomerPhoneEntity } from './order-customer-phone.entity';
+export { OrderCustomerEntity } from './order-customer.entity';
+export { OrderItemCompositionEntity } from './order-item-composition.entity';
+export { OrderItemOptionEntity } from './order-item-option.entity';
+export { OrderItemEntity } from './order-item.entity';
+export { OrderPaymentCardEntity } from './order-payment-card.entity';
+export { OrderPaymentCashEntity } from './order-payment-cash.entity';
+export { OrderPaymentMethodEntity } from './order-payment-method.entity';
+export { OrderPaymentPixEntity } from './order-payment-pix.entity';
+export { OrderPaymentWalletEntity } from './order-payment-wallet.entity';
+export { OrderPaymentEntity } from './order-payment.entity';
+export { OrderScaleItemEntity } from './order-scale-item.entity';
+export { OrderScaleEntity } from './order-scale-price.entity';
+export { OrderTotalEntity } from './order-total.entity';
+export { OrderEntity } from './order.entity';
+

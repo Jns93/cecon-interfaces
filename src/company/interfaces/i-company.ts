@@ -27,6 +27,7 @@ export interface ICompany {
     pubsubTopic: string;
     fullName: string;
     sandbox: boolean;
+    tags: string[];
     updatedAt: number;
     version: string;
 

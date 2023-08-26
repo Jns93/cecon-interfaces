@@ -1,3 +1,5 @@
+import { ICoords } from './i-coords';
+
 export interface IAddress {
     // #region Properties (7)
 
@@ -8,6 +10,7 @@ export interface IAddress {
     state: string;
     streetName: string;
     streetNumber: string;
+    coords?: ICoords;
 
     // #endregion Properties (7)
 }

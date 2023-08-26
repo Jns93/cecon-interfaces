@@ -1,0 +1,20 @@
+export { IOrder } from './i-order';
+export { IOrderAdditionalFee } from './i-order-additional-fee';
+export { IOrderBenefits } from './i-order-benefits';
+export { ISponsorshipValues } from './i-order-benefits-sponsor-ship';
+export { IOrderCancellation } from './i-order-cancellation';
+export { IOrderCustomer } from './i-order-customer';
+export { IOrdersCustomerPhone } from './i-order-customer-phone';
+export { IOrderItem } from './i-order-item';
+export { IOrderItemComposition } from './i-order-item-composition';
+export { IOrderItemOption } from './i-order-item-option';
+export { IOrderPayment } from './i-order-payment';
+export { IOrderPaymentCard } from './i-order-payment-card';
+export { IOrderPaymentCash } from './i-order-payment-cash';
+export { IOrderPaymentMethod } from './i-order-payment-method';
+export { IOrderPaymentPix } from './i-order-payment-pix';
+export { IOrderPaymentWallet } from './i-order-payment-wallet';
+export { IOrderScaleItem } from './i-order-scale-item';
+export { IOrderScale } from './i-order-scale-price';
+export { IOrderTotal } from './i-order-total';
+
