@@ -8,14 +8,14 @@ export class PurchaseEntity extends OrderEntity {
     public additionalNotes?: string = '';
     public appInfo: AppInfoEntity = new AppInfoEntity();
     public deviceUid: string = '';
-    public providerName: PaymentProviderEnum = PaymentProviderEnum.iugu;
+    public providerName: PaymentProviderEnum = PaymentProviderEnum.Iugu;
 
     // #endregion Properties (4)
 
     // #region Constructors (1)
 
     constructor(data?: Partial<PurchaseEntity>) {
-        super();
+        super(data);
         if (data) {
             for (let key in data) {
                 if (data.hasOwnProperty(key) && key in this) {

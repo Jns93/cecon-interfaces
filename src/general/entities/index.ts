@@ -1,4 +1,5 @@
 export { AddressEntity } from './address.entity';
+export { BaseEntity } from './base.entity';
 export { CoordsEntity } from './coords.entity';
 export { DeliveryAreaEntity } from './delivery-area.entity';
 export { DeliveryAreaFixedEntity } from './dellivery-area-fixed.entity';

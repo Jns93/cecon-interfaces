@@ -1,6 +1,6 @@
 {
     "name": "cecon-interfaces",
-    "version": "1.0.17",
+    "version": "1.0.19",
     "description": "Interfaces de Projetos Cecon",
     "dependencies": {},
     "peerDependencies": {},

@@ -2,7 +2,7 @@ import { DeviceModeEnum } from '../enums/device-mode.enum';
 import { IDevice } from '../interfaces/i-device';
 import { MetadataEntity } from './metadata.entity';
 
-export class DeviceEntity implements IDevice {
+export class DeviceEntity implements IDevice  {
     // #region Properties (13)
 
     public active: boolean = false;
@@ -15,8 +15,9 @@ export class DeviceEntity implements IDevice {
     public lastAccess: number = 0;
     // Supondo que INatiGo tenha propriedades que você queira documentar
     public metadata: MetadataEntity = new MetadataEntity();
-    public mode: DeviceModeEnum = DeviceModeEnum.natigo;
+    public mode: DeviceModeEnum = DeviceModeEnum.Natigo;
     public name: string = '';
+    public tags: string[] = [];
     public topicSubscriptions: string[] = [];
     public updatedAt: number = 0;
 

@@ -1,11 +1,11 @@
 import { OrderStatusEnum } from '../enums';
-import { IOrderAdditionalFee } from './i-order-additional-fee';
-import { IOrderBenefits } from './i-order-benefits';
-import { IOrderCancellation } from './i-order-cancellation';
-import { IOrderCustomer } from './i-order-customer';
-import { IOrderItem } from './i-order-item';
-import { IOrderPayment } from './i-order-payment';
-import { IOrderTotal } from './i-order-total';
+import { IOrderAdditionalFee } from './i-additional-fee';
+import { IOrderBenefits } from './i-benefits';
+import { IOrderCancellation } from './i-cancellation';
+import { IOrderCustomer } from './i-customer';
+import { IOrderItem } from './i-item';
+import { IOrderPayment } from './i-payment';
+import { IOrderTotal } from './i-total';
 
 export interface IOrder {
     // #region Properties (23)
@@ -15,12 +15,12 @@ export interface IOrder {
     cancellation: IOrderCancellation;
     companyId: string;
     containerId: string;
-    createdAt: Date;
+    createdAt: number;
     customer: IOrderCustomer;
     id: string;
     sandbox: boolean;
     items: IOrderItem[];
-    payments: IOrderPayment;
+    payments: IOrderPayment | null;
     salesChannel: string;
     status: OrderStatusEnum;
     total: IOrderTotal;

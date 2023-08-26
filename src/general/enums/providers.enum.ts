@@ -1,8 +1,8 @@
 export enum PaymentProviderEnum {
-    iugu = 'IUGU',
-    desenfila = 'DESENFILA',
-    mercadoPago = 'MERCADO PAGO',
-    stripe = 'STRIPE',
-    payPal = 'PAYPAL',
-    other = 'OTHER'
+    Iugu = 'IUGU',
+    Desenfila = 'DESENFILA',
+    MercadoPago = 'MERCADO PAGO',
+    Stripe = 'STRIPE',
+    PayPal = 'PAYPAL',
+    Other = 'OTHER'
 }

@@ -7,10 +7,10 @@ import { MobyoApiConfigEntity } from '../../general/entities/mobyo-apiconfig.ent
 import { OriginEntity } from '../../general/entities/origin.entity';
 import { PaymentMethodEntity } from '../../general/entities/payment-method.entity';
 import { PaymentProviderEntity } from '../../general/entities/payment-provider.entity';
+import { ICompany } from '../interfaces';
 
-export class CompanyEntity {
+export class CompanyEntity implements ICompany {
     // #region Properties (26)
-
     public active: boolean = false;
     public address: AddressEntity = new AddressEntity();
     bgImageURL?: string = '';

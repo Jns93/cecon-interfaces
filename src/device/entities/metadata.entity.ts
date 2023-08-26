@@ -1,4 +1,4 @@
-import { IDeviceMetadata } from '../interfaces/i-device-metadata';
+import { IDeviceMetadata } from '../interfaces/i-metadata';
 import { NatiGoEntity } from './natigo.entity';
 
 export class MetadataEntity implements IDeviceMetadata {

@@ -1,7 +1,7 @@
 // index.ts
 
 export { IDevice } from './i-device';
-export { IDeviceMetadata } from './i-device-metadata';
+export { IDeviceMetadata } from './i-metadata';
 export { INatigo } from './i-natigo';
 
 

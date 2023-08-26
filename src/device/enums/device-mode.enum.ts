@@ -1,8 +1,8 @@
 export enum DeviceModeEnum {
-    app = 'APP',
-    checkout = 'CHECKOUT',
-    screen = 'SCREEN',
-    natigo = 'NATIGO',
-    satManager = 'SAT-MANAGER',
-    pdvNati = 'PDV-NATI',
+    App = 'APP',
+    Checkout = 'CHECKOUT',
+    Screen = 'SCREEN',
+    Natigo = 'NATIGO',
+    SatManager = 'SAT-MANAGER',
+    PdvNati = 'PDV-NATI',
 }

@@ -1,5 +1,5 @@
 import { DeviceModeEnum } from '../enums/device-mode.enum';
-import { IDeviceMetadata } from './i-device-metadata';
+import { IDeviceMetadata } from './i-metadata';
 
 export interface IDevice {
     // #region Properties (14)
@@ -14,6 +14,7 @@ export interface IDevice {
     lastAccess: number;
     mode: DeviceModeEnum;
     name: string;
+    tags: string[];
     topicSubscriptions: string[];
     updatedAt: number;
 

@@ -1,13 +1,14 @@
 import { OrderStatusEnum } from '../enums';
-import { OrderAdditionalFeeEntity } from './order-additional-fees.entity';
-import { OrderBenefitsEntity } from './order-benefits.entity';
-import { OrderCancellationEntity } from './order-cancellation.entity';
-import { OrderCustomerEntity } from './order-customer.entity';
-import { OrderItemEntity } from './order-item.entity';
-import { OrderPaymentEntity } from './order-payment.entity';
-import { OrderTotalEntity } from './order-total.entity';
+import { IOrder } from '../interfaces';
+import { OrderAdditionalFeeEntity } from './additional-fees.entity';
+import { OrderBenefitsEntity } from './benefits.entity';
+import { OrderCancellationEntity } from './cancellation.entity';
+import { OrderCustomerEntity } from './customer.entity';
+import { OrderItemEntity } from './item.entity';
+import { OrderPaymentEntity } from './payment.entity';
+import { OrderTotalEntity } from './total.entity';
 
-export class OrderEntity {
+export class OrderEntity implements IOrder {
     // #region Properties (16)
 
     public additionalFees: OrderAdditionalFeeEntity[] = [];

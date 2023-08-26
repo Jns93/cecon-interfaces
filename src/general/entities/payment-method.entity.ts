@@ -6,17 +6,17 @@ export class PaymentMethodEntity {
     // #region Properties (13)
 
     public active: boolean = false;
-    public channel: PaymentChannelEnum = PaymentChannelEnum.AUTOMATION;
+    public channel: PaymentChannelEnum = PaymentChannelEnum.Automation;
     public createdAt: number = 0;
     public fee: number = 0;
     public id: string = '';
     public index: number = 0;
     public maxAmount: number = 0;
     public minAmount: number = 0;
-    public mode: PaymentModeEnum = PaymentModeEnum.MANUAL;
+    public mode: PaymentModeEnum = PaymentModeEnum.Manual;
     public name: string = '';
     public token: string = '';
-    public type: PaymentTypeEnum = PaymentTypeEnum.CREDIT_CARD;
+    public type: PaymentTypeEnum = PaymentTypeEnum.CreditCard;
     public updatedAt: number = Date.now();
 
     // #endregion Properties (13)

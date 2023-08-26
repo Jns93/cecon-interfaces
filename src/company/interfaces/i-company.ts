@@ -7,9 +7,9 @@ export interface ICompany {
     address: IAddress;
     bgImageURL?: string;
     containerId: string;
-    createdAt: Date;
+    createdAt: number;
     deliveryArea: IDeliveryArea[];
-    deliveryAreaFixed?: IDeliveryAreaFixed;
+    deliveryAreaFixed?: IDeliveryAreaFixed | null;
     doc: string;
     docType: DocTypeEnum;
     email: string;
