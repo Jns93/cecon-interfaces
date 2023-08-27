@@ -1,6 +1,6 @@
 import { IuguAutoAdvanceEnum } from '../enums/iugu-auto-advance.enum';
 import { IIuguAccountConfiguration } from './i-account-configuration';
-import { IIuguAccountLastVerificationRequestData } from './i-account-info-last-ver-req-data';
+import { IIuguLastVerificationRequestData } from './i-account-info-last-ver-req-data';
 import { IIuguInformations } from './i-account-informations';
 import { IIuguMarketplaceSplit } from './i-account-marketplace-split';
 import { IIuguConfigEarlyPaymentDiscount } from './i-config-early-payment-discounts';
@@ -35,11 +35,11 @@ export interface IIuguAccount {
     canReceive?: boolean;
     changePlanType: number;
     commissionBalance: string;
-    configuration: IIuguAccountConfiguration;
+    configuration: IIuguAccountConfiguration | null;
     createdAt: Date;
     creditCardVerified: boolean;
-    customLogoSmallUrl: null;
-    customLogoUrl: null;
+    customLogoSmallUrl: string;
+    customLogoUrl: string;
     // Saque automático
     defaultReturnUrl: string;
     disableEmails: boolean;
@@ -53,7 +53,7 @@ export interface IIuguAccount {
     id: string;
     informations: IIuguInformations[];
     isVerified?: boolean;
-    lastVerificationRequestData: IIuguAccountLastVerificationRequestData;
+    lastVerificationRequestData: IIuguLastVerificationRequestData;
     lastVerificationRequestFeedback: string;
     lastVerificationRequestStatus: 'accepted' | string;
     lastWithdraw: Date;

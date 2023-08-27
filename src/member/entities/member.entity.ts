@@ -3,20 +3,21 @@ import { MemberRulesEnum } from '../enums';
 import { IMember } from '../interfaces';
 
 export class MemberEntity extends BaseEntity implements IMember {
-    // #region Properties (10)
+    // #region Properties (11)
 
     public active: boolean = true;
     public companyName: string = '';
     public containerName: string = '';
     public email: string = '';
     public name: string = '';
+    public partnerId: string = '';
     public phoneNumber: string = '';
     public photoURL: string = '';
     public rule: MemberRulesEnum = MemberRulesEnum.User;
     public tags: string[] = [];
     public uid: string = '';
 
-    // #endregion Properties (10)
+    // #endregion Properties (11)
 
     // #region Constructors (1)
 

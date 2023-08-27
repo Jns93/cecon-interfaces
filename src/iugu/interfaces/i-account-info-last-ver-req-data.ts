@@ -1,7 +1,7 @@
 import { BooleanStringEnum } from '../../general/enums';
 import { LegalEntiyEnum } from '../../general/enums/person-type.enum';
 
-export interface IIuguAccountLastVerificationRequestData {
+export interface IIuguLastVerificationRequestData {
     // #region Properties (19)
 
     accountType: string;

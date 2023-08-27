@@ -4,6 +4,7 @@ export * from './device';
 export * from './general';
 export * from './invite';
 export * from './iugu';
+export * from './lead';
 export * from './member';
 export * from './order';
 export * from './partners';

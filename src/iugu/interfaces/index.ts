@@ -3,7 +3,7 @@ export { IIuguAccountConfiguration } from './i-account-configuration';
 export { IIuguAccountConfigurationBankSlip } from './i-account-configuration-bank-slip';
 export { IIuguAccountConfigurationCreaditCard } from './i-account-configuration-creadit-card';
 export { IIuguAccountConfigurationPix } from './i-account-configuration-pix';
-export { IIuguAccountLastVerificationRequestData } from './i-account-info-last-ver-req-data';
+export { IIuguLastVerificationRequestData as IIuguAccountLastVerificationRequestData } from './i-account-info-last-ver-req-data';
 export { IIuguInformations } from './i-account-informations';
 export { IIuguMarketplaceSplit } from './i-account-marketplace-split';
 export { IIuguChangePlanSimulation } from './i-change-plan-simulation';
