@@ -7,7 +7,7 @@ export * from './iugu';
 export * from './lead';
 export * from './member';
 export * from './order';
-export * from './partners';
+export * from './partner';
 export * from './plan';
 export * from './purchases';
 export * from './viacep';
