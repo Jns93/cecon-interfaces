@@ -1,5 +1,5 @@
+import { NatiGoEntity } from '../../app/entities/natigo.entity';
 import { IDeviceMetadata } from '../interfaces/i-metadata';
-import { NatiGoEntity } from './natigo.entity';
 
 export class MetadataEntity implements IDeviceMetadata {
     // #region Properties (1)

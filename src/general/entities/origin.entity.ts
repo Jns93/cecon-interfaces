@@ -8,7 +8,7 @@ export class OriginEntity {
     public date: Number = 0;
     details?: string = '';
     referrer?: string = '';
-    public type: LeadOriginEnum = LeadOriginEnum.Others;
+    public type: LeadOriginEnum = LeadOriginEnum.OTHERS;
 
     // #endregion Properties (6)
 

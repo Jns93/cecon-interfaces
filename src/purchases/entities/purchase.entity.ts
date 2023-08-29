@@ -8,7 +8,7 @@ export class PurchaseEntity extends OrderEntity {
     public additionalNotes?: string = '';
     public appInfo: AppInfoEntity = new AppInfoEntity();
     public deviceUid: string = '';
-    public providerName: PaymentProviderEnum = PaymentProviderEnum.Iugu;
+    public providerName: PaymentProviderEnum = PaymentProviderEnum.IUGU;
 
     // #endregion Properties (4)
 

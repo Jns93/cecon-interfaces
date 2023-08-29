@@ -1,27 +1,27 @@
-import { DeviceModeEnum } from '../enums/device-mode.enum';
+import { OsEnum } from '../../general/enums/os.enum';
 import { IDevice } from '../interfaces/i-device';
-import { MetadataEntity } from './metadata.entity';
+import { DeviceInstalledAppsEntity } from './installed-apps.entity';
 
-export class DeviceEntity implements IDevice  {
-    // #region Properties (13)
+export class DeviceEntity implements IDevice {
+    // #region Properties (14)
 
     public active: boolean = false;
     public companyId: string = '';
     public containerId: string = '';
     public createdAt: number = 0;
     public deviceId: string = '';
+    public os: OsEnum = OsEnum.UNKNOWN;
+    public osVersion: string = '';
     public id: string = '';
+    public installedApps: DeviceInstalledAppsEntity[] = [];
     public key: string = '';
     public lastAccess: number = 0;
-    // Supondo que INatiGo tenha propriedades que você queira documentar
-    public metadata: MetadataEntity = new MetadataEntity();
-    public mode: DeviceModeEnum = DeviceModeEnum.Natigo;
     public name: string = '';
     public tags: string[] = [];
     public topicSubscriptions: string[] = [];
     public updatedAt: number = 0;
 
-    // #endregion Properties (13)
+    // #endregion Properties (14)
 
     // #region Constructors (1)
 

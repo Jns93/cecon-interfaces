@@ -2,8 +2,10 @@ import { LeadOriginEnum } from '../../general/enums';
 import { LeadStatusEnum } from '../enums';
 
 export interface ILead {
-    // #region Properties (17)
+    // #region Properties (21)
 
+    // Lista de produtos ou serviços de interesse.
+    activity?: string[];
     // Status atual.
     agentId: string;
     // Endereço de e-mail principal para contato.
@@ -27,10 +29,10 @@ export interface ILead {
     lastContacted?: number;
     // Número do documento conforme o tipo.
     name: string;
-    // Lista de produtos ou serviços de interesse.
-    notes?: string[];
+    note?: string;
     // Outros endereços de e-mail, se disponíveis.
     phoneNumber?: string;
+    responsibleId?: string;
     // Outros números de telefone, se disponíveis.
     sandbox: boolean;
     source: LeadOriginEnum;
@@ -40,6 +42,6 @@ export interface ILead {
     tags?: string[];
     updatedAt: number;
 
-    // #endregion Properties (17)
+    // #endregion Properties (21)
     // Etiquetas ou categorias para ajudar na segmentação e busca.
 }

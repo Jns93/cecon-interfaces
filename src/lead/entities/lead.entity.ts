@@ -3,8 +3,10 @@ import { LeadStatusEnum } from '../enums';
 import { ILead } from '../interfaces';
 
 export class LeadEntity implements ILead {
-    // #region Properties (19)
+    // #region Properties (21)
 
+    /**Lista de produtos ou serviços de interesse.  */
+    activity?: string[] = [];
     /**Status atual.  */
     public agentId: string = '';
     /**Endereço de e-mail principal para contato.  */
@@ -28,20 +30,20 @@ export class LeadEntity implements ILead {
     lastContacted?: number = Date.now();
     /**Número do documento conforme o tipo.  */
     public name: string = '';
-    /**Lista de produtos ou serviços de interesse.  */
-    notes?: string[] = [];
+    note?: string = '';
     /**Outros endereços de e-mail, se disponíveis.  */
     phoneNumber?: string = '';
+    responsibleId?: string = '';
     /**Outros números de telefone, se disponíveis.  */
     public sandbox: boolean = false;
-    public source: LeadOriginEnum = LeadOriginEnum.Others;
+    public source: LeadOriginEnum = LeadOriginEnum.OTHERS;
     /**Data e hora do último contato.  */
-    public status: LeadStatusEnum = LeadStatusEnum.New;
+    public status: LeadStatusEnum = LeadStatusEnum.NEW;
     /**ID do colaborador responsável pelo lead.  */
     tags?: string[] = [];
     public updatedAt: number = Date.now();
 
-    // #endregion Properties (19)
+    // #endregion Properties (21)
 
     // #region Constructors (1)
 

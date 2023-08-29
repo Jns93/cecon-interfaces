@@ -1,5 +1,5 @@
 export enum CompanyMessageTypeEnum {
-    whatsapp = 'WHATSAPP',
-    instagram = 'INSTAGRAM',
-    sms = 'SMS',
+    WHATSAPP = 'WHATSAPP',
+    INSTAGRAM = 'INSTAGRAM',
+    SMS = 'SMS',
 }

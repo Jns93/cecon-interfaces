@@ -1,5 +1,5 @@
 export enum IntervalTypeEnum {
-    Days = 'DAYS',
-    Weeks = 'WEEKS',
-    Months = 'MONTHS',
+    DAYS = 'DAYS',
+    WEEKS = 'WEEKS',
+    MONTHS = 'MONTHS',
 }

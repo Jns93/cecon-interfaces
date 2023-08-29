@@ -1,3 +1,4 @@
+export * from './app';
 export * from './company';
 export * from './container';
 export * from './device';

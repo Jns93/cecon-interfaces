@@ -13,7 +13,7 @@ export class OrderPaymentMethodEntity implements IOrderPaymentMethod {
     public code: string = '';
     public currency: 'BRL' = 'BRL';
     public id: string = '';
-    public method: PaymentTypeEnum = PaymentTypeEnum.Cash;
+    public method: PaymentTypeEnum = PaymentTypeEnum.CASH;
     pix?: OrderPaymentPixEntity | null = null;
     public prepaid: boolean = false;
     public type: 'ONLINE' | 'OFFLINE' = 'OFFLINE';

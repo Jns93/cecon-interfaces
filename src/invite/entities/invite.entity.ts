@@ -19,7 +19,7 @@ export class InviteEntity implements IInvite {
     public name: string = '';
     public phoneNumber: string = '';
     public photoURL: string = '';
-    public status: InviteStatusEnum = InviteStatusEnum.Pending;
+    public status: InviteStatusEnum = InviteStatusEnum.PENDING;
     public uid: string = '';
     public updatedAt: number = Date.now();
 

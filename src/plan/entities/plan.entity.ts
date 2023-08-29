@@ -9,9 +9,9 @@ export class PlanEntity implements IPlan {
     public createdAt: number = Date.now();
     public features: PlanFeatureEntity[] = [];
     public id: string = '';
-    public identifier: PlanIdentifierEnum = PlanIdentifierEnum.NatiGo;
+    public identifier: PlanIdentifierEnum = PlanIdentifierEnum.NATIGO;
     public interval: number = 12;
-    public intervalType: IntervalTypeEnum = IntervalTypeEnum.Months;
+    public intervalType: IntervalTypeEnum = IntervalTypeEnum.MONTHS;
     public name: string = '';
     public price: number = 0;
     public updatedAt: number = Date.now();

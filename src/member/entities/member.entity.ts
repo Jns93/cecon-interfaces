@@ -1,9 +1,9 @@
 import { BaseEntity } from '../../general';
-import { MemberRulesEnum } from '../enums';
+import { MemberRulesEnum, MemberTypeEnum } from '../enums';
 import { IMember } from '../interfaces';
 
 export class MemberEntity extends BaseEntity implements IMember {
-    // #region Properties (11)
+    // #region Properties (12)
 
     public active: boolean = true;
     public companyName: string = '';
@@ -13,11 +13,12 @@ export class MemberEntity extends BaseEntity implements IMember {
     public partnerId: string = '';
     public phoneNumber: string = '';
     public photoURL: string = '';
-    public rule: MemberRulesEnum = MemberRulesEnum.User;
+    public rule: MemberRulesEnum = MemberRulesEnum.USER;
     public tags: string[] = [];
+    public type: MemberTypeEnum = MemberTypeEnum.CLIENT;
     public uid: string = '';
 
-    // #endregion Properties (11)
+    // #endregion Properties (12)
 
     // #region Constructors (1)
 

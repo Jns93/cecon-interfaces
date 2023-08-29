@@ -7,7 +7,7 @@ export class LastVerificationRequestDataEntity implements IIuguAccountLastVerifi
 
     public accountType: string = '';
     public address: string = '';
-    public automaticTransfer: BooleanStringEnum = BooleanStringEnum.False;
+    public automaticTransfer: BooleanStringEnum = BooleanStringEnum.FALSE;
     public bank: string = '';
     public bankAg: string = '';
     public bankCc: string = '';
@@ -19,8 +19,8 @@ export class LastVerificationRequestDataEntity implements IIuguAccountLastVerifi
     public documentCpf: string = '';
     public documentId: string = '';
     public name: string = '';
-    public personType: LegalEntiyEnum = LegalEntiyEnum.Individual;
-    public physicalProducts: BooleanStringEnum = BooleanStringEnum.False;
+    public personType: LegalEntiyEnum = LegalEntiyEnum.LEGAL;
+    public physicalProducts: BooleanStringEnum = BooleanStringEnum.FALSE;
     public priceRange: string = '';
     public state: string = '';
     public telephone: string = '';

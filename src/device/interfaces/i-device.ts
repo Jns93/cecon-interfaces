@@ -1,5 +1,5 @@
-import { DeviceModeEnum } from '../enums/device-mode.enum';
-import { IDeviceMetadata } from './i-metadata';
+import { OsEnum } from '../../general/enums/os.enum';
+import { IDeviceInstalledApps } from './i-installed-apps';
 
 export interface IDevice {
     // #region Properties (14)
@@ -8,11 +8,12 @@ export interface IDevice {
     containerId: string;
     createdAt: number;
     deviceId: string;
-    metadata: IDeviceMetadata;
     id: string;
     key: string;
     lastAccess: number;
-    mode: DeviceModeEnum;
+    installedApps: IDeviceInstalledApps[];
+    os: OsEnum;
+    osVersion: string; 
     name: string;
     tags: string[];
     topicSubscriptions: string[];

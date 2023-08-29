@@ -1,4 +1,4 @@
 export enum BooleanStringEnum {
-    False = 'false',
-    True = 'true',
+    FALSE = 'false',
+    TRUE = 'true',
 }

@@ -1,6 +1,6 @@
 export enum IuguAutoAdvanceEnum {
-    DaysAfterPayment = 'days_after_payment',
-    Daily = 'daily',
-    Weekly = 'weekly',
-    Monthly = 'monthly'
+    DAYS_AFTER_PAYMENT = 'days_after_payment',
+    DAILY = 'daily',
+    WEEKLY = 'weekly',
+    MONTHLY = 'monthly'
 }

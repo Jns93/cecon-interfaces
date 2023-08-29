@@ -8,7 +8,7 @@ export class IuguAccountEntity implements IIuguAccount {
 
     public autoAdvance: boolean = false;
     public autoAdvanceOption: number = 0;
-    public autoAdvanceType: IuguAutoAdvanceEnum = IuguAutoAdvanceEnum.Daily;
+    public autoAdvanceType: IuguAutoAdvanceEnum = IuguAutoAdvanceEnum.DAILY;
     public autoWithdraw: boolean = false;
     public balance: string = '';
     public balanceAvailableForWithdraw: string = '';

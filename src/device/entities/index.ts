@@ -2,7 +2,6 @@
 
 export { DeviceEntity } from './device.entity';
 export { MetadataEntity } from './metadata.entity';
-export { NatiGoEntity } from './natigo.entity';
 
 
 

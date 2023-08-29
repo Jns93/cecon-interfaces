@@ -1,4 +1,4 @@
 export enum PlanIdentifierEnum {
-    NatiGo = 'NATIGO-UNO',
-    SatManagerNapoleon = 'SAT-MANAGER-NAPOLEON',
+    NATIGO = 'NATIGO-UNO',
+    SAT_MANAGER_NAPOLEON = 'SAT-MANAGER-NAPOLEON',
 }
