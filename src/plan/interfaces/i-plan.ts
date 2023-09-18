@@ -8,8 +8,8 @@ export interface IPlan {
     identifier: PlanIdentifierEnum;
     interval: number;
     intervalType: IntervalTypeEnum;
-    createdAt: number;
-    updatedAt: number;
+    createdAt: Date;
+    updatedAt: Date;
     price: number;
     features: IPlanFeature[];
 }

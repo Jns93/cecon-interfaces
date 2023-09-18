@@ -3,20 +3,18 @@ import { LeadStatusEnum } from '../enums';
 import { ILead } from '../interfaces';
 
 export class LeadEntity implements ILead {
-    // #region Properties (21)
+    // #region Properties (20)
 
     /**Lista de produtos ou serviços de interesse.  */
     activity?: string[] = [];
-    /**Status atual.  */
-    public agentId: string = '';
     /**Endereço de e-mail principal para contato.  */
-    alternateEmails?: string[] = [];
+    public alternateEmails: string[] = [];
     /**Número de telefone principal.  */
-    alternatePhones?: string[] = [];
+    public alternatePhones: string[] = [];
     /**ID do agente ou parceiro que cadastrou o lead.  */
     assignedTo?: string = '';
     /**Notas ou observações adicionais.  */
-    public createdAt: number = Date.now();
+    public createdAt: Date = new Date();
     /**Tipo de documento (CPF, CNPJ, Passaporte, etc.).  */
     public doc: string = '';
     /**Identificador único do lead.  */
@@ -27,23 +25,24 @@ export class LeadEntity implements ILead {
     /**Fonte de origem do lead.  */
     public interestedIn: string[] = [];
     /**Data e hora de criação.  */
-    lastContacted?: number = Date.now();
+    lastContacted?: Date = new Date();
     /**Número do documento conforme o tipo.  */
     public name: string = '';
     note?: string = '';
+    public origin: LeadOriginEnum = LeadOriginEnum.OTHERS;
+    /**Status atual.  */
+    public partnerId: string = '';
     /**Outros endereços de e-mail, se disponíveis.  */
     phoneNumber?: string = '';
-    responsibleId?: string = '';
     /**Outros números de telefone, se disponíveis.  */
     public sandbox: boolean = false;
-    public source: LeadOriginEnum = LeadOriginEnum.OTHERS;
     /**Data e hora do último contato.  */
     public status: LeadStatusEnum = LeadStatusEnum.NEW;
     /**ID do colaborador responsável pelo lead.  */
-    tags?: string[] = [];
-    public updatedAt: number = Date.now();
+    public tags: string[] = [];
+    public updatedAt: Date = new Date();
 
-    // #endregion Properties (21)
+    // #endregion Properties (20)
 
     // #region Constructors (1)
 

@@ -3,6 +3,6 @@ export interface IRating {
     userId: string;
     rating: number;
     comment?: string;
-    createdAt: number;
+    createdAt: Date;
     // #endregion Properties (3)
 }

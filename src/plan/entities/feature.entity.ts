@@ -3,14 +3,14 @@ import { IPlanFeature } from '../interfaces';
 export class PlanFeatureEntity implements IPlanFeature {
     // #region Properties (9)
 
-    public createdAt: number = Date.now();
+    public createdAt: Date = new Date();
     public id: string = '';
     public identifier: string = '';
     public important: boolean = false;
     public name: string = '';
     public planId: string = '';
     public position: number = 0;
-    public updatedAt: number = Date.now();
+    public updatedAt: Date = new Date();
     public value: number = 0;
 
     // #endregion Properties (9)

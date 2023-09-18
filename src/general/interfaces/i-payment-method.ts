@@ -7,7 +7,7 @@ export interface IPaymentMethod {
 
     active: boolean;
     channel: PaymentChannelEnum;
-    createdAt: number;
+    createdAt: Date;
     fee: number;
     id: string;
     index: number;
@@ -17,7 +17,7 @@ export interface IPaymentMethod {
     name: string;
     token: string;
     type: PaymentTypeEnum;
-    updatedAt: number;
+    updatedAt: Date;
 
     // #endregion Properties (13)
 }

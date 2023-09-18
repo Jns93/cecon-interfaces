@@ -2,46 +2,90 @@ import { LeadOriginEnum } from '../../general/enums';
 import { LeadStatusEnum } from '../enums';
 
 export interface ILead {
-    // #region Properties (21)
+    // #region Properties (20)
 
-    // Lista de produtos ou serviços de interesse.
+    /**
+     * Lista de atividades ou eventos relacionados ao lead.
+     * Exemplo: ['Feira de negócios', 'Evento de lançamento', 'Reunião']
+     * */
     activity?: string[];
-    // Status atual.
-    agentId: string;
-    // Endereço de e-mail principal para contato.
-    alternateEmails?: string[];
-    // Número de telefone principal.
-    alternatePhones?: string[];
-    // ID do agente ou parceiro que cadastrou o lead.
+    /**
+     * Outros endereços de e-mail, se disponíveis.
+     **/
+    alternateEmails: string[];
+    /**
+     *  Números alternativos de telefone para contato.
+     **/
+    alternatePhones: string[];
+    /**
+     * ID do agente ou parceiro responsável pelo lead.
+     **/
     assignedTo?: string;
-    // Notas ou observações adicionais.
-    createdAt: number;
-    // Tipo de documento (CPF, CNPJ, Passaporte, etc.).
+    /**
+     * Data e hora de criação.
+     **/
+    createdAt: Date;
+    /**
+     * Número do documento conforme o tipo.
+    **/
     doc: string;
-    // Identificador único do lead.
+    /**
+     * Tipo de documento (CPF, CNPJ, Passaporte, etc.).
+    **/
     docType: any;
-    // Nome completo ou razão social do lead.
+    /**
+     * Endereço de e-mail principal para contato.
+     **/
     email: string;
+    /**
+     * Identificador único do lead.
+    **/
     id: string;
-    // Fonte de origem do lead.
+    /**
+     * Lista de produtos ou serviços de interesse.
+     */
     interestedIn: string[];
-    // Data e hora de criação.
-    lastContacted?: number;
-    // Número do documento conforme o tipo.
+    /**
+     * Data e hora do último contato.
+     **/
+    lastContacted?: Date;
+    /**
+     * Nome completo ou razão social do lead.
+    **/
     name: string;
+    /**
+     * Notas ou observações adicionais.
+     *  */
     note?: string;
-    // Outros endereços de e-mail, se disponíveis.
+    /**
+     * Fonte de origem do lead.
+     **/
+    origin: LeadOriginEnum;
+    /**
+     * Id do afiliado responsável pelo lead.
+     */
+    partnerId: string;
+    /**
+     * Número de telefone principal para contato.
+     */
     phoneNumber?: string;
-    responsibleId?: string;
-    // Outros números de telefone, se disponíveis.
+    /**
+     * Indica se o lead está em sandbox ou não.
+     */
     sandbox: boolean;
-    source: LeadOriginEnum;
-    // Data e hora do último contato.
+    /**
+     * Status do lead.
+     */
     status: LeadStatusEnum;
-    // ID do colaborador responsável pelo lead.
-    tags?: string[];
-    updatedAt: number;
+    /**
+     * Lista de tags ou categorias para ajudar na segmentação e busca.
+     */
+    tags: string[];
+    /**
+     * Data e hora da última atualização.
+     */
+    updatedAt: Date;
 
-    // #endregion Properties (21)
+    // #endregion Properties (20)
     // Etiquetas ou categorias para ajudar na segmentação e busca.
 }

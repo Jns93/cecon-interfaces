@@ -8,11 +8,11 @@ export class InviteEntity implements IInvite {
     public companyId: string = '';
     public companyName: string = '';
     public containerId: string = '';
-    public createdAt: number = Date.now();
+    public createdAt: Date = new Date();
     public doc: string = '';
     public docType: DocTypeEnum = DocTypeEnum.CNPJ;
     public email: string = '';
-    public expireAt: number = Date.now() + 86400000;
+    public expireAt: Date = new Date(new Date().getTime() + 86400000);
     public expired: boolean = false;
     public id: string = '';
     public internationalCode: string = '+55';
@@ -21,7 +21,7 @@ export class InviteEntity implements IInvite {
     public photoURL: string = '';
     public status: InviteStatusEnum = InviteStatusEnum.PENDING;
     public uid: string = '';
-    public updatedAt: number = Date.now();
+    public updatedAt: Date = new Date();
 
     // #endregion Properties (17)
 

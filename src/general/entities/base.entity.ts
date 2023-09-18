@@ -6,9 +6,9 @@ export class BaseEntity {
     public active: boolean = true;
     public companyId: string = '';
     public containerId: string = '';
-    public createdAt: number = Date.now();
+    public createdAt: Date = new Date();
     public id: string = '';
-    public updatedAt: number = Date.now();
+    public updatedAt: Date = new Date();
 
     // #endregion Properties (6)
 

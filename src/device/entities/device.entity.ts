@@ -8,7 +8,7 @@ export class DeviceEntity implements IDevice {
     public active: boolean = false;
     public companyId: string = '';
     public containerId: string = '';
-    public createdAt: number = 0;
+    public createdAt: Date = new Date()
     public deviceId: string = '';
     public os: OsEnum = OsEnum.UNKNOWN;
     public osVersion: string = '';
@@ -19,7 +19,7 @@ export class DeviceEntity implements IDevice {
     public name: string = '';
     public tags: string[] = [];
     public topicSubscriptions: string[] = [];
-    public updatedAt: number = 0;
+    public updatedAt: Date = new Date();
 
     // #endregion Properties (14)
 

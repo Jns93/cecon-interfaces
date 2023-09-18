@@ -7,11 +7,11 @@ export interface IInvite {
     companyId: string;
     companyName: string;
     containerId: string;
-    createdAt: number;
+    createdAt: Date;
     doc: string;
     docType: DocTypeEnum;
     email: string;
-    expireAt: number;
+    expireAt: Date;
     expired: boolean;
     id: string;
     internationalCode: string;
@@ -20,7 +20,7 @@ export interface IInvite {
     photoURL: string;
     status: InviteStatusEnum;
     uid: string;
-    updatedAt: number;
+    updatedAt: Date;
 
     // #endregion Properties (17)
 }

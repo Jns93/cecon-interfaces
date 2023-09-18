@@ -6,8 +6,8 @@ export interface IBase {
     active: boolean;
     companyId: string;
     containerId: string;
-    createdAt: number;
+    createdAt: Date;
     id: string;
-    updatedAt: number;
+    updatedAt: Date;
     // #endregion Properties (7)
 }

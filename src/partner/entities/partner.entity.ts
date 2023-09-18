@@ -22,7 +22,7 @@ export class PartnerEntity implements IPartner {
     public pubsubTopic: string = '';
     public sandbox: boolean = false;
     public tags: string[] = [];
-    public updatedAt: number = 0;
+    public updatedAt: Date = new Date();
     public version: string = '';
 
     // #endregion Properties (18)

@@ -16,7 +16,7 @@ export class OrderEntity implements IOrder {
     public cancellation: OrderCancellationEntity = new OrderCancellationEntity();
     public companyId: string = '';
     public containerId: string = '';
-    public createdAt: number = Date.now();
+    public createdAt: Date = new Date();
     public customer: OrderCustomerEntity = new OrderCustomerEntity();
     public id: string = '';
     public items: OrderItemEntity[] = [];
@@ -25,7 +25,7 @@ export class OrderEntity implements IOrder {
     public sandbox: boolean = false;
     public status: OrderStatusEnum = OrderStatusEnum.PENDING;
     public total: OrderTotalEntity = new OrderTotalEntity();
-    public updatedAt: number = Date.now();
+    public updatedAt: Date = new Date();
     public version: string = '';
     constructor(data?: Partial<OrderEntity>) {
         if (data) {

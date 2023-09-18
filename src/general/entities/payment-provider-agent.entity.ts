@@ -1,8 +1,10 @@
+import { IPaymentProviderAgent } from '../interfaces';
 
-export class PaymentProviderAgentEntity {
+export class PaymentProviderAgentEntity implements IPaymentProviderAgent {
     // #region Properties (2)
 
     public accountId: string = '';
+    public partnerId: string = '';
     name?: string = '';
 
     // #endregion Properties (2)

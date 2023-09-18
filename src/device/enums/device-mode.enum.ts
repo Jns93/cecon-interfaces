@@ -1,9 +1,0 @@
-export enum DeviceModeEnum {
-    APP = 'APP',
-    CHECKOUT = 'CHECKOUT',
-    SCREEN = 'SCREEN',
-    NATIGO = 'NATIGO',
-    SATMANAGER = 'SAT-MANAGER',
-    PDVNATI = 'PDV-NATI',
-    FISCALMANAGER = 'FISCAL-MANAGER',
-}

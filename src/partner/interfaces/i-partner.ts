@@ -21,7 +21,7 @@ export interface IPartner {
     pubsubTopic: string;
     sandbox: boolean;
     tags: string[];
-    updatedAt: number;
+    updatedAt: Date;
     version: string;
 
     // #endregion Properties (18)

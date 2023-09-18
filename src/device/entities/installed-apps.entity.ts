@@ -4,18 +4,20 @@ import { IDeviceInstalledApps } from '../interfaces/i-installed-apps';
 export class DeviceInstalledAppsEntity implements IDeviceInstalledApps {
     // #region Properties (13)
 
-    public activationDate: number = Date.now();
+    public activationDate: Date = new Date();
     public active: boolean = false;
     public appId: string = '';
-    public createdAt: number = Date.now();
+    public id: string = '';
+    public createdAt: Date = new Date();
     public customConfig: AppConfigType = null;
-    public expirationDate: number = Date.now();
+    public subscriptionId: string = '';
+    public expirationDate: Date = new Date();
     public isPaid: boolean = false;
     public orderId: string = '';
-    public renewPaymentDate: number = Date.now();
+    public renewPaymentDate: Date = new Date();
     public title: string = '';
     public topicSubscriptions: string[] = [];
-    public updatedAt: number = Date.now();
+    public updatedAt: Date = new Date();
     public version: string = '';
 
     // #endregion Properties (13)

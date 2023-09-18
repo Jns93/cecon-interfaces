@@ -6,7 +6,7 @@ export interface IDevice {
     active: boolean;
     companyId: string;
     containerId: string;
-    createdAt: number;
+    createdAt: Date;
     deviceId: string;
     id: string;
     key: string;
@@ -17,7 +17,7 @@ export interface IDevice {
     name: string;
     tags: string[];
     topicSubscriptions: string[];
-    updatedAt: number;
+    updatedAt: Date;
 
     // #endregion Properties (14)
 }

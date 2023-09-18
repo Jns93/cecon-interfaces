@@ -7,7 +7,7 @@ export interface ICompany {
     address: IAddress;
     bgImageURL?: string;
     containerId: string;
-    createdAt: number;
+    createdAt: Date;
     deliveryArea: IDeliveryArea[];
     deliveryAreaFixed?: IDeliveryAreaFixed | null;
     doc: string;
@@ -28,7 +28,7 @@ export interface ICompany {
     fullName: string;
     sandbox: boolean;
     tags: string[];
-    updatedAt: number;
+    updatedAt: Date;
     version: string;
 
     // #endregion Properties (27)

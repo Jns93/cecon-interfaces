@@ -16,7 +16,7 @@ export class CompanyEntity implements ICompany {
     bgImageURL?: string = '';
     public config: MobyoApiConfigEntity = new MobyoApiConfigEntity();
     public containerId: string = '';
-    public createdAt: number = Date.now();
+    public createdAt: Date = new Date();
     public deliveryArea: DeliveryAreaEntity[] = [];
     deliveryAreaFixed?: DeliveryAreaFixedEntity | null = null;
     public doc: string = '';
@@ -36,7 +36,7 @@ export class CompanyEntity implements ICompany {
     public pubsubTopic: string = '';
     public sandbox: boolean = false;
     public tags: string[] = [];
-    public updatedAt: number = 0;
+    public updatedAt: Date = new Date();
     public version: string = '1.0.0';
 
     // #endregion Properties (26)

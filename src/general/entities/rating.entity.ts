@@ -4,7 +4,7 @@ export class RatingEntity implements IRating {
     // #region Properties (4)
 
     comment?: string = '';
-    public createdAt: number = Date.now();
+    public createdAt: Date = new Date();
     public rating: number = 5;
     public userId: string = '';
 

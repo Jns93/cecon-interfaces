@@ -15,7 +15,7 @@ export interface IOrder {
     cancellation: IOrderCancellation;
     companyId: string;
     containerId: string;
-    createdAt: number;
+    createdAt: Date;
     customer: IOrderCustomer;
     id: string;
     sandbox: boolean;
@@ -24,7 +24,7 @@ export interface IOrder {
     salesChannel: string;
     status: OrderStatusEnum;
     total: IOrderTotal;
-    updatedAt: number;
+    updatedAt: Date;
     version: string;
 
     // #endregion Properties (23)

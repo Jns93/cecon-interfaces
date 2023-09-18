@@ -3,18 +3,20 @@ import { AppConfigType } from '../../app';
 export interface IDeviceInstalledApps {
     // #region Properties (13)
 
-    activationDate: number;
+    activationDate: Date;
     active: boolean;
     appId: string;
-    createdAt: number;
+    id: string;
+    createdAt: Date;
     customConfig: AppConfigType;
-    expirationDate: number;
+    expirationDate: Date;
     isPaid: boolean;
     orderId: string;
-    renewPaymentDate: number;
+    subscriptionId: string;
+    renewPaymentDate: Date;
     title: string;
     topicSubscriptions: string[];
-    updatedAt: number;
+    updatedAt: Date;
     version: string;
 
     // #endregion Properties (13)

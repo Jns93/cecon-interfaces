@@ -7,7 +7,7 @@ export class PaymentMethodEntity {
 
     public active: boolean = false;
     public channel: PaymentChannelEnum = PaymentChannelEnum.AUTOMATION;
-    public createdAt: number = 0;
+    public createdAt: Date = new Date()
     public fee: number = 0;
     public id: string = '';
     public index: number = 0;
@@ -17,7 +17,7 @@ export class PaymentMethodEntity {
     public name: string = '';
     public token: string = '';
     public type: PaymentTypeEnum = PaymentTypeEnum.CREDIT_CARD;
-    public updatedAt: number = Date.now();
+    public updatedAt: Date = new Date();
 
     // #endregion Properties (13)
 

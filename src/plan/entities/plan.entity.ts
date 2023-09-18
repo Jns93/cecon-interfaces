@@ -6,7 +6,7 @@ import { PlanFeatureEntity } from './feature.entity';
 export class PlanEntity implements IPlan {
     // #region Properties (9)
 
-    public createdAt: number = Date.now();
+    public createdAt: Date = new Date();
     public features: PlanFeatureEntity[] = [];
     public id: string = '';
     public identifier: PlanIdentifierEnum = PlanIdentifierEnum.NATIGO;
@@ -14,7 +14,7 @@ export class PlanEntity implements IPlan {
     public intervalType: IntervalTypeEnum = IntervalTypeEnum.MONTHS;
     public name: string = '';
     public price: number = 0;
-    public updatedAt: number = Date.now();
+    public updatedAt: Date = new Date();
 
     // #endregion Properties (9)
 
