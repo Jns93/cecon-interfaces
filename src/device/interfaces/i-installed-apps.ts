@@ -1,23 +1,24 @@
-import { AppConfigType } from '../../app';
+import { AppConfigType, AppModeEnum } from '../../app';
 
 export interface IDeviceInstalledApps {
-    // #region Properties (13)
+    // #region Properties (16)
 
     activationDate: Date;
     active: boolean;
     appId: string;
-    id: string;
     createdAt: Date;
     customConfig: AppConfigType;
     expirationDate: Date;
+    iconUrl: string;
+    id: string;
     isPaid: boolean;
+    name: string;
+    mode: AppModeEnum;
     orderId: string;
-    subscriptionId: string;
     renewPaymentDate: Date;
-    title: string;
-    topicSubscriptions: string[];
+    subscriptionId: string;
     updatedAt: Date;
     version: string;
 
-    // #endregion Properties (13)
+    // #endregion Properties (16)
 }

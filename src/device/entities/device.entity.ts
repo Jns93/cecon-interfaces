@@ -15,10 +15,10 @@ export class DeviceEntity implements IDevice {
     public id: string = '';
     public installedApps: DeviceInstalledAppsEntity[] = [];
     public key: string = '';
-    public lastAccess: number = 0;
+    public lastAccess: Date = new Date();
     public name: string = '';
     public tags: string[] = [];
-    public topicSubscriptions: string[] = [];
+    public pubsubTopic: string = '';
     public updatedAt: Date = new Date();
 
     // #endregion Properties (14)

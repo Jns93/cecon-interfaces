@@ -10,13 +10,13 @@ export interface IDevice {
     deviceId: string;
     id: string;
     key: string;
-    lastAccess: number;
+    lastAccess: Date;
     installedApps: IDeviceInstalledApps[];
     os: OsEnum;
     osVersion: string; 
     name: string;
     tags: string[];
-    topicSubscriptions: string[];
+    pubsubTopic: string;
     updatedAt: Date;
 
     // #endregion Properties (14)
