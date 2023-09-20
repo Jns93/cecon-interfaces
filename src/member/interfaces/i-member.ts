@@ -13,7 +13,6 @@ export interface IMember extends IBase {
     photoURL: string;
     rule: MemberRulesEnum;
     type: MemberTypeEnum;
-    pubsubSubscription: string;
     tags: string[];
     uid: string;
 

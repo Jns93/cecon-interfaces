@@ -24,7 +24,6 @@ export interface ICompany {
     paymentProvider: IPaymentProvider;
     paymentsMethods: IPaymentMethod[];
     phoneNumber: string;
-    pubsubTopic: string;
     fullName: string;
     sandbox: boolean;
     tags: string[];

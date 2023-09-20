@@ -7,6 +7,7 @@ export * from './invite';
 export * from './iugu';
 export * from './lead';
 export * from './member';
+export * from './notification';
 export * from './order';
 export * from './partner';
 export * from './plan';

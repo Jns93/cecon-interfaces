@@ -13,7 +13,6 @@ export class MemberEntity extends BaseEntity implements IMember {
     public partnerId: string = '';
     public phoneNumber: string = '';
     public photoURL: string = '';
-    public pubsubSubscription: string = '';
     public rule: MemberRulesEnum = MemberRulesEnum.USER;
     public tags: string[] = [];
     public type: MemberTypeEnum = MemberTypeEnum.CLIENT;
