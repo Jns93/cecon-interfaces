@@ -1,5 +1,5 @@
 import { OsEnum } from '../../general/enums/os.enum';
-import { IDeviceInstalledApps } from './i-installed-apps';
+import { IInstallation } from '../../installation';
 
 export interface IDevice {
     // #region Properties (14)
@@ -8,15 +8,15 @@ export interface IDevice {
     containerId: string;
     createdAt: Date;
     deviceId: string;
+    /** Deverá ser injetado nas requisições */
+    installedApps?: IInstallation[];
     id: string;
     key: string;
     lastAccess: Date;
-    installedApps: IDeviceInstalledApps[];
     os: OsEnum;
     osVersion: string; 
     name: string;
     tags: string[];
-    pubsubTopic: string;
     updatedAt: Date;
 
     // #endregion Properties (14)

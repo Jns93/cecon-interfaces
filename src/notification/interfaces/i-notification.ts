@@ -8,6 +8,8 @@ export interface INotification {
     priority: NotificationPriorityEnum;
     category: NotificationCategoryEnum;
     createdAt: Date;
+    title: string;
+    description: string;
     expirationTime: number;
     status: NotificationStatusEnum;
     imageURL: string;

@@ -11,7 +11,7 @@ export interface IToken {
     partnerId: string;
     containerId: string;
     sandbox: boolean;
-    lastUsedAt: number;
+    lastAccessAt: number;
     description: string;
     value: string;
 

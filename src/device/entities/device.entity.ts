@@ -1,6 +1,5 @@
 import { OsEnum } from '../../general/enums/os.enum';
 import { IDevice } from '../interfaces/i-device';
-import { DeviceInstalledAppsEntity } from './installed-apps.entity';
 
 export class DeviceEntity implements IDevice {
     // #region Properties (14)
@@ -11,14 +10,13 @@ export class DeviceEntity implements IDevice {
     public createdAt: Date = new Date()
     public deviceId: string = '';
     public os: OsEnum = OsEnum.UNKNOWN;
+    public installedApps = [];
     public osVersion: string = '';
     public id: string = '';
-    public installedApps: DeviceInstalledAppsEntity[] = [];
     public key: string = '';
     public lastAccess: Date = new Date();
     public name: string = '';
     public tags: string[] = [];
-    public pubsubTopic: string = '';
     public updatedAt: Date = new Date();
 
     // #endregion Properties (14)

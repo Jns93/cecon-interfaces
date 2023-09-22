@@ -11,7 +11,7 @@ export class TokenEntity implements IToken {
     public partnerId: string = '';
     public containerId: string = '';
     public sandbox: boolean = false;
-    public lastUsedAt: number = Date.now();
+    public lastAccessAt: number = Date.now();
     public description: string = '';
     public value: string = '';
 

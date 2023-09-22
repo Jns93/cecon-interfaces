@@ -10,6 +10,8 @@ export class NotificationEntity implements INotification {
     public createdAt: Date = new Date();
     public data: string = '';
     public expirationTime: number = 3600;
+    public title: string = '';
+    public description: string = '';
     public id: string = '';
     public imageURL: string = '';
     public priority: NotificationPriorityEnum = NotificationPriorityEnum.HIGH;

@@ -19,7 +19,6 @@ export class PartnerEntity implements IPartner {
     public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
     public paymentsMethods: PaymentMethodEntity[] = [];
     public phoneNumber: string = '';
-    public pubsubTopic: string = '';
     public sandbox: boolean = false;
     public tags: string[] = [];
     public updatedAt: Date = new Date();

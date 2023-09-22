@@ -1,4 +1,3 @@
-import { PubSubEnum } from '../../general/enums/pub-sub.enum';
 
 export interface INatigo {
     // #region Properties (6)
@@ -15,10 +14,6 @@ export interface INatigo {
      * Indica se o acesso é restrito a usuários logados
      */
     openLockRequired: boolean;
-    /**
-     * Indica o tópico do pubsub
-     */
-    pubsubTopicType: PubSubEnum;
     /**
      * URL de abertura do NATIGO
      */

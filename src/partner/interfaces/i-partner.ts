@@ -18,7 +18,6 @@ export interface IPartner {
     paymentProvider: IPaymentProvider;
     paymentsMethods: IPaymentMethod[];
     phoneNumber: string;
-    pubsubTopic: string;
     sandbox: boolean;
     tags: string[];
     updatedAt: Date;
