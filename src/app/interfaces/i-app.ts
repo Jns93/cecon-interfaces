@@ -3,38 +3,30 @@ import { OsEnum } from '../../general/enums/os.enum';
 import { PlatfomrEnum } from '../../general/enums/platform.enum';
 import { AppModeEnum } from '../enums';
 import { AppCategoryEnum } from '../enums/app-category.enum';
+import { AppTypeEnum } from '../enums/app-type.enum';
 import { AppHeaderTypeEnum } from '../enums/header-type.enum';
 
 export interface IApp {
-    // #region Properties (21)
+    // #region Properties (29)
 
     active: boolean;
     activeInstalls: number;
+    /**
+     * Indica se permite adicionar a assinatura
+     */
+    allowAddSubscription: boolean;
     carousel: ICarouselImage[];
     categories: AppCategoryEnum[];
     createdBy: string;
-    mode: AppModeEnum;
     description: string;
     downloadUrl: string;
     features: string[];
     headerImage: string;
     headerType: AppHeaderTypeEnum;
     headerVideo: string;
-    /**
-     * Indica se permite adicionar a assinatura
-     */
-    allowAddSubscription: boolean;
-    /**
-     * Indica se o app é gratuito ou não
-     */
-    isFree: boolean;
-    price: number;
-    /**
-     * Tipo de intervalo para o preço
-     * @example
-     * Mensal, Semanal, Diário
-     */
-    intervalType: IntervalTypeEnum;
+    icon: string;
+    type: AppTypeEnum;
+    id: string;
     /**
      * Intervalo de tempo para o preço
      * @example
@@ -44,16 +36,26 @@ export interface IApp {
      * 
      */
     interval: number;
-    icon: string;
-    id: string;
+    /**
+     * Tipo de intervalo para o preço
+     * @example
+     * Mensal, Semanal, Diário
+     */
+    intervalType: IntervalTypeEnum;
+    /**
+     * Indica se o app é gratuito ou não
+     */
+    mode: AppModeEnum;
+    name: string;
     os: OsEnum[];
     platforms: PlatfomrEnum[];
+    price: number;
     ratings: IRating[];
     tags: string[];
-    name: string;
     totalInstalls: number;
-    versionName: string;
+    trialTime: number;
     versionCode: number;
+    versionName: string;
 
-    // #endregion Properties (21)
+    // #endregion Properties (29)
 }

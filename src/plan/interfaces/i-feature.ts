@@ -10,7 +10,9 @@ export interface IPlanFeature {
     planId: string;
     position: number;
     updatedAt: Date;
-    value: number;
+    quantity: number;
+    price: number;
+    isFeature: boolean;
 
     // #endregion Properties (9)
 }

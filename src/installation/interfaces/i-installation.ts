@@ -1,24 +1,23 @@
-import { AppConfigType, AppModeEnum } from '../../app';
+import { AppConfigType } from '../../app';
+import { InstallationStatusEnum } from '../enums';
+import { IInstallationApp } from './i-installation-app';
 
 export interface IInstallation {
-    // #region Properties (17)
+    // #region Properties (13)
 
-    active: boolean;
-    suspended: boolean;
-    appIconUrl: string;
-    appId: string;
-    appName: string;
+    app: IInstallationApp;
     createdAt: Date;
     customConfig: AppConfigType;
     expirationDate: Date;
-    id: string;
-    mode: AppModeEnum;
-    subscriptionId: string;
     featureId: string;
-    tags: string[];
-    updatedAt: Date;
+    id: string;
     lastCheckAt: Date;
-    version: string;
+    status: InstallationStatusEnum;
+    subscriptionId: string;
+    tags: string[];
+    trialEndDate: Date;
+    trialStartDate: Date;
+    updatedAt: Date;
 
-    // #endregion Properties (17)
+    // #endregion Properties (13)
 }

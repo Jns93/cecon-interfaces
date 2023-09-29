@@ -19,7 +19,6 @@ export class SubscriptionEntity implements ISubscription {
     public renewPaymentDate: Date = new Date();
     public startDate: Date = new Date();
     public status: SubscriptionStatusEnum = SubscriptionStatusEnum.PENDING;
-    public trialEndDate: Date = new Date();
     public updatedAt: Date = new Date();
 
     // #endregion Properties (15)

@@ -9,6 +9,7 @@ export class PlanEntity implements IPlan {
     public createdAt: Date = new Date();
     public features: PlanFeatureEntity[] = [];
     public id: string = '';
+    public index: number = 0;
     public identifier: PlanIdentifierEnum = PlanIdentifierEnum.NATIGO;
     public interval: number = 12;
     public intervalType: IntervalTypeEnum = IntervalTypeEnum.MONTHS;

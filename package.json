@@ -1,9 +1,7 @@
 {
     "name": "cecon-interfaces",
-    "version": "1.0.77",
+    "version": "1.0.79",
     "description": "Interfaces de Projetos Cecon",
-    "dependencies": {},
-    "peerDependencies": {},
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "private": false,

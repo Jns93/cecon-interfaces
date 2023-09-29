@@ -10,8 +10,11 @@ export class PlanFeatureEntity implements IPlanFeature {
     public name: string = '';
     public planId: string = '';
     public position: number = 0;
+    public quantity: number = 0;
     public updatedAt: Date = new Date();
-    public value: number = 0;
+    public price: number = 0;
+    public isFeature: boolean = false;
+
 
     // #endregion Properties (9)
 

@@ -2,18 +2,22 @@ import { CarouselImageEntity, IntervalTypeEnum, RatingEntity } from '../../gener
 import { OsEnum } from '../../general/enums/os.enum';
 import { PlatfomrEnum } from '../../general/enums/platform.enum';
 import { AppCategoryEnum } from '../enums/app-category.enum';
+import { AppTypeEnum } from '../enums/app-type.enum';
 import { AppHeaderTypeEnum } from '../enums/header-type.enum';
 import { AppModeEnum } from '../enums/mode.enum';
 import { IApp } from '../interfaces/i-app';
 
 export class AppEntity implements IApp {
-    // #region Properties (26)
+    // #region Properties (29)
 
     public active: boolean = false;
     public activeInstalls: number = 0;
+    /**
+     * Indica se permite adicionar a assinatura
+     */
+    public allowAddSubscription: boolean = false;
     public carousel: CarouselImageEntity[] = [];
     public categories: AppCategoryEnum[] = [];
-    public mode: AppModeEnum = AppModeEnum.NONE;
     public createdBy: string = '';
     public description: string = '';
     public downloadUrl: string = '';
@@ -38,25 +42,23 @@ export class AppEntity implements IApp {
      * Mensal, Semanal, Diário
      */
     public intervalType: IntervalTypeEnum = IntervalTypeEnum.MONTHS;
-    /**
-     * Indica se permite adicionar a assinatura
-     */
-    public allowAddSubscription: boolean = false;
+    public mode: AppModeEnum = AppModeEnum.NONE;
+    public name: string = '';
     /**
      * Indica se o app é gratuito ou não
      */
-    public isFree: boolean = false;
     public os: OsEnum[] = [];
     public platforms: PlatfomrEnum[] = [];
     public price: number = 0;
     public ratings: RatingEntity[] = [];
     public tags: string[] = [];
-    public name: string = '';
     public totalInstalls: number = 0;
-    public versionName: string = '';
+    public trialTime = 0;
+    public type: AppTypeEnum = AppTypeEnum.FREE;
     public versionCode: number = 1;
+    public versionName: string = '';
 
-    // #endregion Properties (26)
+    // #endregion Properties (29)
 
     // #region Constructors (1)
 

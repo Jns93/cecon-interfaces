@@ -9,6 +9,7 @@ export interface IPlan {
     interval: number;
     intervalType: IntervalTypeEnum;
     createdAt: Date;
+    index: number;
     updatedAt: Date;
     price: number;
     features: IPlanFeature[];

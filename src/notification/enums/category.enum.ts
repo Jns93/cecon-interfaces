@@ -5,6 +5,9 @@ export enum NotificationCategoryEnum {
     TASK = 'task',
     MEETING = 'meeting',
     ALERT = 'alert',
+    INFO = 'info',
+    DANGER = 'danger',
+    WARN = 'warning',
     UPDATE = 'update',
     OTHER = 'other'
 }

@@ -9,7 +9,6 @@ export interface ISubscription {
     createdAt: Date;
     customerId: string;
     endDate: Date;
-    trialEndDate: Date;
     id: string;
     interval: number;
     intervalType: IntervalTypeEnum;
