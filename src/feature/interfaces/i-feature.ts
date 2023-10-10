@@ -1,18 +1,18 @@
-import { AppModeEnum } from '../../app';
+import { EAppMode } from '../../app';
 
 export interface IFeature {
-    // #region Properties (16)
+    // #region Properties (10)
 
     appId: string;
-    appMode: AppModeEnum | null;
-    createdAt: Date;
-    subscriptionId: string;
+    appMode: EAppMode | null;
     companyId: string;
     containerId: string;
-    id: string;
+    createdAt: Date;
     deviceId: string;
-    planId: string;
+    id: string;
     installationId: string;
+    planId: string | null;
+    subscriptionId: string;
 
-    // #endregion Properties (16)
+    // #endregion Properties (10)
 }

@@ -1,16 +1,21 @@
 import { IntervalTypeEnum } from '../../general/enums';
-import { PlanIdentifierEnum } from '../enums/plans-identifier.enum';
+import { EPlanIdentifier } from '../enums';
 import { IPlanFeature } from './i-feature';
 
 export interface IPlan {
+    // #region Properties (10)
+
+    createdAt: Date;
+    features: IPlanFeature[];
     id: string;
-    name: string;
-    identifier: PlanIdentifierEnum;
+    identifier: EPlanIdentifier;
+    index: number;
     interval: number;
     intervalType: IntervalTypeEnum;
-    createdAt: Date;
-    index: number;
-    updatedAt: Date;
+    tags: string[];
+    name: string;
     price: number;
-    features: IPlanFeature[];
+    updatedAt: Date;
+
+    // #endregion Properties (10)
 }

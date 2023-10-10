@@ -12,7 +12,7 @@ export interface INotification {
     description: string;
     expirationTime: number;
     status: NotificationStatusEnum;
-    imageURL: string;
+    imageUrl: string;
     sound: boolean;
     id: string;
     data: string;

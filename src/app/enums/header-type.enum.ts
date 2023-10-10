@@ -1,4 +1,4 @@
-export enum AppHeaderTypeEnum {
+export enum EAppHeaderType {
     VIDEO = 'VIDEO',
     IMAGE = 'IMAGE',
 }

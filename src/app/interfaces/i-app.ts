@@ -1,10 +1,10 @@
 import { ICarouselImage, IRating, IntervalTypeEnum } from '../../general';
 import { OsEnum } from '../../general/enums/os.enum';
 import { PlatfomrEnum } from '../../general/enums/platform.enum';
-import { AppModeEnum } from '../enums';
-import { AppCategoryEnum } from '../enums/app-category.enum';
-import { AppTypeEnum } from '../enums/app-type.enum';
-import { AppHeaderTypeEnum } from '../enums/header-type.enum';
+import { EAppMode } from '../enums';
+import { EAppCategory } from '../enums/app-category.enum';
+import { EAppType } from '../enums/app-type.enum';
+import { EAppHeaderType } from '../enums/header-type.enum';
 
 export interface IApp {
     // #region Properties (29)
@@ -16,16 +16,16 @@ export interface IApp {
      */
     allowAddSubscription: boolean;
     carousel: ICarouselImage[];
-    categories: AppCategoryEnum[];
+    categories: EAppCategory[];
     createdBy: string;
     description: string;
     downloadUrl: string;
     features: string[];
     headerImage: string;
-    headerType: AppHeaderTypeEnum;
+    headerType: EAppHeaderType;
     headerVideo: string;
-    icon: string;
-    type: AppTypeEnum;
+    iconUrl: string;
+    type: EAppType;
     id: string;
     /**
      * Intervalo de tempo para o preço
@@ -45,7 +45,7 @@ export interface IApp {
     /**
      * Indica se o app é gratuito ou não
      */
-    mode: AppModeEnum;
+    mode: EAppMode;
     name: string;
     os: OsEnum[];
     platforms: PlatfomrEnum[];

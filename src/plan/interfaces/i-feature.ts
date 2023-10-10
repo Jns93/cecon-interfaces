@@ -1,18 +1,18 @@
+import { EPlanFeatureType } from "../enums";
 
 export interface IPlanFeature {
-    // #region Properties (9)
+  // #region Properties (10)
 
-    createdAt: Date;
-    id: string;
-    identifier: string;
-    important: boolean;
-    name: string;
-    planId: string;
-    position: number;
-    updatedAt: Date;
-    quantity: number;
-    price: number;
-    isFeature: boolean;
+  appId: string;
+  createdAt: Date;
+  featureType: EPlanFeatureType;
+  id: string;
+  index: number;
+  name: string;
+  planId: string;
+  price: number;
+  quantity: number;
+  updatedAt: Date;
 
-    // #endregion Properties (9)
+  // #endregion Properties (10)
 }

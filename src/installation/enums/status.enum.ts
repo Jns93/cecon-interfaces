@@ -6,4 +6,5 @@ export enum InstallationStatusEnum {
     CANCELLED = 'CANCELLED',
     PENDING = 'PENDING',
     INACTIVE = 'INACTIVE',
+    INSTALLED = 'INSTALLED',
 }

@@ -1,5 +1,5 @@
 import { IntervalTypeEnum } from '../../general/enums';
-import { PlanIdentifierEnum } from '../enums/plans-identifier.enum';
+import { EPlanIdentifier } from '../enums/plans-identifier.enum';
 import { IPlan } from '../interfaces';
 import { PlanFeatureEntity } from './feature.entity';
 
@@ -9,8 +9,9 @@ export class PlanEntity implements IPlan {
     public createdAt: Date = new Date();
     public features: PlanFeatureEntity[] = [];
     public id: string = '';
+    public tags: string[] = [];
     public index: number = 0;
-    public identifier: PlanIdentifierEnum = PlanIdentifierEnum.NATIGO;
+    public identifier: EPlanIdentifier = EPlanIdentifier.NATIGO;
     public interval: number = 12;
     public intervalType: IntervalTypeEnum = IntervalTypeEnum.MONTHS;
     public name: string = '';

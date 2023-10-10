@@ -9,6 +9,7 @@ export { IIuguMarketplaceSplit } from './i-account-marketplace-split';
 export { IIuguChangePlanSimulation } from './i-change-plan-simulation';
 export { IIuguConfigEarlyPaymentDiscount } from './i-config-early-payment-discounts';
 export { IIuguCustomer } from './i-customer';
+export { IIuguInvoice } from './i-invoice';
 export { IIuguPaymentToken } from './i-payment-token';
 export { IIuguPaymentTokenData } from './i-payment-token-data';
 export { IIuguPlan } from './i-plan';
@@ -21,5 +22,3 @@ export { IIuguSubscriptionFeatures } from './i-subscription-features';
 export { IIuguSubscriptionLog } from './i-subscription-log';
 export { IIuguSubscriptionRecentInvoice } from './i-subscription-recent-invoice';
 export { IIuguSubscriptionSubitem } from './i-subscription-subitem';
-
-

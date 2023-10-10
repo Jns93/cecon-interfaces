@@ -1,4 +1,4 @@
-import { AppModeEnum } from '../../app';
+import { EAppMode } from '../../app';
 import { IInstallationApp } from '../interfaces/i-installation-app';
 
 export class InstallationAppEntity implements IInstallationApp {
@@ -6,7 +6,7 @@ export class InstallationAppEntity implements IInstallationApp {
 
     public iconUrl: string = '';
     public id: string = '';
-    public mode: AppModeEnum = AppModeEnum.NATI_GO;
+    public mode: EAppMode = EAppMode.NATI_GO;
     public name: string = '';
     public version: string = '';
 

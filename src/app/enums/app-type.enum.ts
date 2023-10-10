@@ -1,4 +1,4 @@
-export enum AppTypeEnum {
+export enum EAppType {
     FREE = 'FREE',
     PAID = 'PAID',
     SUBSCRIPTION = 'SUBSCRIPTION',

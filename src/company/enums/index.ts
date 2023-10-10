@@ -1,7 +1,7 @@
 // index.ts
 
-export { CompanyKeysEnum } from './keys.enum';
-export { CompanyMessageTypeEnum } from './message-type.enum';
+export { ECompanyKeys } from './keys.enum';
+export { ECompanyMessageType } from './message-type.enum';
 
 
 

@@ -1,5 +1,5 @@
-export { AppCategoryEnum } from './app-category.enum';
-export { AppTypeEnum } from './app-type.enum';
-export { AppHeaderTypeEnum } from './header-type.enum';
-export { AppModeEnum } from './mode.enum';
+export { EAppCategory } from './app-category.enum';
+export { EAppType } from './app-type.enum';
+export { EAppHeaderType } from './header-type.enum';
+export { EAppMode } from './mode.enum';
 

@@ -3,12 +3,12 @@ import { IInvoiceItem } from '../interfaces';
 export class InvoiceItemEntity implements IInvoiceItem {
     // #region Properties (8)
 
+    public addition: number = 0;
     public description: string = '';
-    public discounts: number = 0;
+    public discount: number = 0;
     public id: string = '';
     public quantity: number = 1;
     public sku: string = '';
-    public taxes: number = 0;
     public totalPrice: number = 0;
     public unitPrice: number = 0;
 

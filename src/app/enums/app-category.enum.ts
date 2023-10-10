@@ -1,4 +1,4 @@
-export enum AppCategoryEnum {
+export enum EAppCategory {
     UTILITIES = 'UTILIDADES',
     OTHERS = 'OUTROS',
     POINTOFSALES = 'PDV',

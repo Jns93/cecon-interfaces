@@ -17,7 +17,7 @@ export interface IInvite {
     internationalCode: string;
     name: string;
     phoneNumber: string;
-    photoURL: string;
+    photoUrl: string;
     status: InviteStatusEnum;
     uid: string;
     updatedAt: Date;

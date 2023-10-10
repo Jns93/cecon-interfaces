@@ -1,3 +1,4 @@
 export { ISubscription } from './i-subscription';
-export { ISubscriptionInvoiceHistory } from './i-subscription-invoice-history';
+export { ISubscriptionItem } from './i-subscription-item';
+export { ISubscriptionLog } from './i-subscription-log';
 

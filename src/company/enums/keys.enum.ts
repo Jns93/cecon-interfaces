@@ -1,4 +1,4 @@
-export enum CompanyKeysEnum {
+export enum ECompanyKeys {
     GOOGLE = 'GOOGLE',
     LOGGI = 'LOGGI',
     DESENFILA = 'DESENFILA',

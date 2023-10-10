@@ -1,12 +1,12 @@
 export interface IInvoiceItem {
     // #region Properties (8)
 
+    addition: number;
     description: string;
-    discounts: number;
+    discount: number;
     id: string;
     quantity: number;
     sku: string;
-    taxes: number;
     totalPrice: number;
     unitPrice: number;
 

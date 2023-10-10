@@ -4,26 +4,31 @@ import { InvoiceItemEntity } from './invoice-item.entity';
 import { InvoicePaymentMethodEntity } from './invoice-payment-method.entity';
 
 export class InvoiceEntity implements IInvoice {
-    // #region Properties (16)
+    // #region Properties (21)
 
+    public addition: number = 0;
     public companyId: string = '';
     public containerId: string = '';
     public createdAt: Date = new Date();
-    public discounts: number = 0;
-    public dueDateAt: Date = new Date();
+    public discount: number = 0;
+    public dueDateAt: Date = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000);
+    public ensureDueOnWorkday: boolean = true;
+    public expiresIn: number = 5;
     public id: string = '';
-    public invoiceNumber: string = '';
     public items: InvoiceItemEntity[] = [];
     public notes: string = '';
-    public paidDateAt: Date = new Date();
+    public paidAt: Date = new Date();
     public paymentMethod: InvoicePaymentMethodEntity[] = [];
+    public providerInvoiceNumber: string = '';
+    public providerInvoiceUrl: string = '';
     public status: InvoiceStatusEnum = InvoiceStatusEnum.PENDING;
+    public subscriptionId: string = '';
     public subtotal: number = 0;
     public taxes: number = 0;
     public total: number = 0;
     public updatedAt: Date = new Date();
 
-    // #endregion Properties (16)
+    // #endregion Properties (21)
 
     // #region Constructors (1)
 

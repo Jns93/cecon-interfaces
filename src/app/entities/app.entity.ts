@@ -1,10 +1,10 @@
 import { CarouselImageEntity, IntervalTypeEnum, RatingEntity } from '../../general';
 import { OsEnum } from '../../general/enums/os.enum';
 import { PlatfomrEnum } from '../../general/enums/platform.enum';
-import { AppCategoryEnum } from '../enums/app-category.enum';
-import { AppTypeEnum } from '../enums/app-type.enum';
-import { AppHeaderTypeEnum } from '../enums/header-type.enum';
-import { AppModeEnum } from '../enums/mode.enum';
+import { EAppCategory } from '../enums/app-category.enum';
+import { EAppType } from '../enums/app-type.enum';
+import { EAppHeaderType } from '../enums/header-type.enum';
+import { EAppMode } from '../enums/mode.enum';
 import { IApp } from '../interfaces/i-app';
 
 export class AppEntity implements IApp {
@@ -17,15 +17,15 @@ export class AppEntity implements IApp {
      */
     public allowAddSubscription: boolean = false;
     public carousel: CarouselImageEntity[] = [];
-    public categories: AppCategoryEnum[] = [];
+    public categories: EAppCategory[] = [];
     public createdBy: string = '';
     public description: string = '';
     public downloadUrl: string = '';
     public features: string[] = [];
     public headerImage: string = '';
-    public headerType: AppHeaderTypeEnum = AppHeaderTypeEnum.IMAGE;
+    public headerType: EAppHeaderType = EAppHeaderType.IMAGE;
     public headerVideo: string = '';
-    public icon: string = '';
+    public iconUrl: string = '';
     public id: string = '';
     /**
      * Intervalo de tempo para o preço
@@ -42,7 +42,7 @@ export class AppEntity implements IApp {
      * Mensal, Semanal, Diário
      */
     public intervalType: IntervalTypeEnum = IntervalTypeEnum.MONTHS;
-    public mode: AppModeEnum = AppModeEnum.NONE;
+    public mode: EAppMode = EAppMode.NONE;
     public name: string = '';
     /**
      * Indica se o app é gratuito ou não
@@ -54,7 +54,7 @@ export class AppEntity implements IApp {
     public tags: string[] = [];
     public totalInstalls: number = 0;
     public trialTime = 0;
-    public type: AppTypeEnum = AppTypeEnum.FREE;
+    public type: EAppType = EAppType.FREE;
     public versionCode: number = 1;
     public versionName: string = '';
 

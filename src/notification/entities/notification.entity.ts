@@ -13,7 +13,7 @@ export class NotificationEntity implements INotification {
     public title: string = '';
     public description: string = '';
     public id: string = '';
-    public imageURL: string = '';
+    public imageUrl: string = '';
     public priority: NotificationPriorityEnum = NotificationPriorityEnum.HIGH;
     public sound: boolean = true;
     public status: NotificationStatusEnum = NotificationStatusEnum.DELIVERED;

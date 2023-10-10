@@ -12,9 +12,9 @@ export class PartnerEntity implements IPartner {
     public email: string = '';
     public fullName: string = '';
     public id: string = '';
-    public imageURL?: string = '';
+    public imageUrl?: string = '';
     public internationalCode: string = '';
-    public logoURL?: string = '';
+    public logoUrl?: string = '';
     public name: string = '';
     public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
     public paymentsMethods: PaymentMethodEntity[] = [];

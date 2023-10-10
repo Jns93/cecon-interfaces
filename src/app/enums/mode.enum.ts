@@ -1,4 +1,4 @@
-export enum AppModeEnum {
+export enum EAppMode {
     APP = 'APP',
     CHECKOUT = 'CHECKOUT',
     SCREEN = 'SCREEN',

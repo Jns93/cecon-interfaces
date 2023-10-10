@@ -1,18 +1,18 @@
-import { AppModeEnum } from '../../app';
+import { EAppMode } from '../../app';
 import { IFeature } from '../interfaces';
 
 export class FeatureEntity implements IFeature {
     // #region Properties (10)
 
     public appId: string = '';
-    public appMode: AppModeEnum | null = null;
+    public appMode: EAppMode | null = null;
     public companyId: string = '';
     public containerId: string = '';
     public createdAt: Date = new Date();
     public deviceId: string = '';
     public id: string = '';
     public installationId: string = '';
-    public planId: string = '';
+    public planId: string | null = null;
     public subscriptionId: string = '';
 
     // #endregion Properties (10)

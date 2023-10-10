@@ -18,7 +18,7 @@ export class InviteEntity implements IInvite {
     public internationalCode: string = '+55';
     public name: string = '';
     public phoneNumber: string = '';
-    public photoURL: string = '';
+    public photoUrl: string = '';
     public status: InviteStatusEnum = InviteStatusEnum.PENDING;
     public uid: string = '';
     public updatedAt: Date = new Date();

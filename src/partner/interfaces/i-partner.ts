@@ -11,9 +11,9 @@ export interface IPartner {
     email: string;
     fullName: string;
     id: string;
-    imageURL?: string;
+    imageUrl?: string;
     internationalCode: string;
-    logoURL?: string;
+    logoUrl?: string;
     name: string;
     paymentProvider: IPaymentProvider;
     paymentsMethods: IPaymentMethod[];

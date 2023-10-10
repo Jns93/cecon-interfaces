@@ -1,4 +1,4 @@
-export enum InvoiceStatusEnum {
+export enum IuguInvoiceStatusEnum {
     PENDING = "PENDING",
     PAID = "PAID",
     CANCELED = "CANCELED",
