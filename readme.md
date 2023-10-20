@@ -1,4 +1,4 @@
-*Mude a versão*
+*Mude a versão do PACKAGE.JSON*
 
 Compilar:
 
