@@ -1,1 +1,1 @@
-export { InstallationStatusEnum } from './status.enum';
+export { EInstallationStatus } from './status.enum';

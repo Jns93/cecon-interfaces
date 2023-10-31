@@ -1,17 +1,15 @@
-import { IFeature } from "../../feature";
-import { ICustomVariable, IntervalTypeEnum } from "../../general";
-import { SubscriptionStatusEnum } from "../enums";
-import { ISubscriptionItem } from "./i-subscription-item";
-import { ISubscriptionLog } from "./i-subscription-log";
+import { IFeature } from '../../feature';
+import { ICustomVariable, IntervalTypeEnum } from '../../general';
+import { SubscriptionStatusEnum } from '../enums';
+import { ISubscriptionCompany } from './i-subscription-company';
+import { ISubscriptionItem } from './i-subscription-item';
+import { ISubscriptionLog } from './i-subscription-log';
 
 export interface ISubscription {
   // #region Properties (24)
 
   cancellationReason: string;
-  companyDoc: string;
-  companyId: string;
-  companyName: string;
-  containerId: string | null;
+  company: ISubscriptionCompany;
   createdAt: Date;
   customVariables: ICustomVariable[];
   expiresAt: Date;

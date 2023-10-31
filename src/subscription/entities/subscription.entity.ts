@@ -1,31 +1,29 @@
-import { FeatureEntity } from "../../feature";
-import { CustomVariableEntity, IntervalTypeEnum } from "../../general";
-import { SubscriptionStatusEnum } from "../enums";
-import { ISubscription } from "../interfaces/i-subscription";
-import { SubscriptionItemEntity } from "./subscription-item.entity";
-import { SubscriptionLogEntity } from "./subscription-log.entity";
+import { FeatureEntity } from '../../feature';
+import { CustomVariableEntity, IntervalTypeEnum } from '../../general';
+import { SubscriptionStatusEnum } from '../enums';
+import { ISubscription } from '../interfaces/i-subscription';
+import { SubscriptionCompanyEntity } from './subscription-company.entity';
+import { SubscriptionItemEntity } from './subscription-item.entity';
+import { SubscriptionLogEntity } from './subscription-log.entity';
 
 export class SubscriptionEntity implements ISubscription {
-  // #region Properties (24)
+  // #region Properties (25)
 
-  public cancellationReason: string = "";
-  public companyDoc: string = "";
-  public companyId: string = "";
-  public companyName: string = "";
-  public containerId: string | null = "";
+  public cancellationReason: string = '';
+  public company: SubscriptionCompanyEntity = new SubscriptionCompanyEntity();
   public createdAt: Date = new Date();
   public customVariables: CustomVariableEntity[] = [];
   public expiresAt: Date = new Date();
   public features: FeatureEntity[] = [];
-  public id: string = "";
+  public id: string = '';
   public interval: number = 0;
   public intervalType: IntervalTypeEnum = IntervalTypeEnum.MONTHS;
   public items: SubscriptionItemEntity[] = [];
   public logs: SubscriptionLogEntity[] = [];
-  public notes: string = "";
-  public partnerId: string | null = "";
-  public planId: string = "";
-  public planName: string = "";
+  public notes: string = '';
+  public partnerId: string | null = '';
+  public planId: string = '';
+  public planName: string = '';
   public renewPaymentDate: Date = new Date();
   public renovatedAt: Date = new Date();
   public startsAt: Date = new Date();
@@ -33,7 +31,7 @@ export class SubscriptionEntity implements ISubscription {
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (24)
+  // #endregion Properties (25)
 
   // #region Constructors (1)
 

@@ -1,13 +1,14 @@
 import { AddressEntity } from '../../general';
 import { EFiscalDocModelCode } from '../../general/enums/fiscal-doc-model-code.enum';
+import { EAppMode } from '../enums';
 import { IRabbit } from '../interfaces/i-rabbit';
 
 export class RabbitEntity implements IRabbit {
-  // #region Properties (15)
+  // #region Properties (18)
 
   public address: AddressEntity = new AddressEntity();
   public api: string = 'http://localhost:8089';
-  public cityCode: string = '';
+  public cityCode: number | null = null;
   public doc: string = '';
   public ie: string = '';
   public ignoreCpfCnpj: boolean = false;
@@ -19,9 +20,12 @@ export class RabbitEntity implements IRabbit {
   public regime: 1 | 2 | 3 = 1;
   public serialNumber: string = '';
   public signature: string = '';
+  public syncAt: Date = new Date();
+  public type: EAppMode = EAppMode.RABBIT;
+  public updatedAt: Date = new Date();
   public version: string = '1.0.0';
 
-  // #endregion Properties (15)
+  // #endregion Properties (18)
 
   // #region Constructors (1)
 

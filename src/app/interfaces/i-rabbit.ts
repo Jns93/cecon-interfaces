@@ -1,33 +1,22 @@
 import { IAddress } from '../../general';
 import { EFiscalDocModelCode } from '../../general/enums/fiscal-doc-model-code.enum';
+import { EAppMode } from '../enums';
 
 export interface IRabbit {
-  // #region Properties (6)
+  // #region Properties (18)
 
   /**
-   * Modelo do documento 59 SAT e 65 NFC-e
+   * Endereço do estabelecimento igual ao do SAT
    */
-  model: EFiscalDocModelCode;
+  address: IAddress;
   /**
    * Api para conexão com o Rabbit
    */
   api: string;
   /**
-   * No de série do SAT
-   */
-  serialNumber: string;
-  /**
-   * Número do caixa
-   */
-  pdvId: string;
-  /**
-   * Assinatura do SAT (para NFC-e colocar apenas um número)
-   */
-  signature: string;
-  /**
-   * Versão do Rabbit
-   */
-  version: string;
+   * Código do município do estabelecimento igual ao do SAT
+   * */
+  cityCode: number | null;
   /**
    * CNPJ do estabelecimento igual ao do SAT
    */
@@ -37,32 +26,48 @@ export interface IRabbit {
    */
   ie: string;
   /**
-   * Regime tributário 1- Simples Nacional | 2 - Lucro Presumido | 3 - Lucro Real
+   * Ignorar vendas com CPF ou CNPJ?
    */
-  regime: 1 | 2 | 3;
+  ignoreCpfCnpj: boolean;
+  /**
+   * Modelo do documento 59 SAT e 65 NFC-e
+   */
+  model: EFiscalDocModelCode;
   /**
    * Razão social do estabelecimento igual ao do SAT
    */
   name: string;
   /**
-   * Endereço do estabelecimento igual ao do SAT
-   */
-  address: IAddress;
-  /**
-   * Código do município do estabelecimento igual ao do SAT
-   * */
-  cityCode: string;
-  /**
    * Controlar apenas dinheiro?
    */
   onlyCash: boolean;
   /**
-   * Ignorar vendas com CPF ou CNPJ?
+   * Número do caixa
    */
-  ignoreCpfCnpj: boolean;
+  pdvId: string;
   /**
    * Porcentagem de emissão de NFC-e
    */
   percentage: number;
-  // #endregion Properties (6)
+  /**
+   * Regime tributário 1- Simples Nacional | 2 - Lucro Presumido | 3 - Lucro Real
+   */
+  regime: 1 | 2 | 3;
+  /**
+   * No de série do SAT
+   */
+  serialNumber: string;
+  /**
+   * Assinatura do SAT (para NFC-e colocar apenas um número)
+   */
+  signature: string;
+  syncAt: Date;
+  type: EAppMode;
+  updatedAt: Date;
+  /**
+   * Versão do Rabbit
+   */
+  version: string;
+
+  // #endregion Properties (18)
 }

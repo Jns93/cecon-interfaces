@@ -15,7 +15,7 @@ export * from './order';
 export * from './partner';
 export * from './plan';
 export * from './purchases';
+export * from './resume';
 export * from './subscription';
 export * from './token';
 export * from './viacep';
-
