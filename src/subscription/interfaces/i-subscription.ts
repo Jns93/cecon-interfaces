@@ -22,6 +22,7 @@ export interface ISubscription {
   notes: string;
   partnerId: string | null;
   planId: string;
+  appId: string;
   planName: string;
   renewPaymentDate: Date;
   renovatedAt: Date;

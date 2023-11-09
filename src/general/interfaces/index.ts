@@ -16,4 +16,4 @@ export { IPaymentProviderAgent } from './i-payment-provider-agent';
 export { IPaymentToken } from './i-payment-token';
 export { IPaymentTokenData } from './i-payment-token-data';
 export { IRating } from './i-rating';
-
+export { ISponsorshipValue } from './i-sponsorship-value';

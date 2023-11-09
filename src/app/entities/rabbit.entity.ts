@@ -8,19 +8,21 @@ export class RabbitEntity implements IRabbit {
 
   public address: AddressEntity = new AddressEntity();
   public api: string = 'http://localhost:8089';
-  public cityCode: number | null = null;
+  public cityCode: string = '';
+  public ufCode: number | null = null;
+  public enviroment: 'production' | 'development' = 'production';
   public doc: string = '';
   public ie: string = '';
   public ignoreCpfCnpj: boolean = false;
   public model: EFiscalDocModelCode = EFiscalDocModelCode.NFCE;
   public name: string = '';
   public onlyCash: boolean = false;
-  public pdvId: string = '';
+  public pdvId: number | null = null;
   public percentage: number = 50;
   public regime: 1 | 2 | 3 = 1;
   public serialNumber: string = '';
   public signature: string = '';
-  public syncAt: Date = new Date();
+  public syncAt: Date | null = null;
   public type: EAppMode = EAppMode.RABBIT;
   public updatedAt: Date = new Date();
   public version: string = '1.0.0';

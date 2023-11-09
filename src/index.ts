@@ -1,4 +1,5 @@
 export * from './app';
+export * from './campaign';
 export * from './company';
 export * from './container';
 export * from './device';
@@ -19,3 +20,4 @@ export * from './resume';
 export * from './subscription';
 export * from './token';
 export * from './viacep';
+export * from './voucher';

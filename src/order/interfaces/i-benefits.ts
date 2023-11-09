@@ -1,14 +1,14 @@
-import { ISponsorshipValues } from './i-benefits-sponsor-ship';
+import { ISponsorshipValue } from '../../general/interfaces';
 
 export interface IOrderBenefits {
-    // #region Properties (6)
+  // #region Properties (6)
 
-    description: string;
-    id: string;
-    sponsorshipValues: ISponsorshipValues[];
-    target: string;
-    targetId: string;
-    value: number;
+  description: string;
+  id: string;
+  sponsorshipValues: ISponsorshipValue[];
+  target: string;
+  targetId: string;
+  value: number;
 
-    // #endregion Properties (6)
+  // #endregion Properties (6)
 }

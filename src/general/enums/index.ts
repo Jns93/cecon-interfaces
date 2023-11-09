@@ -1,5 +1,6 @@
 export { BooleanStringEnum } from './boolean-string.enum';
 export { DocTypeEnum } from './doc-type.enum';
+export { EDiscountType } from './e-discount-type.enum';
 export { EFiscalDocModelCode } from './fiscal-doc-model-code.enum';
 export { IntervalTypeEnum } from './interval-type.enum';
 export { LeadOriginEnum } from './lead-origin.enum';
@@ -11,3 +12,4 @@ export { PaymentTypeEnum } from './payment-type.enum';
 export { LegalEntiyEnum } from './person-type.enum';
 export { PlatfomrEnum } from './platform.enum';
 export { PaymentProviderEnum } from './providers.enum';
+export { ESponsorshipValues } from './sponsorship-values.enum';

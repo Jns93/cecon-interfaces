@@ -25,7 +25,7 @@ export interface INatigo {
    */
   version: string;
   updatedAt: Date;
-  syncAt: Date;
+  syncAt: Date | null;
 
   // #endregion Properties (6)
 }

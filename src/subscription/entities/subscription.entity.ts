@@ -10,6 +10,7 @@ export class SubscriptionEntity implements ISubscription {
   // #region Properties (25)
 
   public cancellationReason: string = '';
+  public appId: string = '';
   public company: SubscriptionCompanyEntity = new SubscriptionCompanyEntity();
   public createdAt: Date = new Date();
   public customVariables: CustomVariableEntity[] = [];

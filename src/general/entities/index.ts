@@ -14,4 +14,4 @@ export { PaymentProviderEntity } from './payment-provider.entity';
 export { PaymentTokenDataEntity } from './payment-token-data.entity';
 export { PaymentTokenEntity } from './payment-token.entity';
 export { RatingEntity } from './rating.entity';
-
+export { SponsorshipValueEntity } from './sponsorship-value.entity';

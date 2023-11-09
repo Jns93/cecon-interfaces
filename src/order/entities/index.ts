@@ -1,5 +1,4 @@
 export { OrderAdditionalFeeEntity } from './additional-fees.entity';
-export { SponsorshipValuesEntity } from './benefits-sponsor-ship.entity';
 export { OrderBenefitsEntity } from './benefits.entity';
 export { OrderCancellationEntity } from './cancellation.entity';
 export { OrdersCustomerPhoneEntity } from './customer-phone.entity';
@@ -17,4 +16,3 @@ export { OrderPaymentEntity } from './payment.entity';
 export { OrderScaleItemEntity } from './scale-item.entity';
 export { OrderScaleEntity } from './scale-price.entity';
 export { OrderTotalEntity } from './total.entity';
-

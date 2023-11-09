@@ -3,7 +3,7 @@ import { EFiscalDocModelCode } from '../../general/enums/fiscal-doc-model-code.e
 import { EAppMode } from '../enums';
 
 export interface IRabbit {
-  // #region Properties (18)
+  // #region Properties (20)
 
   /**
    * Endereço do estabelecimento igual ao do SAT
@@ -16,11 +16,12 @@ export interface IRabbit {
   /**
    * Código do município do estabelecimento igual ao do SAT
    * */
-  cityCode: number | null;
+  cityCode: string;
   /**
    * CNPJ do estabelecimento igual ao do SAT
    */
   doc: string;
+  enviroment: 'production' | 'development';
   /**
    * Inscrição Estadual do estabelecimento igual ao do SAT
    */
@@ -44,7 +45,7 @@ export interface IRabbit {
   /**
    * Número do caixa
    */
-  pdvId: string;
+  pdvId: number | null;
   /**
    * Porcentagem de emissão de NFC-e
    */
@@ -61,13 +62,14 @@ export interface IRabbit {
    * Assinatura do SAT (para NFC-e colocar apenas um número)
    */
   signature: string;
-  syncAt: Date;
+  syncAt: Date | null;
   type: EAppMode;
+  ufCode: number | null;
   updatedAt: Date;
   /**
    * Versão do Rabbit
    */
   version: string;
 
-  // #endregion Properties (18)
+  // #endregion Properties (20)
 }

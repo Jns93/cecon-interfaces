@@ -1,6 +1,5 @@
 export { IOrderAdditionalFee } from './i-additional-fee';
 export { IOrderBenefits } from './i-benefits';
-export { ISponsorshipValues } from './i-benefits-sponsor-ship';
 export { IOrderCancellation } from './i-cancellation';
 export { IOrderCustomer } from './i-customer';
 export { IOrdersCustomerPhone } from './i-customer-phone';
@@ -17,4 +16,3 @@ export { IOrderPaymentWallet } from './i-payment-wallet';
 export { IOrderScaleItem } from './i-scale-item';
 export { IOrderScale } from './i-scale-price';
 export { IOrderTotal } from './i-total';
-
