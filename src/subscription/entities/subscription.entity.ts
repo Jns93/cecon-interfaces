@@ -7,7 +7,7 @@ import { SubscriptionItemEntity } from './subscription-item.entity';
 import { SubscriptionLogEntity } from './subscription-log.entity';
 
 export class SubscriptionEntity implements ISubscription {
-  // #region Properties (23)
+  // #region Properties (24)
 
   public amount: number = 0;
   public appId: string = '';
@@ -15,6 +15,7 @@ export class SubscriptionEntity implements ISubscription {
   public company: SubscriptionCompanyEntity = new SubscriptionCompanyEntity();
   public createdAt: Date = new Date();
   public customVariables: CustomVariableEntity[] = [];
+  public cycledAt: Date = new Date();
   public expiresAt: Date = new Date();
   public features: FeatureEntity[] = [];
   public id: string = '';
@@ -33,7 +34,7 @@ export class SubscriptionEntity implements ISubscription {
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (23)
+  // #endregion Properties (24)
 
   // #region Constructors (1)
 

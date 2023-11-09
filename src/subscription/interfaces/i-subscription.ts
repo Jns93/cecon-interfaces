@@ -6,7 +6,7 @@ import { ISubscriptionItem } from './i-subscription-item';
 import { ISubscriptionLog } from './i-subscription-log';
 
 export interface ISubscription {
-  // #region Properties (23)
+  // #region Properties (24)
 
   amount: number;
   appId: string;
@@ -14,6 +14,7 @@ export interface ISubscription {
   company: ISubscriptionCompany;
   createdAt: Date;
   customVariables: ICustomVariable[];
+  cycledAt: Date;
   expiresAt: Date;
   features: IFeature[];
   id: string;
@@ -32,5 +33,5 @@ export interface ISubscription {
   tags: string[];
   updatedAt: Date;
 
-  // #endregion Properties (23)
+  // #endregion Properties (24)
 }
