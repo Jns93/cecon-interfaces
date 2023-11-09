@@ -1,5 +1,5 @@
 import { IFeature } from '../../feature';
-import { ICustomVariable, IntervalTypeEnum } from '../../general';
+import { ICustomVariable, IntervalTypeEnum, PaymentTypeEnum } from '../../general';
 import { IInvoice } from '../../invoice';
 import { SubscriptionStatusEnum } from '../enums';
 import { ISubscriptionCompany } from './i-subscription-company';
@@ -20,6 +20,8 @@ export interface ISubscription {
   features: IFeature[];
   id: string;
   interval: number;
+  paymentMethod: PaymentTypeEnum;
+  paymentMethodDescription: string;
   intervalType: IntervalTypeEnum;
   invoices: IInvoice[];
   items: ISubscriptionItem[];
