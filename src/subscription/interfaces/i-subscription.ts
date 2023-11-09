@@ -1,12 +1,13 @@
 import { IFeature } from '../../feature';
 import { ICustomVariable, IntervalTypeEnum } from '../../general';
+import { IInvoice } from '../../invoice';
 import { SubscriptionStatusEnum } from '../enums';
 import { ISubscriptionCompany } from './i-subscription-company';
 import { ISubscriptionItem } from './i-subscription-item';
 import { ISubscriptionLog } from './i-subscription-log';
 
 export interface ISubscription {
-  // #region Properties (24)
+  // #region Properties (25)
 
   amount: number;
   appId: string;
@@ -20,6 +21,7 @@ export interface ISubscription {
   id: string;
   interval: number;
   intervalType: IntervalTypeEnum;
+  invoices: IInvoice[];
   items: ISubscriptionItem[];
   logs: ISubscriptionLog[];
   notes: string;
@@ -33,5 +35,5 @@ export interface ISubscription {
   tags: string[];
   updatedAt: Date;
 
-  // #endregion Properties (24)
+  // #endregion Properties (25)
 }
