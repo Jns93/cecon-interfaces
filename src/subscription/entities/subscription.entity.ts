@@ -7,10 +7,11 @@ import { SubscriptionItemEntity } from './subscription-item.entity';
 import { SubscriptionLogEntity } from './subscription-log.entity';
 
 export class SubscriptionEntity implements ISubscription {
-  // #region Properties (25)
+  // #region Properties (23)
 
-  public cancellationReason: string = '';
+  public amount: number = 0;
   public appId: string = '';
+  public cancellationReason: string = '';
   public company: SubscriptionCompanyEntity = new SubscriptionCompanyEntity();
   public createdAt: Date = new Date();
   public customVariables: CustomVariableEntity[] = [];
@@ -32,7 +33,7 @@ export class SubscriptionEntity implements ISubscription {
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (25)
+  // #endregion Properties (23)
 
   // #region Constructors (1)
 

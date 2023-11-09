@@ -6,8 +6,10 @@ import { ISubscriptionItem } from './i-subscription-item';
 import { ISubscriptionLog } from './i-subscription-log';
 
 export interface ISubscription {
-  // #region Properties (24)
+  // #region Properties (23)
 
+  amount: number;
+  appId: string;
   cancellationReason: string;
   company: ISubscriptionCompany;
   createdAt: Date;
@@ -22,7 +24,6 @@ export interface ISubscription {
   notes: string;
   partnerId: string | null;
   planId: string;
-  appId: string;
   planName: string;
   renewPaymentDate: Date;
   renovatedAt: Date;
@@ -31,5 +32,5 @@ export interface ISubscription {
   tags: string[];
   updatedAt: Date;
 
-  // #endregion Properties (24)
+  // #endregion Properties (23)
 }
