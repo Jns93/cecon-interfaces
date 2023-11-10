@@ -1,37 +1,38 @@
-import { PaymentChannelEnum } from '../enums/payment-channel.enum';
-import { PaymentModeEnum } from '../enums/payment-mode.enum';
-import { PaymentTypeEnum } from '../enums/payment-type.enum';
+import { PaymentTypeEnum } from '..';
+import { IPaymentMethod } from '../interfaces';
+import { PaymentCardEntity } from './payment-card.entity';
+import { PaymentCashEntity } from './payment-cash.entity';
+import { PaymentPixEntity } from './payment-pix.entity';
+import { PaymentWalletEntity } from './payment-wallet.entity';
 
-export class PaymentMethodEntity {
-    // #region Properties (13)
+export class PaymentMethodEntity implements IPaymentMethod {
+  // #region Properties (11)
 
-    public active: boolean = false;
-    public channel: PaymentChannelEnum = PaymentChannelEnum.AUTOMATION;
-    public createdAt: Date = new Date()
-    public fee: number = 0;
-    public id: string = '';
-    public index: number = 0;
-    public maxAmount: number = 0;
-    public minAmount: number = 0;
-    public mode: PaymentModeEnum = PaymentModeEnum.MANUAL;
-    public name: string = '';
-    public token: string = '';
-    public type: PaymentTypeEnum = PaymentTypeEnum.CREDIT_CARD;
-    public updatedAt: Date = new Date();
+  card?: PaymentCardEntity | null = null;
+  cash?: PaymentCashEntity | null = null;
+  public code: string = '';
+  public currency: 'BRL' = 'BRL';
+  public id: string = '';
+  public method: PaymentTypeEnum = PaymentTypeEnum.CASH;
+  pix?: PaymentPixEntity | null = null;
+  public prepaid: boolean = false;
+  public type: 'ONLINE' | 'OFFLINE' = 'OFFLINE';
+  public value: number = 0;
+  wallet?: PaymentWalletEntity | null = null;
 
-    // #endregion Properties (13)
+  // #endregion Properties (11)
 
-    // #region Constructors (1)
+  // #region Constructors (1)
 
-    constructor(data?: Partial<PaymentMethodEntity>) {
-        if (data) {
-            for (let key in data) {
-                if (data.hasOwnProperty(key) && key in this) {
-                    (this as any)[key] = (data as any)[key];
-                }
-            }
+  constructor(data?: Partial<PaymentMethodEntity>) {
+    if (data) {
+      for (let key in data) {
+        if (data.hasOwnProperty(key) && key in this) {
+          (this as any)[key] = (data as any)[key];
         }
+      }
     }
+  }
 
-    // #endregion Constructors (1)
+  // #endregion Constructors (1)
 }

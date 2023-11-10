@@ -1,8 +1,8 @@
 export enum PaymentTypeEnum {
-  CREDIT_CARD = 'creditCard',
-  DEBIT_CARD = 'debitCard',
+  CREDIT_CARD = 'CREDIT_CARD',
+  DEBIT_CARD = 'DEBIT_CARD',
   CASH = 'CASH',
-  PIX = 'pix',
+  PIX = 'PIX',
   MOBILE_PAYMENT = 'MOBILE_PAYMENT',
   CHECK = 'CHECK',
   CRYPTOCURRENCY = 'CRYPTOCURRENCY',
@@ -17,5 +17,5 @@ export enum PaymentTypeEnum {
   GIFT_CARD = 'GIFT_CARD',
   VOUCHER = 'VOUCHER',
   BILLING = 'BILLING',
-  BANK_SLIP = 'bankSlip',
+  BANK_SLIP = 'BANK_SLIP',
 }
