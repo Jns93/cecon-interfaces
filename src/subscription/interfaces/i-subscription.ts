@@ -1,8 +1,8 @@
 import { IFeature } from '../../feature';
 import { ICustomVariable, IntervalTypeEnum } from '../../general';
-import { IPayment } from '../../general/interfaces/i-payment';
+import { IPayment } from '../../general/interfaces';
 import { IInvoice } from '../../invoice';
-import { SubscriptionStatusEnum } from '../enums';
+import { ESubscriptionStatus } from '../enums';
 import { ISubscriptionCompany } from './i-subscription-company';
 import { ISubscriptionItem } from './i-subscription-item';
 import { ISubscriptionLog } from './i-subscription-log';
@@ -34,7 +34,7 @@ export interface ISubscription {
   renewPaymentDate: Date;
   renovatedAt: Date;
   startsAt: Date;
-  status: SubscriptionStatusEnum;
+  status: ESubscriptionStatus;
   tags: string[];
   updatedAt: Date;
 

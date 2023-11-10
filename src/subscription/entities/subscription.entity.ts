@@ -1,7 +1,7 @@
 import { FeatureEntity } from '../../feature';
 import { CustomVariableEntity, IntervalTypeEnum, PaymentEntity } from '../../general';
 import { InvoiceEntity } from '../../invoice';
-import { SubscriptionStatusEnum } from '../enums';
+import { ESubscriptionStatus } from '../enums';
 import { ISubscription } from '../interfaces/i-subscription';
 import { SubscriptionCompanyEntity } from './subscription-company.entity';
 import { SubscriptionItemEntity } from './subscription-item.entity';
@@ -33,7 +33,7 @@ export class SubscriptionEntity implements ISubscription {
   public renewPaymentDate: Date = new Date();
   public renovatedAt: Date = new Date();
   public startsAt: Date = new Date();
-  public status: SubscriptionStatusEnum = SubscriptionStatusEnum.PENDING;
+  public status: ESubscriptionStatus = ESubscriptionStatus.PENDING;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
   public payment: PaymentEntity = new PaymentEntity();
