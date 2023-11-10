@@ -1,5 +1,5 @@
 import { FeatureEntity } from '../../feature';
-import { CustomVariableEntity, IntervalTypeEnum, PaymentTypeEnum } from '../../general';
+import { CustomVariableEntity, IntervalTypeEnum, PaymentEntity } from '../../general';
 import { InvoiceEntity } from '../../invoice';
 import { SubscriptionStatusEnum } from '../enums';
 import { ISubscription } from '../interfaces/i-subscription';
@@ -27,8 +27,6 @@ export class SubscriptionEntity implements ISubscription {
   public logs: SubscriptionLogEntity[] = [];
   public notes: string = '';
   public partnerId: string | null = '';
-  public paymentMethod: PaymentTypeEnum = PaymentTypeEnum.BANK_SLIP;
-  public paymentMethodDescription: string = 'Boleto';
   public planId: string = '';
   public planName: string = '';
   public renewPaymentDate: Date = new Date();
@@ -37,6 +35,7 @@ export class SubscriptionEntity implements ISubscription {
   public status: SubscriptionStatusEnum = SubscriptionStatusEnum.PENDING;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
+  public payment: PaymentEntity = new PaymentEntity();
 
   // #endregion Properties (27)
 
