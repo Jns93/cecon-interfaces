@@ -5,7 +5,6 @@ import { DeliveryAreaFixedEntity } from '../../general/entities/dellivery-area-f
 import { MessagerChannelEntity } from '../../general/entities/messager-channel.entity';
 import { MobyoApiConfigEntity } from '../../general/entities/mobyo-apiconfig.entity';
 import { OriginEntity } from '../../general/entities/origin.entity';
-import { PaymentMethodEntity } from '../../general/entities/payment-method.entity';
 import { PaymentProviderEntity } from '../../general/entities/payment-provider.entity';
 import { ICompany } from '../interfaces';
 
@@ -31,7 +30,6 @@ export class CompanyEntity implements ICompany {
   public name: string = '';
   public origin: OriginEntity = new OriginEntity();
   public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
-  public paymentsMethods: PaymentMethodEntity[] = [];
   public phoneNumber: string = '';
   public sandbox: boolean = false;
   public tags: string[] = [];
