@@ -12,6 +12,7 @@ export class SubscriptionEntity implements ISubscription {
 
   public amount: number = 0;
   public appId: string = '';
+  public appName: string = '';
   public cancellationReason: string = '';
   public company: SubscriptionCompanyEntity = new SubscriptionCompanyEntity();
   public createdAt: Date = new Date();

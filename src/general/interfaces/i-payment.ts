@@ -1,4 +1,4 @@
-import { IPaymentMethod } from './i-payment-method';
+import { IPaymentMethod } from '../../general';
 
 export interface IPayment {
   // #region Properties (3)

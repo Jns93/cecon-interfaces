@@ -12,6 +12,7 @@ export interface ISubscription {
 
   amount: number;
   appId: string;
+  appName: string;
   cancellationReason: string;
   company: ISubscriptionCompany;
   createdAt: Date;
