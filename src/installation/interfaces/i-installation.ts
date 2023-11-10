@@ -1,5 +1,5 @@
 import { AppConfigType } from '../../app';
-import { EInstallationStatus } from '../enums';
+import { ESubscriptionStatus } from '../../subscription/enums/subscription-status.enum';
 import { IInstallationApp } from './i-installation-app';
 
 export interface IInstallation {
@@ -12,7 +12,7 @@ export interface IInstallation {
   featureId: string;
   id: string;
   lastCheckAt: Date;
-  status: EInstallationStatus;
+  status: ESubscriptionStatus;
   subscriptionId: string;
   tags: string[];
   trialEndDate: Date;

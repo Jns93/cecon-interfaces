@@ -1,4 +1,4 @@
-export enum SubscriptionStatusEnum {
+export enum ESubscriptionStatus {
   ACTIVE = 'ACTIVE',
   CANCELLED = 'CANCELLED',
   PLACED = 'PLACED',

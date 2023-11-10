@@ -1,5 +1,5 @@
 import { AppConfigType } from '../../app';
-import { EInstallationStatus } from '../enums';
+import { ESubscriptionStatus } from '../../subscription/enums/subscription-status.enum';
 import { IInstallation } from '../interfaces/i-installation';
 import { InstallationAppEntity } from './installation-app.entity';
 
@@ -13,7 +13,7 @@ export class InstallationEntity implements IInstallation {
   public featureId: string = '';
   public id: string = '';
   public lastCheckAt: Date = new Date();
-  public status: EInstallationStatus = EInstallationStatus.PENDING;
+  public status: ESubscriptionStatus = ESubscriptionStatus.PLACED;
   public subscriptionId: string = '';
   public tags: string[] = [];
   public trialEndDate: Date = new Date();

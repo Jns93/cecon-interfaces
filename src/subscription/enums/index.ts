@@ -1,1 +1,1 @@
-export { SubscriptionStatusEnum } from './subscription-status.enum';
+export { ESubscriptionStatus as SubscriptionStatusEnum } from './subscription-status.enum';
