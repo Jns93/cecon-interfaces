@@ -1,23 +1,23 @@
-import { PaymentChannelEnum } from '../enums/payment-channel.enum';
-import { PaymentModeEnum } from '../enums/payment-mode.enum';
-import { PaymentTypeEnum } from '../enums/payment-type.enum';
+import { PaymentTypeEnum } from '..';
+import { IPaymentCard } from './i-payment-card';
+import { IPaymentCash } from './i-payment-cash';
+import { IPaymentPix } from './i-payment-pix';
+import { IPaymentWallet } from './i-payment-wallet';
 
 export interface IPaymentMethod {
-    // #region Properties (13)
+  // #region Properties (11)
 
-    active: boolean;
-    channel: PaymentChannelEnum;
-    createdAt: Date;
-    fee: number;
-    id: string;
-    index: number;
-    maxAmount: number;
-    minAmount: number;
-    mode: PaymentModeEnum;
-    name: string;
-    token: string;
-    type: PaymentTypeEnum;
-    updatedAt: Date;
+  card?: IPaymentCard | null;
+  cash?: IPaymentCash | null;
+  code: string;
+  currency: 'BRL';
+  id: string;
+  method: PaymentTypeEnum;
+  pix?: IPaymentPix | null;
+  prepaid: boolean;
+  type: 'ONLINE' | 'OFFLINE';
+  value: number;
+  wallet?: IPaymentWallet | null;
 
-    // #endregion Properties (13)
+  // #endregion Properties (11)
 }
