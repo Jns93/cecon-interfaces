@@ -1,30 +1,25 @@
 import { IInvoiceItem } from '../interfaces';
 
 export class InvoiceItemEntity implements IInvoiceItem {
-    // #region Properties (8)
+  // #region Properties (3)
 
-    public addition: number = 0;
-    public description: string = '';
-    public discount: number = 0;
-    public id: string = '';
-    public quantity: number = 1;
-    public sku: string = '';
-    public totalPrice: number = 0;
-    public unitPrice: number = 0;
+  public description: string = '';
+  public quantity: number = 1;
+  public unitPrice: number = 0;
 
-    // #endregion Properties (8)
+  // #endregion Properties (3)
 
-    // #region Constructors (1)
+  // #region Constructors (1)
 
-    constructor(data?: Partial<InvoiceItemEntity>) {
-        if (data) {
-            for (let key in data) {
-                if (data.hasOwnProperty(key) && key in this) {
-                    (this as any)[key] = (data as any)[key];
-                }
-            }
+  constructor(data?: Partial<InvoiceItemEntity>) {
+    if (data) {
+      for (let key in data) {
+        if (data.hasOwnProperty(key) && key in this) {
+          (this as any)[key] = (data as any)[key];
         }
+      }
     }
+  }
 
-    // #endregion Constructors (1)
+  // #endregion Constructors (1)
 }

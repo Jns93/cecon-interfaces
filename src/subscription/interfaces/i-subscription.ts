@@ -8,7 +8,7 @@ import { ISubscriptionItem } from './i-subscription-item';
 import { ISubscriptionLog } from './i-subscription-log';
 
 export interface ISubscription {
-  // #region Properties (25)
+  // #region Properties (27)
 
   amount: number;
   appId: string;
@@ -22,13 +22,13 @@ export interface ISubscription {
   features: IFeature[];
   id: string;
   interval: number;
-  payment: IPayment;
   intervalType: IntervalTypeEnum;
   invoices: IInvoice[];
   items: ISubscriptionItem[];
   logs: ISubscriptionLog[];
   notes: string;
   partnerId: string | null;
+  payment: IPayment;
   planId: string;
   planName: string;
   renewPaymentDate: Date;
@@ -38,5 +38,5 @@ export interface ISubscription {
   tags: string[];
   updatedAt: Date;
 
-  // #endregion Properties (25)
+  // #endregion Properties (27)
 }

@@ -1,1 +1,1 @@
-export { InvoiceStatusEnum } from './invoices-status.enum';
+export { EInvoiceStatus } from './invoices-status.enum';

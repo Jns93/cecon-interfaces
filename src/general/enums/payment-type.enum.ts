@@ -18,4 +18,5 @@ export enum PaymentTypeEnum {
   VOUCHER = 'VOUCHER',
   BILLING = 'BILLING',
   BANK_SLIP = 'BANK_SLIP',
+  NONE = 'NONE',
 }

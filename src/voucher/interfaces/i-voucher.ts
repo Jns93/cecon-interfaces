@@ -2,12 +2,14 @@ import { EDiscountType, ISponsorshipValue } from '../../general';
 import { EVoucherStatus } from '../enums';
 
 export interface IVoucher {
-  // #region Properties (18)
+  // #region Properties (20)
+
   //TODO opçao de permitir subscription ou invoice
   // se permite ou não a alteração do nome do cupom pelo parceiro
   allowsKeyChange: boolean;
   // valor do desconto (soma do valor de todos os patrocínios - sponsorship)
   amount: number;
+  appId: string[];
   // ID da campanha associada (opcional para uso futuro)
   campaignId?: string | null;
   // ID da empresa associada ao cupom (opcional)
@@ -23,7 +25,6 @@ export interface IVoucher {
   // data de validade do cupom
   expirationDate: Date;
   id: string;
-  tags: string[];
   // se a chave do cupom é pública ou privada
   isPublic: boolean;
   // chave única para o cupom
@@ -31,16 +32,17 @@ export interface IVoucher {
   // máximo de utilizações permitidas (-1 para ilimitado)
   maxUses: number;
   // ID do parceiro associado ao cupom (opcional)
-  partnerId?: string | null;
+  partnerId: string[];
   // informação de patrocínio (opcional)
   sponsorship: ISponsorshipValue[];
   // status do cupom
   status: EVoucherStatus;
+  tags: string[];
   // data da última atualização do cupom
   updatedAt: Date;
   // contador de quantas vezes o cupom foi usado
   usedCount: number;
 
-  // #endregion Properties (18)
+  // #endregion Properties (20)
   // data da última atualização da campanha
 }

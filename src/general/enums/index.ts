@@ -1,3 +1,4 @@
+export { EBankSlipStatus } from './bank-slip-status.enum';
 export { BooleanStringEnum } from './boolean-string.enum';
 export { DocTypeEnum } from './doc-type.enum';
 export { EDiscountType } from './e-discount-type.enum';
