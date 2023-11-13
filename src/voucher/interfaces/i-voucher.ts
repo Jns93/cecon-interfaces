@@ -23,6 +23,7 @@ export interface IVoucher {
   // data de validade do cupom
   expirationDate: Date;
   id: string;
+  tags: string[];
   // se a chave do cupom é pública ou privada
   isPublic: boolean;
   // chave única para o cupom

@@ -3,7 +3,7 @@ import { EVoucherStatus } from '../enums';
 import { IVoucher } from '../interfaces';
 
 export class VoucherEntity implements IVoucher {
-  // #region Properties (18)
+  // #region Properties (19)
 
   // se permite ou não a alteração do nome do cupom pelo parceiro
   public allowsKeyChange: boolean = false;
@@ -36,12 +36,13 @@ export class VoucherEntity implements IVoucher {
   public sponsorship: SponsorshipValueEntity[] = [];
   // status do cupom
   public status: EVoucherStatus = EVoucherStatus.PLACED;
+  public tags: string[] = [];
   // data da última atualização do cupom
   public updatedAt: Date = new Date();
   // contador de quantas vezes o cupom foi usado
   public usedCount: number = 0;
 
-  // #endregion Properties (18)
+  // #endregion Properties (19)
 
   // #region Constructors (1)
 
