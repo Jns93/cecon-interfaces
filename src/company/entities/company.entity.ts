@@ -21,6 +21,7 @@ export class CompanyEntity implements ICompany {
   public doc: string = '';
   public docType: DocTypeEnum = DocTypeEnum.CNPJ;
   public email: string = '';
+  public level: number = 50;
   public fullName: string = '';
   public id: string = '';
   imageUrl?: string = '';

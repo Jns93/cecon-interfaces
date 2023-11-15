@@ -31,6 +31,7 @@ export interface ISubscription {
   payment: IPayment;
   planId: string;
   planName: string;
+  phoneNumberNotification: string;
   renewPaymentDate: Date;
   renovatedAt: Date;
   startsAt: Date;

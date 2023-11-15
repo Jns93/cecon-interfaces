@@ -9,7 +9,7 @@ export class InvoicePayerEntity implements IInvoicePayer {
   public docType: DocTypeEnum = DocTypeEnum.CNPJ;
   public email: string = '';
   public name: string = '';
-  public phoneNumber: number | null = null;
+  public phoneNumber: string | null = null;
 
   // #endregion Properties (6)
 

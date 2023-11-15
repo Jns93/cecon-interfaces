@@ -8,7 +8,7 @@ export interface IInvoicePayer {
   docType: DocTypeEnum;
   email: string;
   name: string;
-  phoneNumber: number | null;
+  phoneNumber: string | null;
 
   // #endregion Properties (6)
 }

@@ -8,7 +8,7 @@ import { IInvoicePayer } from './i-invoice-payer';
 import { IInvoicePix } from './i-invoice-pix';
 
 export interface IInvoice {
-  // #region Properties (41)
+  // #region Properties (42)
 
   addition: number;
   bankSlip: IInvoiceBankSlip | null;
@@ -21,39 +21,37 @@ export interface IInvoice {
   currency: string;
   discount: number;
   dueDateAt: Date;
-  returnUrl: string;
-  returnExpiredUrl: string;
-  notificationUrl: string;
   email: string;
   ensureDueOnWorkday: boolean;
   expiresIn: number;
+  externalInvoiceId: string;
+  externalInvoiceUrl: string;
   fineForlatePayment: number;
   id: string;
   items: IInvoiceItem[];
   log: IInvoiceLog[];
   notes: string;
+  notificationUrl: string;
   orderId: string;
   paidAt: Date | null;
   partnerId: string | null;
+  password: string | null;
   payer: IInvoicePayer;
   paymentMethod: PaymentTypeEnum;
   paymentProvider: IPaymentProvider | null;
-  phoneNumberNotification: number | null;
+  phoneNumberNotification: string | null;
   pix: IInvoicePix | null;
-  externalInvoiceId: string;
-  externalInvoiceUrl: string;
-  secureId: string;
-  secureUrl: string;
+  returnExpiredUrl: string;
+  returnUrl: string;
   status: EInvoiceStatus;
   subscriptionId: string;
   subtotal: number;
   totalAmount: number;
-  password: string | null;
   totalFee: number;
   totalOverPaid: number;
   totalPaid: number;
   totalRefunded: number;
   updatedAt: Date;
 
-  // #endregion Properties (41)
+  // #endregion Properties (42)
 }

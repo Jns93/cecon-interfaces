@@ -3,7 +3,7 @@ import { EFiscalDocModelCode } from '../../general/enums/fiscal-doc-model-code.e
 import { EAppMode } from '../enums';
 
 export interface IRabbit {
-  // #region Properties (22)
+  // #region Properties (23)
 
   /**
    * Endereço do estabelecimento igual ao do SAT
@@ -18,6 +18,10 @@ export interface IRabbit {
    * */
   cityCode: string;
   /**
+   * Controlar Pix?
+   */
+  controlPix: boolean;
+  /**
    * CNPJ do estabelecimento igual ao do SAT
    */
   doc: string;
@@ -25,10 +29,6 @@ export interface IRabbit {
    * Emitir NFC-e quando fo litro
    */
   emitirL: boolean;
-  /**
-   * Controlar Pix?
-   */
-  controlPix: boolean;
   /**
    * Ambiente de emissão 1 - Produção | 2 - Homologação
    */
@@ -77,7 +77,7 @@ export interface IRabbit {
    * Assinatura do SAT (para NFC-e colocar apenas um número)
    */
   signature: string;
-  syncAt: Date | null;
+  syncAt: number;
   type: EAppMode;
   ufCode: number | null;
   updatedAt: Date;
@@ -86,5 +86,5 @@ export interface IRabbit {
    */
   version: string;
 
-  // #endregion Properties (22)
+  // #endregion Properties (23)
 }

@@ -24,7 +24,7 @@ export class RabbitEntity implements IRabbit {
   public regime: 1 | 2 | 3 = 1;
   public serialNumber: string = '';
   public signature: string = '';
-  public syncAt: Date | null = null;
+  public syncAt: number = 0;
   public type: EAppMode = EAppMode.RABBIT;
   public ufCode: number | null = null;
   public updatedAt: Date = new Date();

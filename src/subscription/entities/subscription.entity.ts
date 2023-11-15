@@ -8,7 +8,7 @@ import { SubscriptionItemEntity } from './subscription-item.entity';
 import { SubscriptionLogEntity } from './subscription-log.entity';
 
 export class SubscriptionEntity implements ISubscription {
-  // #region Properties (27)
+  // #region Properties (28)
 
   public amount: number = 0;
   public appId: string = '';
@@ -28,6 +28,8 @@ export class SubscriptionEntity implements ISubscription {
   public logs: SubscriptionLogEntity[] = [];
   public notes: string = '';
   public partnerId: string | null = '';
+  public payment: PaymentEntity = new PaymentEntity();
+  public phoneNumberNotification: string = '';
   public planId: string = '';
   public planName: string = '';
   public renewPaymentDate: Date = new Date();
@@ -36,9 +38,8 @@ export class SubscriptionEntity implements ISubscription {
   public status: ESubscriptionStatus = ESubscriptionStatus.PENDING;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
-  public payment: PaymentEntity = new PaymentEntity();
 
-  // #endregion Properties (27)
+  // #endregion Properties (28)
 
   // #region Constructors (1)
 
