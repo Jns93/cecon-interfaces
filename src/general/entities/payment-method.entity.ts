@@ -1,4 +1,4 @@
-import { PaymentTypeEnum } from '..';
+import { EPaymentType } from '..';
 import { IPaymentMethod } from '../interfaces';
 import { PaymentCardEntity } from './payment-card.entity';
 import { PaymentCashEntity } from './payment-cash.entity';
@@ -13,7 +13,7 @@ export class PaymentMethodEntity implements IPaymentMethod {
   public code: string = '';
   public currency: 'BRL' = 'BRL';
   public id: string = '';
-  public method: PaymentTypeEnum = PaymentTypeEnum.CASH;
+  public method: EPaymentType = EPaymentType.CASH;
   pix?: PaymentPixEntity | null = null;
   public prepaid: boolean = false;
   public type: 'ONLINE' | 'OFFLINE' = 'OFFLINE';

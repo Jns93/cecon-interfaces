@@ -1,5 +1,5 @@
 import { IFeature } from '../../feature';
-import { ICustomVariable, IntervalTypeEnum } from '../../general';
+import { EPaymentType, ICustomVariable, IntervalTypeEnum } from '../../general';
 import { IPayment } from '../../general/interfaces';
 import { IInvoice } from '../../invoice';
 import { ESubscriptionStatus } from '../enums';
@@ -8,7 +8,7 @@ import { ISubscriptionItem } from './i-subscription-item';
 import { ISubscriptionLog } from './i-subscription-log';
 
 export interface ISubscription {
-  // #region Properties (27)
+  // #region Properties (30)
 
   amount: number;
   appId: string;
@@ -29,15 +29,18 @@ export interface ISubscription {
   notes: string;
   partnerId: string | null;
   payment: IPayment;
+  paymentType: EPaymentType;
+  phoneNumberNotification: string;
   planId: string;
   planName: string;
-  phoneNumberNotification: string;
+  recentInvoice: IInvoice[];
   renewPaymentDate: Date;
   renovatedAt: Date;
   startsAt: Date;
   status: ESubscriptionStatus;
+  suspendedTimes: number;
   tags: string[];
   updatedAt: Date;
 
-  // #endregion Properties (27)
+  // #endregion Properties (30)
 }

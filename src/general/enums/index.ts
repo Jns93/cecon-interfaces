@@ -9,7 +9,7 @@ export { OsEnum } from './os.enum';
 export { PaymentChannelEnum } from './payment-channel.enum';
 export { PaymentModeEnum } from './payment-mode.enum';
 export { PaymentStatusEnum } from './payment-status.enum';
-export { PaymentTypeEnum } from './payment-type.enum';
+export { EPaymentType } from './payment-type.enum';
 export { LegalEntiyEnum } from './person-type.enum';
 export { PlatfomrEnum } from './platform.enum';
 export { PaymentProviderEnum } from './providers.enum';

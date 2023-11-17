@@ -1,4 +1,4 @@
-import { PaymentTypeEnum } from '..';
+import { EPaymentType } from '..';
 import { IPaymentCard } from './i-payment-card';
 import { IPaymentCash } from './i-payment-cash';
 import { IPaymentPix } from './i-payment-pix';
@@ -12,7 +12,7 @@ export interface IPaymentMethod {
   code: string;
   currency: 'BRL';
   id: string;
-  method: PaymentTypeEnum;
+  method: EPaymentType;
   pix?: IPaymentPix | null;
   prepaid: boolean;
   type: 'ONLINE' | 'OFFLINE';

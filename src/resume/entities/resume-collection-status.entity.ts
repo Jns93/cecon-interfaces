@@ -1,17 +1,16 @@
-import { IResumeCollection } from '../interfaces';
 import { IResumeCollectionStatus } from '../interfaces/i-resume-collection-status';
 
-export class ResumeCollectionEntity implements IResumeCollection {
-  // #region Properties (2)
+export class ResumeCollectionStatusEntity implements IResumeCollectionStatus {
+  // #region Properties (6)
 
-  public collectionName: string = '';
-  public status: IResumeCollectionStatus[] = [];
+  public count: number = 0;
+  public status: string = '';
 
-  // #endregion Properties (2)
+  // #endregion Properties (6)
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<ResumeCollectionEntity>) {
+  constructor(data?: Partial<ResumeCollectionStatusEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {

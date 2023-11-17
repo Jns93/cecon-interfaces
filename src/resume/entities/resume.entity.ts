@@ -3,12 +3,13 @@ import { ResumeCollectionEntity } from './resume-collection.entity';
 import { ResumeTotalEntity } from './resume-total.entity';
 
 export class ResumeEntity implements IResume {
-  // #region Properties (2)
+  // #region Properties (3)
 
   public counts: ResumeCollectionEntity[] = [];
+  public id: string = '';
   public totals: ResumeTotalEntity[] = [];
 
-  // #endregion Properties (2)
+  // #endregion Properties (3)
 
   // #region Constructors (1)
 

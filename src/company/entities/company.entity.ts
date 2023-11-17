@@ -10,28 +10,29 @@ import { ICompany } from '../interfaces';
 
 export class CompanyEntity implements ICompany {
   // #region Properties (26)
+
   public active: boolean = false;
   public address: AddressEntity = new AddressEntity();
-  bgImageUrl?: string = '';
-  public config: MobyoApiConfigEntity = new MobyoApiConfigEntity();
+  public bgImageUrl: string | null = null;
+  public config: MobyoApiConfigEntity | null = null;
   public containerId: string = '';
   public createdAt: Date = new Date();
   public deliveryArea: DeliveryAreaEntity[] = [];
-  deliveryAreaFixed?: DeliveryAreaFixedEntity | null = null;
+  public deliveryAreaFixed: DeliveryAreaFixedEntity | null = null;
   public doc: string = '';
   public docType: DocTypeEnum = DocTypeEnum.CNPJ;
   public email: string = '';
-  public level: number = 50;
   public fullName: string = '';
   public id: string = '';
-  imageUrl?: string = '';
+  public imageUrl: string | null = null;
   public internationalCode: string = '+55';
-  logoUrl?: string = '';
+  public logoUrl: string | null = null;
   public messagerChannels: MessagerChannelEntity[] = [];
   public name: string = '';
   public origin: OriginEntity = new OriginEntity();
   public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public phoneNumber: string = '';
+  public phoneNumberNotification: string | null = null;
   public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();

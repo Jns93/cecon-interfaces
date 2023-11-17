@@ -9,6 +9,7 @@ export interface IPartner {
   doc: string;
   docType: DocTypeEnum;
   email: string;
+  level: number;
   fullName: string;
   id: string;
   imageUrl?: string;

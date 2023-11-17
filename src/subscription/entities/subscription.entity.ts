@@ -1,5 +1,5 @@
 import { FeatureEntity } from '../../feature';
-import { CustomVariableEntity, IntervalTypeEnum, PaymentEntity } from '../../general';
+import { CustomVariableEntity, EPaymentType, IntervalTypeEnum, PaymentEntity } from '../../general';
 import { InvoiceEntity } from '../../invoice';
 import { ESubscriptionStatus } from '../enums';
 import { ISubscription } from '../interfaces/i-subscription';
@@ -8,7 +8,7 @@ import { SubscriptionItemEntity } from './subscription-item.entity';
 import { SubscriptionLogEntity } from './subscription-log.entity';
 
 export class SubscriptionEntity implements ISubscription {
-  // #region Properties (28)
+  // #region Properties (31)
 
   public amount: number = 0;
   public appId: string = '';
@@ -29,17 +29,20 @@ export class SubscriptionEntity implements ISubscription {
   public notes: string = '';
   public partnerId: string | null = '';
   public payment: PaymentEntity = new PaymentEntity();
+  public paymentType: EPaymentType = EPaymentType.NONE;
   public phoneNumberNotification: string = '';
   public planId: string = '';
   public planName: string = '';
+  public recentInvoice: InvoiceEntity[] = [];
   public renewPaymentDate: Date = new Date();
   public renovatedAt: Date = new Date();
   public startsAt: Date = new Date();
   public status: ESubscriptionStatus = ESubscriptionStatus.PENDING;
+  public suspendedTimes: number = 0;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (28)
+  // #endregion Properties (31)
 
   // #region Constructors (1)
 

@@ -1,6 +1,6 @@
 import { PaymentChannelEnum } from '../enums/payment-channel.enum';
 import { PaymentModeEnum } from '../enums/payment-mode.enum';
-import { PaymentTypeEnum } from '../enums/payment-type.enum';
+import { EPaymentType } from '../enums/payment-type.enum';
 import { IPaymentMethodOption } from '../interfaces';
 
 export class PaymentMethodOptionEntity implements IPaymentMethodOption {
@@ -17,7 +17,7 @@ export class PaymentMethodOptionEntity implements IPaymentMethodOption {
   public mode: PaymentModeEnum = PaymentModeEnum.MANUAL;
   public name: string = '';
   public token: string = '';
-  public type: PaymentTypeEnum = PaymentTypeEnum.CREDIT_CARD;
+  public type: EPaymentType = EPaymentType.CREDIT_CARD;
   public updatedAt: Date = new Date();
 
   // #endregion Properties (13)

@@ -1,4 +1,4 @@
-import { PaymentProviderEntity, PaymentTypeEnum } from '../../general';
+import { EPaymentType, PaymentProviderEntity } from '../../general';
 import { EInvoiceStatus } from '../enums';
 import { IInvoice } from '../interfaces';
 import { InvoiceBankSlipEntity } from './invoice-bank-slip.entity';
@@ -38,7 +38,7 @@ export class InvoiceEntity implements IInvoice {
   public partnerId: string = '';
   public password: string | null = null;
   public payer: InvoicePayerEntity = new InvoicePayerEntity();
-  public paymentMethod: PaymentTypeEnum = PaymentTypeEnum.NONE;
+  public paymentMethod: EPaymentType = EPaymentType.NONE;
   public paymentProvider: PaymentProviderEntity | null = null;
   public phoneNumberNotification: string | null = null;
   public pix: InvoicePixEntity | null = null;

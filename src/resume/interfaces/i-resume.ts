@@ -6,6 +6,7 @@ export interface IResume {
 
   counts: IResumeCollection[];
   totals: IResumeTotal[];
+  id: string;
 
   // #endregion Properties (1)
 }

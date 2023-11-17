@@ -1,10 +1,10 @@
+import { IResumeCollectionStatus } from './i-resume-collection-status';
+
 export interface IResumeCollection {
-  // #region Properties (10)
+  // #region Properties (2)
 
   collectionName: string;
-  total: number;
-  actived: number;
-  deactived: number;
+  status: IResumeCollectionStatus[];
 
-  // #endregion Properties (10)
+  // #endregion Properties (2)
 }

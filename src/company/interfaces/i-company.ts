@@ -14,21 +14,21 @@ export interface ICompany {
 
   active: boolean;
   address: IAddress;
-  bgImageUrl?: string;
-  config: IMobyoApiConfig;
+  bgImageUrl: string | null;
+  config: IMobyoApiConfig | null;
   containerId: string;
   createdAt: Date;
   deliveryArea: IDeliveryArea[];
   deliveryAreaFixed?: IDeliveryAreaFixed | null;
+  phoneNumberNotification: string | null;
   doc: string;
   docType: DocTypeEnum;
   email: string;
-  level: number;
   fullName: string;
   id: string;
-  imageUrl?: string;
+  imageUrl: string | null;
   internationalCode: string;
-  logoUrl?: string;
+  logoUrl: string | null;
   messagerChannels: IMessagerChannel[];
   name: string;
   origin: IOrigin;

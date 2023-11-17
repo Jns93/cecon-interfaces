@@ -1,4 +1,4 @@
-import { IPaymentProvider, PaymentTypeEnum } from '../../general';
+import { EPaymentType, IPaymentProvider } from '../../general';
 import { EInvoiceStatus } from '../enums';
 import { IInvoiceBankSlip } from './i-invoice-bank-slip';
 import { IInvoiceCreditCard } from './i-invoice-credit-card';
@@ -37,7 +37,7 @@ export interface IInvoice {
   partnerId: string | null;
   password: string | null;
   payer: IInvoicePayer;
-  paymentMethod: PaymentTypeEnum;
+  paymentMethod: EPaymentType;
   paymentProvider: IPaymentProvider | null;
   phoneNumberNotification: string | null;
   pix: IInvoicePix | null;

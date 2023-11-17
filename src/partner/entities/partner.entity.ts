@@ -14,6 +14,7 @@ export class PartnerEntity implements IPartner {
   public id: string = '';
   public imageUrl?: string = '';
   public internationalCode: string = '';
+  public level: number = 50;
   public logoUrl?: string = '';
   public name: string = '';
   public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
