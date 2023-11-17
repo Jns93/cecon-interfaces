@@ -56,7 +56,7 @@ export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<GlobalSettingEntity>) {
+  constructor(data?: Partial<GlobalSettingIuguEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {
