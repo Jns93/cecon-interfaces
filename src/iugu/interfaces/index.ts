@@ -7,9 +7,11 @@ export { IIuguLastVerificationRequestData as IIuguAccountLastVerificationRequest
 export { IIuguInformations } from './i-account-informations';
 export { IIuguMarketplaceSplit } from './i-account-marketplace-split';
 export { IIuguChangePlanSimulation } from './i-change-plan-simulation';
+export { IIuguChargeCreditCard } from './i-charge-credit-card';
 export { IIuguConfigEarlyPaymentDiscount } from './i-config-early-payment-discounts';
 export { IIuguCustomer } from './i-customer';
 export { IIuguInvoice } from './i-invoice';
+export { IIuguInvoiceBankSlip } from './i-invoice-bankslip';
 export { IIuguPaymentToken } from './i-payment-token';
 export { IIuguPaymentTokenData } from './i-payment-token-data';
 export { IIuguPlan } from './i-plan';

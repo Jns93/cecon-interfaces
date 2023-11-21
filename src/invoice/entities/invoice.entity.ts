@@ -24,10 +24,8 @@ export class InvoiceEntity implements IInvoice {
   public dueDateAt: Date = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000);
   public email: string = '';
   public ensureDueOnWorkday: boolean = true;
-  public expiresIn: number = 3;
   public externalInvoiceId: string = '';
   public externalInvoiceUrl: string = '';
-  public fineForlatePayment: number = 0;
   public id: string = '';
   public items: InvoiceItemEntity[] = [];
   public log: InvoiceLogEntity[] = [];

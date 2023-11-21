@@ -1,3 +1,5 @@
+import { IIuguInvoiceBankSlip } from './i-invoice-bankslip';
+
 export interface IIuguInvoice {
   // #region Properties (114)
 
@@ -9,7 +11,7 @@ export interface IIuguInvoice {
   authorizedAtIso: any;
   bankAccountBranch: string;
   bankAccountNumber: string;
-  bankSlip: any;
+  bankSlip: IIuguInvoiceBankSlip | null;
   bankSlipExtraDue: number;
   canceledAt: any;
   canceledAtIso: any;

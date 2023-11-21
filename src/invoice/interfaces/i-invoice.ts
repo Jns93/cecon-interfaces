@@ -23,10 +23,8 @@ export interface IInvoice {
   dueDateAt: Date;
   email: string;
   ensureDueOnWorkday: boolean;
-  expiresIn: number;
   externalInvoiceId: string;
   externalInvoiceUrl: string;
-  fineForlatePayment: number;
   id: string;
   items: IInvoiceItem[];
   log: IInvoiceLog[];
