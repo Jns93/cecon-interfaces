@@ -4,6 +4,7 @@ export interface ISubscriptionItem {
   description: string;
   quantity: number;
   recurrent: boolean;
+  voucherKey: string | null;
   totalPrice: number;
   unitPrice: number;
 

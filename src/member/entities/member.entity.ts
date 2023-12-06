@@ -32,7 +32,6 @@ export class MemberEntity extends BaseEntity implements IMember {
       }
     }
   }
-  photoURL: string;
 
   // #endregion Constructors (1)
 }

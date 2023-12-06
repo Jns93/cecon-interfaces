@@ -1,15 +1,16 @@
-import { ISubscriptionItem } from "../interfaces";
+import { ISubscriptionItem } from '../interfaces';
 
 export class SubscriptionItemEntity implements ISubscriptionItem {
-  // #region Properties (5)
+  // #region Properties (6)
 
-  public description: string = "";
+  public description: string = '';
   public quantity: number = 1;
   public recurrent: boolean = true;
   public totalPrice: number = 0;
   public unitPrice: number = 0;
+  public voucherKey: string | null = null;
 
-  // #endregion Properties (5)
+  // #endregion Properties (6)
 
   // #region Constructors (1)
 

@@ -5,6 +5,7 @@ export class GlobalSettingEntity implements IGlobalSetting {
   // #region Properties (1)
 
   public iugu: GlobalSettingIuguEntity = new GlobalSettingIuguEntity();
+  public billingDays = 3;
 
   // #endregion Properties (1)
 

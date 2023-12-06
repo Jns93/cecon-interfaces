@@ -5,6 +5,7 @@ export interface IInvoicePix {
   qrCodeImage: string;
   qrCodeText: string;
   status: string;
+  expiresAt: Date;
 
   // #endregion Properties (4)
 }

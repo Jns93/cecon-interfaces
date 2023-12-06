@@ -33,7 +33,7 @@ export interface ISubscription {
   phoneNumberNotification: string;
   planId: string;
   planName: string;
-  recentInvoice: IInvoice[];
+  recentInvoices: IInvoice[];
   renewPaymentDate: Date;
   renovatedAt: Date;
   startsAt: Date;

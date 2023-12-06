@@ -3,7 +3,7 @@ import { EVoucherStatus } from '../enums';
 import { IVoucher } from '../interfaces';
 
 export class VoucherEntity implements IVoucher {
-  // #region Properties (20)
+  // #region Properties (21)
 
   // se permite ou não a alteração do nome do cupom pelo parceiro
   public allowsKeyChange: boolean = false;
@@ -32,7 +32,8 @@ export class VoucherEntity implements IVoucher {
   // máximo de utilizações permitidas (-1 para ilimitado)
   public maxUses: number = -1;
   // ID do parceiro associado ao cupom (opcional)
-  public partnerId: string[] = [];
+  public partnersId: string[] = [];
+  public recurrent: boolean = false;
   // informação de patrocínio (opcional)
   public sponsorship: SponsorshipValueEntity[] = [];
   // status do cupom
@@ -43,7 +44,7 @@ export class VoucherEntity implements IVoucher {
   // contador de quantas vezes o cupom foi usado
   public usedCount: number = 0;
 
-  // #endregion Properties (20)
+  // #endregion Properties (21)
 
   // #region Constructors (1)
 
@@ -56,6 +57,7 @@ export class VoucherEntity implements IVoucher {
       }
     }
   }
+  partnerId: string[];
 
   // #endregion Constructors (1)
   // data da última atualização da campanha

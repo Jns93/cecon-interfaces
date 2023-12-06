@@ -15,6 +15,10 @@ export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
    */
   public ensureWorkdayDueDate: boolean = true;
   /**
+   * Prazo de dias para o vencimento da fatura.
+   */
+  public billingDays: number = 10;
+  /**
    * Expira uma fatura e impossibilita o seu pagamento depois 'x' dias após o vencimento.
    * Valor enviado precisa estar entre 0 e 30. Se for enviado "0", a fatura ficará
    * disponível para ser paga até às 23:59:59 do dia de vencimento.

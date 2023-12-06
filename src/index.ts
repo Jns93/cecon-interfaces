@@ -16,6 +16,7 @@ export * from './notification';
 export * from './order';
 export * from './partner';
 export * from './plan';
+export * from './pubsub';
 export * from './purchases';
 export * from './resume';
 export * from './subscription';

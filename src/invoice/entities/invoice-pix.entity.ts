@@ -1,14 +1,15 @@
 import { IInvoicePix } from '../interfaces/i-invoice-pix';
 
 export class InvoicePixEntity implements IInvoicePix {
-  // #region Properties (4)
+  // #region Properties (5)
 
+  public expiresAt: Date = new Date();
   public qrCode: string = '';
   public qrCodeImage: string = '';
   public qrCodeText: string = '';
   public status: string = '';
 
-  // #endregion Properties (4)
+  // #endregion Properties (5)
 
   // #region Constructors (1)
 

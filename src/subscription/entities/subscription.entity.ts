@@ -33,7 +33,7 @@ export class SubscriptionEntity implements ISubscription {
   public phoneNumberNotification: string = '';
   public planId: string = '';
   public planName: string = '';
-  public recentInvoice: InvoiceEntity[] = [];
+  public recentInvoices: InvoiceEntity[] = [];
   public renewPaymentDate: Date = new Date();
   public renovatedAt: Date = new Date();
   public startsAt: Date = new Date();

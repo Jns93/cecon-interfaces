@@ -42,6 +42,7 @@ export interface IVoucher {
   updatedAt: Date;
   // contador de quantas vezes o cupom foi usado
   usedCount: number;
+  recurrent: boolean;
 
   // #endregion Properties (20)
   // data da última atualização da campanha
