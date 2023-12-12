@@ -1,12 +1,13 @@
 export interface IGlobalSettingMaster {
-  // #region Properties (2)
+  // #region Properties (7)
 
   billingDays: number;
   deleteInvoicesPlacedDays: number;
   deleteSubscriptionsPlacedDays: number;
+  subscriptionSuspendedTimes: number;
   subscriptionsCancelDays: number;
-  subscriptionsSuspendDays: number;
   subscriptionsExpireDays: number;
+  subscriptionsSuspendDays: number;
 
-  // #endregion Properties (2)
+  // #endregion Properties (7)
 }

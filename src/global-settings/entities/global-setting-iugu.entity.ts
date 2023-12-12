@@ -1,7 +1,7 @@
 import { IGlobalSettingIugu } from '../interfaces/i-global-setting-iugu';
 
 export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
-  // #region Properties (9)
+  // #region Properties (10)
 
   /**
    * Prazo máximo para pagamento do boleto após o vencimento.
@@ -10,14 +10,14 @@ export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
    */
   public bankSlipExtraDue: number = 1;
   /**
+   * Prazo de dias para o vencimento da fatura.
+   */
+  public billingDays: number = 10;
+  /**
    * Se true, garante que a data de vencimento seja apenas em dias de semana,
    * e não em sábados ou domingos.
    */
   public ensureWorkdayDueDate: boolean = true;
-  /**
-   * Prazo de dias para o vencimento da fatura.
-   */
-  public billingDays: number = 10;
   /**
    * Expira uma fatura e impossibilita o seu pagamento depois 'x' dias após o vencimento.
    * Valor enviado precisa estar entre 0 e 30. Se for enviado "0", a fatura ficará
@@ -56,7 +56,7 @@ export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
    */
   public perDayInterestValue: number = 1;
 
-  // #endregion Properties (9)
+  // #endregion Properties (10)
 
   // #region Constructors (1)
 

@@ -2,20 +2,21 @@ import { NotificationCategoryEnum, NotificationPriorityEnum, NotificationStatusE
 import { INotificationAction } from './i-notification-action';
 
 export interface INotification {
-    // #region Properties (9)
+  // #region Properties (13)
 
-    action: INotificationAction;
-    priority: NotificationPriorityEnum;
-    category: NotificationCategoryEnum;
-    createdAt: Date;
-    title: string;
-    description: string;
-    expirationTime: number;
-    status: NotificationStatusEnum;
-    imageUrl: string;
-    sound: boolean;
-    id: string;
-    data: string;
-    topicName: string;
-    // #endregion Properties (9)
+  action: INotificationAction;
+  category: NotificationCategoryEnum;
+  createdAt: Date;
+  data: string;
+  description: string;
+  expirationTime: number;
+  id: string;
+  imageUrl: string;
+  priority: NotificationPriorityEnum;
+  sound: boolean;
+  status: NotificationStatusEnum;
+  title: string;
+  topicName: string;
+
+  // #endregion Properties (13)
 }

@@ -1,26 +1,17 @@
 import { IGlobalSettingMaster } from '../interfaces/i-global-setting-master';
 
 export class GlobalSettingMasterEntity implements IGlobalSettingMaster {
-  // #region Properties (6)
+  // #region Properties (8)
 
-  /**
-   * Prazo de dias para o vencimento da fatura.
-   */
+  public billingDays: number = 10;
   public deleteInvoicesPlacedDays: number = 10;
   public deleteSubscriptionsPlacedDays: number = 10;
-  /**
-   *  Dias em que a fatura expira após o vencimento
-   *
-   * */
+  public subscriptionSuspendedTimes: number = 3;
   public subscriptionsCancelDays: number = 3;
   public subscriptionsExpireDays: number = 1;
   public subscriptionsSuspendDays: number = 1;
-  /**
-   * Dias em que a fatura é suspensa após o vencimento
-   */
-  public suspendDays: number = 3;
 
-  // #endregion Properties (6)
+  // #endregion Properties (8)
 
   // #region Constructors (1)
 
@@ -33,7 +24,6 @@ export class GlobalSettingMasterEntity implements IGlobalSettingMaster {
       }
     }
   }
-  billingDays: number;
 
   // #endregion Constructors (1)
 }
