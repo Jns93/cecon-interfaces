@@ -1,5 +1,5 @@
 import { AppConfigType } from '../../app';
-import { ESubscriptionStatus } from '../../subscription/enums/subscription-status.enum';
+import { ESubscriptionStatus } from '../../subscription-base';
 import { IInstallation } from '../interfaces/i-installation';
 import { InstallationAppEntity } from './installation-app.entity';
 

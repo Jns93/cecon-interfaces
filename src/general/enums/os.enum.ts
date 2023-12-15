@@ -1,4 +1,4 @@
-export enum OsEnum {
+export enum EOs {
   ANDROID = 'ANDROID',
   IOS = 'IOS',
   WINDOWS_PHONE = 'WINDOWS_PHONE',

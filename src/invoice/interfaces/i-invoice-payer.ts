@@ -1,11 +1,11 @@
-import { DocTypeEnum, IAddress } from '../../general';
+import { EDocType, IAddress } from '../../general';
 
 export interface IInvoicePayer {
   // #region Properties (6)
 
   address: IAddress;
   doc: string;
-  docType: DocTypeEnum;
+  docType: EDocType;
   email: string;
   name: string;
   phoneNumber: string | null;

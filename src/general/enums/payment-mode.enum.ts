@@ -1,5 +1,5 @@
-export enum PaymentModeEnum {
-    ELECTRONIC = 'ELECTRONIC',
-    MANUAL = 'MANUAL',
-    DIGITAL = 'DIGITAL',
+export enum EPaymentMode {
+  ELECTRONIC = 'ELECTRONIC',
+  MANUAL = 'MANUAL',
+  DIGITAL = 'DIGITAL',
 }

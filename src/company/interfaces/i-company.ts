@@ -1,5 +1,5 @@
 import {
-  DocTypeEnum,
+  EDocType,
   IAddress,
   IDeliveryArea,
   IDeliveryAreaFixed,
@@ -22,7 +22,7 @@ export interface ICompany {
   deliveryAreaFixed?: IDeliveryAreaFixed | null;
   phoneNumberNotification: string | null;
   doc: string;
-  docType: DocTypeEnum;
+  docType: EDocType;
   email: string;
   fullName: string;
   id: string;

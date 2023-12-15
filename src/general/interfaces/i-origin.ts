@@ -1,14 +1,14 @@
-import { LeadOriginEnum } from '../enums/lead-origin.enum';
+import { ELeadOrigin } from '../enums/lead-origin.enum';
 
 export interface IOrigin {
-    // #region Properties (6)
+  // #region Properties (6)
 
-    campaign?: string;
-    contactPoint?: string;
-    date: Number;
-    details?: string;
-    referrer?: string;
-    type: LeadOriginEnum;
+  campaign?: string;
+  contactPoint?: string;
+  date: Number;
+  details?: string;
+  referrer?: string;
+  type: ELeadOrigin;
 
-    // #endregion Properties (6)
+  // #endregion Properties (6)
 }

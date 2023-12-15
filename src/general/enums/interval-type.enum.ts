@@ -1,5 +1,5 @@
-export enum IntervalTypeEnum {
-    DAYS = 'DAYS',
-    WEEKS = 'WEEKS',
-    MONTHS = 'MONTHS',
+export enum EIntervalType {
+  DAYS = 'DAYS',
+  WEEKS = 'WEEKS',
+  MONTHS = 'MONTHS',
 }

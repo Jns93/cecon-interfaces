@@ -1,5 +1,5 @@
 import { IAddress, IPaymentProvider } from '../../general';
-import { DocTypeEnum } from '../../general/enums';
+import { EDocType } from '../../general/enums';
 
 export interface IPartner {
   // #region Properties (18)
@@ -7,7 +7,7 @@ export interface IPartner {
   active: boolean;
   address: IAddress;
   doc: string;
-  docType: DocTypeEnum;
+  docType: EDocType;
   email: string;
   level: number;
   fullName: string;

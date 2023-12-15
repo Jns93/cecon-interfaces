@@ -1,5 +1,5 @@
 import { AddressEntity, PaymentProviderEntity } from '../../general';
-import { DocTypeEnum } from '../../general/enums';
+import { EDocType } from '../../general/enums';
 import { IPartner } from '../interfaces';
 
 export class PartnerEntity implements IPartner {
@@ -8,7 +8,7 @@ export class PartnerEntity implements IPartner {
   public active: boolean = true;
   public address: AddressEntity = new AddressEntity();
   public doc: string = '';
-  public docType: DocTypeEnum = DocTypeEnum.CNPJ;
+  public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
   public fullName: string = '';
   public id: string = '';

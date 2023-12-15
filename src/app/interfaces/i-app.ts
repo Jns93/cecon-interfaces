@@ -1,6 +1,6 @@
-import { ICarouselImage, IRating, IntervalTypeEnum } from '../../general';
-import { OsEnum } from '../../general/enums/os.enum';
-import { PlatfomrEnum } from '../../general/enums/platform.enum';
+import { EIntervalType, ICarouselImage, IRating } from '../../general';
+import { EOs } from '../../general/enums/os.enum';
+import { EPlatform } from '../../general/enums/platform.enum';
 import { EAppMode } from '../enums';
 import { EAppCategory } from '../enums/app-category.enum';
 import { EAppType } from '../enums/app-type.enum';
@@ -41,15 +41,15 @@ export interface IApp {
    * @example
    * Mensal, Semanal, Diário
    */
-  intervalType: IntervalTypeEnum;
+  intervalType: EIntervalType;
   /**
    * Indica se o app é gratuito ou não
    */
   mode: EAppMode;
   production: boolean;
   name: string;
-  os: OsEnum[];
-  platforms: PlatfomrEnum[];
+  os: EOs[];
+  platforms: EPlatform[];
   price: number;
   ratings: IRating[];
   tags: string[];

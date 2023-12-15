@@ -1,4 +1,4 @@
-export enum LegalEntiyEnum {
-    LEGAL = 'Pessoa Jurídica',
-    INDIVIDUAL = 'Pessoa Física',
+export enum ELegalEntiy {
+  LEGAL = 'Pessoa Jurídica',
+  INDIVIDUAL = 'Pessoa Física',
 }

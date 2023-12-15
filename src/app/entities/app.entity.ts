@@ -1,6 +1,6 @@
-import { CarouselImageEntity, IntervalTypeEnum, RatingEntity } from '../../general';
-import { OsEnum } from '../../general/enums/os.enum';
-import { PlatfomrEnum } from '../../general/enums/platform.enum';
+import { CarouselImageEntity, EIntervalType, RatingEntity } from '../../general';
+import { EOs } from '../../general/enums/os.enum';
+import { EPlatform } from '../../general/enums/platform.enum';
 import { EAppCategory } from '../enums/app-category.enum';
 import { EAppType } from '../enums/app-type.enum';
 import { EAppHeaderType } from '../enums/header-type.enum';
@@ -42,14 +42,14 @@ export class AppEntity implements IApp {
    * @example
    * Mensal, Semanal, Diário
    */
-  public intervalType: IntervalTypeEnum = IntervalTypeEnum.MONTHS;
+  public intervalType: EIntervalType = EIntervalType.MONTHS;
   public mode: EAppMode = EAppMode.NONE;
   public name: string = '';
   /**
    * Indica se o app é gratuito ou não
    */
-  public os: OsEnum[] = [];
-  public platforms: PlatfomrEnum[] = [];
+  public os: EOs[] = [];
+  public platforms: EPlatform[] = [];
   public price: number = 0;
   public ratings: RatingEntity[] = [];
   public tags: string[] = [];

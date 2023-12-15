@@ -1,4 +1,4 @@
-import { AddressEntity, DocTypeEnum } from '../../general';
+import { AddressEntity, EDocType } from '../../general';
 import { IInvoicePayer } from '../interfaces/i-invoice-payer';
 
 export class InvoicePayerEntity implements IInvoicePayer {
@@ -6,7 +6,7 @@ export class InvoicePayerEntity implements IInvoicePayer {
 
   public address: AddressEntity = new AddressEntity();
   public doc: string = '';
-  public docType: DocTypeEnum = DocTypeEnum.CNPJ;
+  public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
   public name: string = '';
   public phoneNumber: string | null = null;

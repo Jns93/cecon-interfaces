@@ -1,19 +1,19 @@
-import { PaymentChannelEnum } from '../enums/payment-channel.enum';
-import { PaymentModeEnum } from '../enums/payment-mode.enum';
+import { EPaymentChannel } from '../enums/payment-channel.enum';
+import { EPaymentMode } from '../enums/payment-mode.enum';
 import { EPaymentType } from '../enums/payment-type.enum';
 
 export interface IPaymentMethodOption {
   // #region Properties (13)
 
   active: boolean;
-  channel: PaymentChannelEnum;
+  channel: EPaymentChannel;
   createdAt: Date;
   fee: number;
   id: string;
   index: number;
   maxAmount: number;
   minAmount: number;
-  mode: PaymentModeEnum;
+  mode: EPaymentMode;
   name: string;
   token: string;
   type: EPaymentType;

@@ -1,4 +1,4 @@
-import { ESubscriptionStatus } from '../../subscription';
+import { ESubscriptionStatus } from '../../subscription-base';
 import { EPubSubTopicType } from '../enums';
 
 export interface IPubsubSubscriptionChangeStatus {

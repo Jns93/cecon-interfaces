@@ -1,4 +1,4 @@
-import { DocTypeEnum } from '../../general';
+import { EDocType } from '../../general';
 import { AddressEntity } from '../../general/entities/address.entity';
 import { DeliveryAreaEntity } from '../../general/entities/delivery-area.entity';
 import { DeliveryAreaFixedEntity } from '../../general/entities/dellivery-area-fixed.entity';
@@ -20,7 +20,7 @@ export class CompanyEntity implements ICompany {
   public deliveryArea: DeliveryAreaEntity[] = [];
   public deliveryAreaFixed: DeliveryAreaFixedEntity | null = null;
   public doc: string = '';
-  public docType: DocTypeEnum = DocTypeEnum.CNPJ;
+  public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
   public fullName: string = '';
   public id: string = '';

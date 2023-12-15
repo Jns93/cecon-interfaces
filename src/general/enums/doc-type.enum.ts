@@ -1,4 +1,4 @@
-export enum DocTypeEnum {
-    CPF = 'CPF',
-    CNPJ = 'CNPJ',
+export enum EDocType {
+  CPF = 'CPF',
+  CNPJ = 'CNPJ',
 }
