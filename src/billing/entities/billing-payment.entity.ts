@@ -10,7 +10,7 @@ export class BillingPaymentEntity implements IBillingPayment {
   public company: Partial<ICompany> = {};
   public discount: number = 0;
   public id: string = '';
-  public paymentReceipt: string = '';
+  public paymentReceiptUrl: string = '';
   public paymentType: EPaymentType = EPaymentType.NONE;
   public status: EPaymentStatus = EPaymentStatus.PENDING;
   public subtotal: number = 0;

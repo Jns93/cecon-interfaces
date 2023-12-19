@@ -3,12 +3,13 @@ import { InviteStatusEnum } from '../enums';
 import { IInvite } from '../interfaces';
 
 export class InviteEntity implements IInvite {
-  // #region Properties (17)
+  // #region Properties (18)
 
   public companyId: string = '';
   public companyName: string = '';
   public containerId: string = '';
   public createdAt: Date = new Date();
+  public customerId: string = '';
   public doc: string = '';
   public docType: EDocType = EDocType.CNPJ;
   public email: string = '';
@@ -23,7 +24,7 @@ export class InviteEntity implements IInvite {
   public uid: string = '';
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (17)
+  // #endregion Properties (18)
 
   // #region Constructors (1)
 

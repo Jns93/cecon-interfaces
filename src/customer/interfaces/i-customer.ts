@@ -1,5 +1,5 @@
 import { EDocType, IAddress, IDeliveryArea, IDeliveryAreaFixed } from '../../general';
-import { ECustomerInterval, ECustomerStatus } from '../enums';
+import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 
 export interface ICustomer {
   // #region Properties (19)
@@ -14,6 +14,7 @@ export interface ICustomer {
   fullName: string;
   blockedReason: string | null;
   id: string;
+  type: ECustomerType;
   imageUrl: string | null;
   interval: ECustomerInterval;
   limit: number;

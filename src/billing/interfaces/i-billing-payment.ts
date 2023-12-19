@@ -9,7 +9,7 @@ export interface IBillingPayment {
   company: Partial<ICompany>;
   discount: number;
   id: string;
-  paymentReceipt: string;
+  paymentReceiptUrl: string;
   paymentType: EPaymentType;
   status: EPaymentStatus;
   subtotal: number;

@@ -1,5 +1,5 @@
 import { AddressEntity, DeliveryAreaEntity, DeliveryAreaFixedEntity, EDocType } from '../../general';
-import { ECustomerInterval, ECustomerStatus } from '../enums';
+import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 import { ICustomer } from '../interfaces';
 
 export class CustomerEntity implements ICustomer {
@@ -24,6 +24,7 @@ export class CustomerEntity implements ICustomer {
   public sandbox: boolean = false;
   public status: ECustomerStatus = ECustomerStatus.WAITING_CREDIT_ANALYSIS;
   public tags: string[] = [];
+  public type: ECustomerType = ECustomerType.SINGLE;
   public updatedAt: Date = new Date();
 
   // #endregion Properties (20)

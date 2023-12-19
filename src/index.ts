@@ -6,6 +6,7 @@ export * from './clients';
 export * from './company';
 export * from './container';
 export * from './customer';
+export * from './customer-member';
 export * from './device';
 export * from './feature';
 export * from './general';

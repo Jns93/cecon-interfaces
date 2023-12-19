@@ -4,9 +4,10 @@ import { InviteStatusEnum } from '../enums';
 export interface IInvite {
   // #region Properties (17)
 
-  companyId: string;
-  companyName: string;
-  containerId: string;
+  companyId: string | null;
+  companyName: string | null;
+  containerId: string | null;
+  customerId: string | null;
   createdAt: Date;
   doc: string;
   docType: EDocType;
