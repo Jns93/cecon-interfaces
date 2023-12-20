@@ -2,9 +2,11 @@ import { MemberEntity } from '../../member';
 import { ICustomerMember } from '../interfaces';
 
 export class CustomerMemberEntity extends MemberEntity implements ICustomerMember {
-  // #region Properties (13)
+  // #region Properties (1)
 
-  // #endregion Properties (13)
+  public customerId: string = '';
+
+  // #endregion Properties (1)
 
   // #region Constructors (1)
 

@@ -6,10 +6,11 @@ export interface IToken {
   expiresAt: number;
   id: string;
   name: string;
-  companyId: string;
+  companyId: string | null;
   companyName: string;
-  partnerId: string;
-  containerId: string;
+  partnerId: string | null;
+  customerId: string | null;
+  containerId: string | null;
   sandbox: boolean;
   lastAccessAt: number;
   description: string;

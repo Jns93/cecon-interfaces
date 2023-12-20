@@ -1,22 +1,24 @@
 import { IToken } from '../interfaces';
 
 export class TokenEntity implements IToken {
-  // #region Properties (18)
+  // #region Properties (14)
+
   public active: boolean = true;
+  public companyId: string | null = '';
+  public companyName: string = '';
+  public containerId: string | null = '';
   public createdAt: number = Date.now();
+  public customerId: string | null = '';
+  public description: string = '';
   public expiresAt: number = Date.now();
   public id: string = '';
-  public name: string = '';
-  public companyId: string = '';
-  public companyName: string = '';
-  public partnerId: string = '';
-  public containerId: string = '';
-  public sandbox: boolean = false;
   public lastAccessAt: number = Date.now();
-  public description: string = '';
+  public name: string = '';
+  public partnerId: string | null = '';
+  public sandbox: boolean = false;
   public value: string = '';
 
-  // #endregion Properties (18)
+  // #endregion Properties (14)
 
   // #region Constructors (1)
 
