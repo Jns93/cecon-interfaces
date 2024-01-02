@@ -1,14 +1,14 @@
 import { FeatureEntity } from '../../feature';
 import { SubscriptionBaseEntity } from '../../subscription-base/entities/subscription-base.entity';
 import { ISubscriptionCompany } from '../interfaces/i-subscription';
-import { SubscriptionCompanyCompanyEntity } from './subscription-company.entity';
+import { SubscriptionCompanyProfileEntity } from './subscription-company.entity';
 
 export class SubscriptionCompanyEntity extends SubscriptionBaseEntity implements ISubscriptionCompany {
   // #region Properties (7)
 
   public appId: string = '';
   public appName: string = '';
-  public company: SubscriptionCompanyCompanyEntity = new SubscriptionCompanyCompanyEntity();
+  public profile: SubscriptionCompanyProfileEntity = new SubscriptionCompanyProfileEntity();
   public features: FeatureEntity[] = [];
   public partnerId: string | null = '';
   public planId: string = '';

@@ -1,10 +1,9 @@
-import { GTINTypeEnum } from "../enums";
-import { IProductBrand } from "./i-brand";
-import { IProductGpc } from "./i-gpc";
-import { IProductNcm } from "./i-ncm";
+import { GTINTypeEnum } from '../enums';
+import { IProductBrand } from './i-brand';
+import { IProductNcm } from './i-ncm';
 
-export interface IProduct {
-  // #region Properties (25)
+export interface IProductBase {
+  // #region Properties (29)
 
   /**
    * Indicates whether the product is active.
@@ -12,6 +11,20 @@ export interface IProduct {
    * @example true
    */
   active: boolean;
+  /**
+   * Average price of the product.
+   * @example 1.5
+   * @default 0
+   * @minimum 0
+   * @maximum 9999999999999.99
+   */
+  avgPrice: number;
+  /**
+   * Barcode of the product.
+   * @example "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAgAElEQ…"
+   * @default ""
+   */
+  barcodeImage: string | null;
   /**
    * Contains brand information of the product.
    * @example { "id": "5e4f1b1b1b1b1b1b1b1b1b1b", "name": "Brand name" }
@@ -23,7 +36,7 @@ export interface IProduct {
    * @minlength 7
    * @maxlength 7
    */
-  cest: string;
+  cest: string | null;
   /**
    * Date of product creation.
    * @format date-time
@@ -33,59 +46,25 @@ export interface IProduct {
    */
   createdAt: Date;
   /**
-   * Company ID. Optional if the product is from root.
-   * @minlength 24
-   * @maxlength 24
-   * @example "63A3094D46B94B618CDEF2236640E3B3"
-   * @default ""
-   */
-  companyId?: string;
-  /**
-   * Container ID. Optional if the product is from root.
-   * @minlength 24
-   * @maxlength 24
-   * @example "63A3094D46B94B618CDEF2236640E3B3"
-   * @default ""
-   */
-  containerId?: string;
-  /**
-   * To be filled with the Bar Code itself or third parties that is different
-   * from the GTIN standard.
-   * @minlength 3
-   * @maxlength 30
-   * @example "123456789"
-   */
-  customEAN: string;
-  /**
    * Description of the product or service.
    * @minlength 1
    * @maxlength 120
    * @example "Product description"
    */
   description: string;
-  /**
-   * @minlength 2
-   * @maxlength 3
-   * @example "01"
-   */
-  exTipi: string;
-  /**
-   * GPC information of the product.
-   * @example { "code": "10000043", "description": "Açúcar / Substitutos do Açúcar (Não perecível)" }
-   */
-  gpc: IProductGpc;
+
   /**
    * Gross weight of the product.
    * @example 1.5
    * @default 0
    */
-  grossWeight: number;
+  grossWeight: number | null;
   /**
    * Unit of measurement of gross weight.
    * @minlength 1
    * @maxlength 6
    */
-  grossWeightUnit: string;
+  grossWeightUnit: string | null;
   /**
    * To be filled with the GTIN-8, GTIN-12, GTIN-13 or GTIN-14 code
    * (old EAN, UPC and DUN-14 codes).
@@ -108,7 +87,7 @@ export interface IProduct {
    * @example 15
    * @default 0
    */
-  height: number;
+  height: number | null;
   /**
    * Identifier of the product.
    * @minlength 24
@@ -117,19 +96,39 @@ export interface IProduct {
    */
   id: string;
   /**
-   * URL of the product image.
-   * @minlength 1
-   * @maxlength 120
-   * @example "https://www.example.com/image.jpg"
-   * @default ""
-   */
-  imageUrl: string;
-  /**
    * Length of the product.
    * @example 15
    * @default 0
    */
-  length: number;
+  length: number | null;
+  /**
+   * Max cost of the product.
+   * @example 1.5
+   * @default 0
+   * @minimum 0
+   * @maximum 9999999999999.99
+   */
+  maxPrice: number;
+  /**
+   * Quantity of the product.
+   * @example 1.5
+   * @default 0
+   */
+  measureQuantity: number;
+  /**
+   * Height of the product.
+   * @example "UN"
+   * @default "UN"
+   */
+  measureUnit: string;
+  /**
+   * Min cost of the product.
+   * @example 1.5
+   * @default 0
+   * @minimum 0
+   * @maximum 9999999999999.99
+   */
+  minPrice: number;
   /**
    * Name of the product.
    * @minlength 1
@@ -152,7 +151,7 @@ export interface IProduct {
    * @maximum 9999999999999.999
    * @multipleOf 0.001
    */
-  netWeight: number;
+  netWeight: number | null;
   /**
    * Unit of measurement of net weight.
    * @minlength 1
@@ -161,7 +160,7 @@ export interface IProduct {
    * @default "UN"
    * @pattern ^[A-Z]+$
    */
-  netWeightUnit: string;
+  netWeightUnit: string | null;
   /**
    * Price of the product.
    * @example 1.5
@@ -192,6 +191,14 @@ export interface IProduct {
    */
   tags: string[];
   /**
+   * URL of the product image.
+   * @minlength 1
+   * @maxlength 120
+   * @example "https://www.example.com/image.jpg"
+   * @default ""
+   */
+  thumbnail: string | null;
+  /**
    * Date when the product was last updated.
    * @format date-time
    * @example "2019-01-01T00:00:00.000Z"
@@ -204,7 +211,7 @@ export interface IProduct {
    * @default 0
    *
    */
-  width: number;
+  width: number | null;
 
-  // #endregion Properties (25)
+  // #endregion Properties (29)
 }

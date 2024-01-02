@@ -1,11 +1,11 @@
 import { SubscriptionBaseEntity } from '../../subscription-base';
 import { ISubscriptionCustomer } from '../interfaces/i-subscription';
-import { SubscriptionCustomerCustomerEntity } from './subscription-customer.entity';
+import { SubscriptionCustomerProfileEntity } from './subscription-customer.entity';
 
 export class SubscriptionCustomerEntity extends SubscriptionBaseEntity implements ISubscriptionCustomer {
   // #region Properties (1)
 
-  public customer: SubscriptionCustomerCustomerEntity = new SubscriptionCustomerCustomerEntity();
+  public profile: SubscriptionCustomerProfileEntity = new SubscriptionCustomerProfileEntity();
 
   // #endregion Properties (1)
 

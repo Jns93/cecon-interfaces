@@ -1,4 +1,4 @@
-export interface ISubscriptionCustomerCustomer {
+export interface ISubscriptionCustomerProfile {
   // #region Properties (6)
 
   doc: string | null;

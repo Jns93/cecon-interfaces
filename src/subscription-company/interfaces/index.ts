@@ -1,2 +1,2 @@
 export { ISubscriptionCompany } from './i-subscription';
-export { ISubscriptionCompanyCompany } from './i-subscription-company';
+export { ISubscriptionCompanyProfile } from './i-subscription-company';

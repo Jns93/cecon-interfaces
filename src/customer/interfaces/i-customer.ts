@@ -1,4 +1,4 @@
-import { EDocType, IAddress, IDeliveryArea, IDeliveryAreaFixed } from '../../general';
+import { EDocType, IAddress, IDeliveryArea, IDeliveryAreaFixed, IPaymentProvider } from '../../general';
 import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 
 export interface ICustomer {
@@ -17,6 +17,7 @@ export interface ICustomer {
   type: ECustomerType;
   imageUrl: string | null;
   interval: ECustomerInterval;
+  paymentProvider: IPaymentProvider;
   limit: number;
   name: string;
   phoneNumber: string;

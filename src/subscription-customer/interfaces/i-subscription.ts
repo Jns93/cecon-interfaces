@@ -1,10 +1,10 @@
 import { ISubscriptionBase } from '../../subscription-base';
-import { ISubscriptionCustomerCustomer } from './i-subscription-customer';
+import { ISubscriptionCustomerProfile } from './i-subscription-customer';
 
 export interface ISubscriptionCustomer extends ISubscriptionBase {
   // #region Properties (1)
 
-  customer: ISubscriptionCustomerCustomer;
+  profile: ISubscriptionCustomerProfile;
 
   // #endregion Properties (1)
 }

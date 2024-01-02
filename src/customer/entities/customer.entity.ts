@@ -1,4 +1,4 @@
-import { AddressEntity, DeliveryAreaEntity, DeliveryAreaFixedEntity, EDocType } from '../../general';
+import { AddressEntity, DeliveryAreaEntity, DeliveryAreaFixedEntity, EDocType, PaymentProviderEntity } from '../../general';
 import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 import { ICustomer } from '../interfaces';
 
@@ -14,6 +14,7 @@ export class CustomerEntity implements ICustomer {
   public docType: EDocType = EDocType.CPF;
   public email: string = '';
   public fullName: string = '';
+  public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public id: string = '';
   public imageUrl: string | null = null;
   public interval: ECustomerInterval = ECustomerInterval.MONTHLY;

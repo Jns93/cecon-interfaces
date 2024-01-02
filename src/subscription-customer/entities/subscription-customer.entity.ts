@@ -1,6 +1,6 @@
-import { ISubscriptionCustomerCustomer } from '../interfaces/i-subscription-customer';
+import { ISubscriptionCustomerProfile } from '../interfaces/i-subscription-customer';
 
-export class SubscriptionCustomerCustomerEntity implements ISubscriptionCustomerCustomer {
+export class SubscriptionCustomerProfileEntity implements ISubscriptionCustomerProfile {
   // #region Properties (6)
 
   public doc: string | null = '';
@@ -14,7 +14,7 @@ export class SubscriptionCustomerCustomerEntity implements ISubscriptionCustomer
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<SubscriptionCustomerCustomerEntity>) {
+  constructor(data?: Partial<SubscriptionCustomerProfileEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {
