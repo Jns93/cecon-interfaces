@@ -1,9 +1,9 @@
 import { GTINTypeEnum } from '../enums';
-import { IProductBase } from '../interfaces';
+import { IProductGlobal } from '../interfaces';
 import { ProductBrandEntity } from './product-brand.entity';
 import { ProductNcmEntity } from './product-ncm.entity';
 
-export class ProductBaseEntity implements IProductBase {
+export class ProductGlobalEntity implements IProductGlobal {
   // #region Properties (29)
 
   public active: boolean = true;
@@ -29,7 +29,6 @@ export class ProductBaseEntity implements IProductBase {
   public netWeight: number = 0;
   public netWeightUnit: string | null = null;
   public price: number = 0;
-  public sku: string = '';
   public tags: string[] = [];
   public thumbnail: string | null = null;
   public updatedAt: Date = new Date();
@@ -39,7 +38,7 @@ export class ProductBaseEntity implements IProductBase {
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<ProductBaseEntity>) {
+  constructor(data?: Partial<ProductGlobalEntity>) {
     if (data) {
       for (let key in data) {
         if (data.hasOwnProperty(key) && key in this) {

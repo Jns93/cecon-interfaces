@@ -2,7 +2,7 @@ import { GTINTypeEnum } from '../enums';
 import { IProductBrand } from './i-brand';
 import { IProductNcm } from './i-ncm';
 
-export interface IProductBase {
+export interface IProductGlobal {
   // #region Properties (29)
 
   /**
@@ -170,14 +170,6 @@ export interface IProductBase {
    * @multipleOf 0.01
    */
   price: number;
-  /**
-   * Code of the product.
-   * @minlength 1
-   * @maxlength 60
-   * @pattern ^[a-zA-Z0-9]+$
-   * @example "123456789"
-   */
-  sku: string;
   /**
    * Tags associated with the product.
    * @example ["tag1", "tag2"]

@@ -1,14 +1,13 @@
-import { ProductBaseEntity } from '../../product-global';
+import { ProductGlobalEntity } from '../../product-global/entities/product.entity';
 import { IProductContainer } from '../interfaces';
 
-export class ProductContainerEntity extends ProductBaseEntity implements IProductContainer {
+export class ProductContainerEntity extends ProductGlobalEntity implements IProductContainer {
   // #region Properties (5)
 
   public cest: string | null = null;
   public containerId: string = '';
   public customEAN: string = '';
   public exTipi: string = '';
-  public sku: string = '';
 
   // #endregion Properties (5)
 
@@ -23,7 +22,5 @@ export class ProductContainerEntity extends ProductBaseEntity implements IProduc
         }
       }
     }
-  }
-
-  // #endregion Constructors (1)
+  } // #endregion Constructors (1)
 }

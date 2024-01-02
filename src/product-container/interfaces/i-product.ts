@@ -1,6 +1,6 @@
-import { IProductBase } from '../../product-global';
+import { IProductGlobal } from '../../product-global';
 
-export interface IProductContainer extends IProductBase {
+export interface IProductContainer extends IProductGlobal {
   // #region Properties (8)
   /**
    * Container CEST. Optional if the product is from root.
@@ -30,15 +30,6 @@ export interface IProductContainer extends IProductBase {
    * @example "01"
    */
   exTipi: string;
-
-  /**
-   * Code of the product.
-   * @minlength 1
-   * @maxlength 60
-   * @pattern ^[a-zA-Z0-9]+$
-   * @example "123456789"
-   */
-  sku: string;
 
   // #endregion Properties (8)
 }
