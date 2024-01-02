@@ -39,7 +39,7 @@ export class ProductGlobalEntity implements IProductGlobal {
 
   // #region Constructors (1)
 
-  constructor(data?: Partial<ProductGlobalEntity>, bluesoft?: IBlueSoft, ref?: number) {
+  constructor(data?: Partial<ProductGlobalEntity>, bluesoft?: IBlueSoft) {
     if (bluesoft) {
       this.active = true;
       this.avgPrice = bluesoft.avgPrice;
@@ -55,8 +55,8 @@ export class ProductGlobalEntity implements IProductGlobal {
       this.id = '';
       this.length = bluesoft.length || 0;
       this.maxPrice = bluesoft.maxPrice || 0;
-      this.measureQuantity = this.getGtinFromGtins(ref || 0, bluesoft.gtins)?.commercialUnit?.quantityPackaging || 1;
-      this.measureUnit = this.getGtinFromGtins(ref || 0, bluesoft.gtins)?.commercialUnit?.typePackaging || 'Unidade';
+      this.measureQuantity = this.getGtinFromGtins(bluesoft.gtin || 0, bluesoft.gtins)?.commercialUnit?.quantityPackaging || 1;
+      this.measureUnit = this.getGtinFromGtins(bluesoft.gtin || 0, bluesoft.gtins)?.commercialUnit?.typePackaging || 'Unidade';
       this.minPrice = bluesoft.minPrice || 0;
       this.name = bluesoft.description || '';
       this.ncm = new ProductNcmEntity(bluesoft.ncm);
