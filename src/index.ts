@@ -1,6 +1,7 @@
 export * from './app';
 export * from './billing';
 export * from './billing-order';
+export * from './bluesoft';
 export * from './campaign';
 export * from './clients';
 export * from './company';

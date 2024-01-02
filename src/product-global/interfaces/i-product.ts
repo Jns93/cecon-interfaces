@@ -60,12 +60,6 @@ export interface IProductGlobal {
    */
   grossWeight: number | null;
   /**
-   * Unit of measurement of gross weight.
-   * @minlength 1
-   * @maxlength 6
-   */
-  grossWeightUnit: string | null;
-  /**
    * To be filled with the GTIN-8, GTIN-12, GTIN-13 or GTIN-14 code
    * (old EAN, UPC and DUN-14 codes).
    * For products that do not have a bar code with GTIN,
@@ -152,15 +146,6 @@ export interface IProductGlobal {
    * @multipleOf 0.001
    */
   netWeight: number | null;
-  /**
-   * Unit of measurement of net weight.
-   * @minlength 1
-   * @maxlength 6
-   * @example "KG"
-   * @default "UN"
-   * @pattern ^[A-Z]+$
-   */
-  netWeightUnit: string | null;
   /**
    * Price of the product.
    * @example 1.5

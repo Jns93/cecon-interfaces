@@ -6,6 +6,7 @@ export class ProductNcmEntity implements IProductNcm {
   public code: string = '';
   public description: string = '';
   public fullDescription: string = '';
+  public ex: string | null = null;
 
   // #endregion Properties (3)
 
