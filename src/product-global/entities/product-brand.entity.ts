@@ -3,7 +3,7 @@ import { IProductBrand } from '../interfaces';
 export class ProductBrandEntity implements IProductBrand {
   // #region Properties (2)
 
-  public imageUrl: string = '';
+  public picture: string = '';
   public name: string = '';
 
   // #endregion Properties (2)

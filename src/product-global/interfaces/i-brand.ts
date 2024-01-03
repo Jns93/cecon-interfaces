@@ -11,5 +11,5 @@ export interface IProductBrand {
    * It should be a valid URL.
    * @example "http://www.example.com"
    */
-  imageUrl: string;
+  picture: string;
 }
