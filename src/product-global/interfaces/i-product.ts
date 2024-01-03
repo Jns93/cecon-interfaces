@@ -68,7 +68,7 @@ export interface IProductGlobal {
    * @maxlength 14
    * @example "123456789"
    */
-  gtin: string;
+  gtin: number | null;
   /**
    * Type of GTIN.
    * @default GTINTypeEnum.GTIN_13

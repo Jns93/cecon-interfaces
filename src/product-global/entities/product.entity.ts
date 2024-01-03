@@ -17,7 +17,7 @@ export class ProductGlobalEntity implements IProductGlobal {
   public createdAt: Date = new Date();
   public description: string = '';
   public grossWeight: number = 0;
-  public gtin: string = '';
+  public gtin: number | null = null;
   public gtinType: GTINTypeEnum = GTINTypeEnum.THIRTEEN;
   public height: number = 0;
   public id: string = '';
@@ -49,7 +49,7 @@ export class ProductGlobalEntity implements IProductGlobal {
       this.createdAt = new Date();
       this.description = bluesoft.description;
       this.grossWeight = bluesoft.grossWeight || 0;
-      this.gtin = bluesoft.gtin.toString();
+      this.gtin = bluesoft.gtin || null;
       this.gtinType = EGtintype.FOURTEEN;
       this.height = bluesoft.height || 0;
       this.id = '';
