@@ -33,6 +33,7 @@ export interface IInvoice {
   orderId: string;
   paidAt: Date | null;
   partnerId: string | null;
+  customerId: string | null;
   password: string | null;
   payer: IInvoicePayer;
   paymentMethod: EPaymentType;

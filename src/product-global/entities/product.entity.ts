@@ -29,6 +29,7 @@ export class ProductGlobalEntity implements IProductGlobal {
   public name: string = '';
   public ncm: ProductNcmEntity = new ProductNcmEntity();
   public netWeight: number = 0;
+  public createdBy: string = '';
   public price: number = 0;
   public tags: string[] = [];
   public thumbnail: string | null = null;

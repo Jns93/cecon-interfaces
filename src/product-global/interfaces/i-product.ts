@@ -52,6 +52,13 @@ export interface IProductGlobal {
    * @example "Product description"
    */
   description: string;
+  /**
+   * Name of the user who created the product.
+   * @minlength 1
+   * @maxlength 120
+   * @example "User name"
+   */
+  createdBy: string;
 
   /**
    * Gross weight of the product.

@@ -9,7 +9,7 @@ import { InvoicePayerEntity } from './invoice-payer.entity';
 import { InvoicePixEntity } from './invoice-pix.entity';
 
 export class InvoiceEntity implements IInvoice {
-  // #region Properties (44)
+  // #region Properties (41)
 
   public addition: number = 0;
   public bankSlip: InvoiceBankSlipEntity | null = null;
@@ -20,6 +20,7 @@ export class InvoiceEntity implements IInvoice {
   public createdAt: Date = new Date();
   public creditCard: InvoiceCreditCardEntity | null = null;
   public currency: string = 'BRL';
+  public customerId: string | null = null;
   public discount: number = 0;
   public dueDateAt: Date = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000);
   public email: string = '';
@@ -52,7 +53,7 @@ export class InvoiceEntity implements IInvoice {
   public totalRefunded: number = 0;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (44)
+  // #endregion Properties (41)
 
   // #region Constructors (1)
 
