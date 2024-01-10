@@ -1,4 +1,5 @@
 import { EPaymentType, PaymentProviderEntity } from '../../general';
+import { IOrder } from '../../order';
 import { EInvoiceStatus } from '../enums';
 import { IInvoice } from '../interfaces';
 import { InvoiceBankSlipEntity } from './invoice-bank-slip.entity';
@@ -9,7 +10,7 @@ import { InvoicePayerEntity } from './invoice-payer.entity';
 import { InvoicePixEntity } from './invoice-pix.entity';
 
 export class InvoiceEntity implements IInvoice {
-  // #region Properties (41)
+  // #region Properties (42)
 
   public addition: number = 0;
   public bankSlip: InvoiceBankSlipEntity | null = null;
@@ -33,6 +34,7 @@ export class InvoiceEntity implements IInvoice {
   public notes: string = '';
   public notificationUrl: string = '';
   public orderId: string = '';
+  public orders: IOrder[] | null = [];
   public paidAt: Date | null = null;
   public partnerId: string = '';
   public password: string | null = null;
@@ -53,7 +55,7 @@ export class InvoiceEntity implements IInvoice {
   public totalRefunded: number = 0;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (41)
+  // #endregion Properties (42)
 
   // #region Constructors (1)
 

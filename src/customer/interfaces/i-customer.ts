@@ -1,4 +1,5 @@
 import { EDocType, IAddress, IDeliveryArea, IDeliveryAreaFixed, IPaymentProvider } from '../../general';
+import { ISubscriptionCustomer } from '../../subscription-customer';
 import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 
 export interface ICustomer {
@@ -23,6 +24,7 @@ export interface ICustomer {
   phoneNumber: string;
   phoneNumberNotification: string | null;
   sandbox: boolean;
+  subscription: ISubscriptionCustomer | null;
   status: ECustomerStatus;
   tags: string[];
   updatedAt: Date;

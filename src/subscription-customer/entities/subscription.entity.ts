@@ -1,13 +1,18 @@
+import { IInvoice } from '../../invoice';
 import { SubscriptionBaseEntity } from '../../subscription-base';
 import { ISubscriptionCustomer } from '../interfaces/i-subscription';
 import { SubscriptionCustomerProfileEntity } from './subscription-customer.entity';
 
 export class SubscriptionCustomerEntity extends SubscriptionBaseEntity implements ISubscriptionCustomer {
-  // #region Properties (1)
+  // #region Properties (4)
 
+  public amountUsed: number = 0;
+  public creditLimit: number = 0;
+  public currentBalance: number = 0;
+  public openedInvoices: IInvoice[] = [];
   public profile: SubscriptionCustomerProfileEntity = new SubscriptionCustomerProfileEntity();
 
-  // #endregion Properties (1)
+  // #endregion Properties (4)
 
   // #region Constructors (1)
 
@@ -21,4 +26,6 @@ export class SubscriptionCustomerEntity extends SubscriptionBaseEntity implement
       }
     }
   }
+
+  // #endregion Constructors (1)
 }

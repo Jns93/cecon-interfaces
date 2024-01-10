@@ -8,7 +8,7 @@ import { EAppMode } from '../enums/mode.enum';
 import { IApp } from '../interfaces/i-app';
 
 export class AppEntity implements IApp {
-  // #region Properties (29)
+  // #region Properties (30)
 
   public active: boolean = false;
   public activeInstalls: number = 0;
@@ -26,8 +26,8 @@ export class AppEntity implements IApp {
   public headerType: EAppHeaderType = EAppHeaderType.IMAGE;
   public headerVideo: string = '';
   public iconUrl: string = '';
-  public production: boolean = false;
   public id: string = '';
+  public instanceNumberAllowed: number = 1;
   /**
    * Intervalo de tempo para o preço
    * @example
@@ -51,6 +51,7 @@ export class AppEntity implements IApp {
   public os: EOs[] = [];
   public platforms: EPlatform[] = [];
   public price: number = 0;
+  public production: boolean = false;
   public ratings: RatingEntity[] = [];
   public tags: string[] = [];
   public totalInstalls: number = 0;
@@ -59,7 +60,7 @@ export class AppEntity implements IApp {
   public versionCode: number = 1;
   public versionName: string = '';
 
-  // #endregion Properties (29)
+  // #endregion Properties (30)
 
   // #region Constructors (1)
 

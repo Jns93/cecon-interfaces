@@ -1,34 +1,36 @@
 import { AddressEntity, DeliveryAreaEntity, DeliveryAreaFixedEntity, EDocType, PaymentProviderEntity } from '../../general';
+import { ISubscriptionCustomer } from '../../subscription-customer';
 import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 import { ICustomer } from '../interfaces';
 
 export class CustomerEntity implements ICustomer {
-  // #region Properties (20)
+  // #region Properties (23)
 
   public address: AddressEntity = new AddressEntity();
   public blockedReason: string | null = null;
   public createdAt: Date = new Date();
   public deliveryArea: DeliveryAreaEntity[] = [];
-  deliveryAreaFixed?: DeliveryAreaFixedEntity | null | undefined = undefined;
+  public deliveryAreaFixed?: DeliveryAreaFixedEntity | null | undefined = undefined;
   public doc: string = '';
   public docType: EDocType = EDocType.CPF;
   public email: string = '';
   public fullName: string = '';
-  public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public id: string = '';
   public imageUrl: string | null = null;
   public interval: ECustomerInterval = ECustomerInterval.MONTHLY;
   public limit: number = 0;
   public name: string = '';
+  public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public phoneNumber: string = '';
   public phoneNumberNotification: string | null = null;
   public sandbox: boolean = false;
   public status: ECustomerStatus = ECustomerStatus.WAITING_CREDIT_ANALYSIS;
+  public subscription: ISubscriptionCustomer | null = null;
   public tags: string[] = [];
   public type: ECustomerType = ECustomerType.SINGLE;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (20)
+  // #endregion Properties (23)
 
   // #region Constructors (1)
 

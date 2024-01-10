@@ -1,4 +1,5 @@
 import { EPaymentType, IPaymentProvider } from '../../general';
+import { IOrder } from '../../order';
 import { EInvoiceStatus } from '../enums';
 import { IInvoiceBankSlip } from './i-invoice-bank-slip';
 import { IInvoiceCreditCard } from './i-invoice-credit-card';
@@ -36,6 +37,7 @@ export interface IInvoice {
   customerId: string | null;
   password: string | null;
   payer: IInvoicePayer;
+  orders: IOrder[] | null;
   paymentMethod: EPaymentType;
   paymentProvider: IPaymentProvider | null;
   phoneNumberNotification: string | null;

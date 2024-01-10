@@ -19,6 +19,7 @@ export interface IApp {
   categories: EAppCategory[];
   createdBy: string;
   description: string;
+  instanceNumberAllowed: number;
   downloadUrl: string;
   features: string[];
   headerImage: string;

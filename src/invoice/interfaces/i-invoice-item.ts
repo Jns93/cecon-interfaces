@@ -3,6 +3,7 @@ export interface IInvoiceItem {
 
   description: string;
   quantity: number;
+  isRefunded: boolean;
   unitPrice: number;
 
   // #endregion Properties (8)
