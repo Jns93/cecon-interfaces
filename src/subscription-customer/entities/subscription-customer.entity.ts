@@ -1,16 +1,19 @@
+import { EDocType } from '../../general';
 import { ISubscriptionCustomerProfile } from '../interfaces/i-subscription-customer';
 
 export class SubscriptionCustomerProfileEntity implements ISubscriptionCustomerProfile {
-  // #region Properties (6)
+  // #region Properties (8)
 
   public doc: string | null = '';
-  public docType: string | null = '';
+  public docType: EDocType = EDocType.CNPJ;
+  public email: string | null = '';
   public id: string | null = '';
   public imageUrl: string | null = '';
   public name: string | null = '';
+  public phoneNumber: string | null = '';
   public uid: string | null = '';
 
-  // #endregion Properties (6)
+  // #endregion Properties (8)
 
   // #region Constructors (1)
 

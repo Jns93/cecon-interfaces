@@ -6,6 +6,8 @@ export interface IGlobalSettingMaster {
   deleteSubscriptionsPlacedDays: number;
   subscriptionSuspendedTimes: number;
   subscriptionsCancelDays: number;
+  subscriptionsCustomerBillingDays: number;
+  subscriptionsCustomerSuspendDays: number;
   subscriptionsExpireDays: number;
   subscriptionsSuspendDays: number;
 

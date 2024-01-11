@@ -45,7 +45,7 @@ export class InvoiceEntity implements IInvoice {
   public pix: InvoicePixEntity | null = null;
   public returnExpiredUrl: string = '';
   public returnUrl: string = '';
-  public status: EInvoiceStatus = EInvoiceStatus.PENDING;
+  public status: EInvoiceStatus = EInvoiceStatus.DRAFT;
   public subscriptionId: string = '';
   public subtotal: number = 0;
   public totalAmount: number = 0;

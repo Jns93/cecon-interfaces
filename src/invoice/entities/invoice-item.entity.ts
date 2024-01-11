@@ -7,6 +7,7 @@ export class InvoiceItemEntity implements IInvoiceItem {
   public isRefunded: boolean = false;
   public quantity: number = 1;
   public unitPrice: number = 0;
+  public totalPrice: number = 0;
 
   // #endregion Properties (4)
 

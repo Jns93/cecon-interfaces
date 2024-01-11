@@ -5,6 +5,7 @@ export interface IInvoiceItem {
   quantity: number;
   isRefunded: boolean;
   unitPrice: number;
+  totalPrice: number;
 
   // #endregion Properties (8)
 }
