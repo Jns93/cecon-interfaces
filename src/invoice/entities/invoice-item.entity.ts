@@ -1,15 +1,18 @@
 import { IInvoiceItem } from '../interfaces';
 
 export class InvoiceItemEntity implements IInvoiceItem {
-  // #region Properties (4)
+  // #region Properties (8)
 
+  public createdAt: Date = new Date();
   public description: string = '';
   public isRefunded: boolean = false;
   public quantity: number = 1;
-  public unitPrice: number = 0;
+  public reference: string | null = '';
   public totalPrice: number = 0;
+  public unitPrice: number = 0;
+  public updatedAt: Date = new Date();
 
-  // #endregion Properties (4)
+  // #endregion Properties (8)
 
   // #region Constructors (1)
 

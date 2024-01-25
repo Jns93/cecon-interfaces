@@ -10,7 +10,7 @@ import { InvoicePayerEntity } from './invoice-payer.entity';
 import { InvoicePixEntity } from './invoice-pix.entity';
 
 export class InvoiceEntity implements IInvoice {
-  // #region Properties (42)
+  // #region Properties (43)
 
   public addition: number = 0;
   public bankSlip: InvoiceBankSlipEntity | null = null;
@@ -30,7 +30,7 @@ export class InvoiceEntity implements IInvoice {
   public externalInvoiceUrl: string = '';
   public id: string = '';
   public items: InvoiceItemEntity[] = [];
-  public log: InvoiceLogEntity[] = [];
+  public logs: InvoiceLogEntity[] = [];
   public notes: string = '';
   public notificationUrl: string = '';
   public orderId: string = '';
@@ -45,9 +45,10 @@ export class InvoiceEntity implements IInvoice {
   public pix: InvoicePixEntity | null = null;
   public returnExpiredUrl: string = '';
   public returnUrl: string = '';
+  public sandbox: boolean = false;
   public status: EInvoiceStatus = EInvoiceStatus.DRAFT;
+  public subTotal: number = 0;
   public subscriptionId: string = '';
-  public subtotal: number = 0;
   public totalAmount: number = 0;
   public totalFee: number = 0;
   public totalOverPaid: number = 0;
@@ -55,7 +56,7 @@ export class InvoiceEntity implements IInvoice {
   public totalRefunded: number = 0;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (42)
+  // #endregion Properties (43)
 
   // #region Constructors (1)
 

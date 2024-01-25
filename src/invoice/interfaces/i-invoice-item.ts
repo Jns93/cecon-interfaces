@@ -6,6 +6,9 @@ export interface IInvoiceItem {
   isRefunded: boolean;
   unitPrice: number;
   totalPrice: number;
+  reference: string | null;
+  createdAt: Date;
+  updatedAt: Date;
 
   // #endregion Properties (8)
 }

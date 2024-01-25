@@ -1,7 +1,7 @@
 import { IGlobalSettingIugu } from '../interfaces/i-global-setting-iugu';
 
 export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
-  // #region Properties (10)
+  // #region Properties (13)
 
   /**
    * Prazo máximo para pagamento do boleto após o vencimento.
@@ -38,6 +38,7 @@ export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
    * cobrada para pagamentos efetuados após a data de vencimento
    */
   public latePaymentFineCents: number = 0;
+  public liveApiToken: string = '';
   /**
    * determina se cobra ou não juros por dia de atraso.
    * 1% ao mês pro rata. Necessário passar a multa como true
@@ -55,8 +56,10 @@ export class GlobalSettingIuguEntity implements IGlobalSettingIugu {
    * calculados são menores que 1 centavo.
    */
   public perDayInterestValue: number = 1;
+  public testApiToken: string = '';
+  public userApiToken: string = '';
 
-  // #endregion Properties (10)
+  // #endregion Properties (13)
 
   // #region Constructors (1)
 

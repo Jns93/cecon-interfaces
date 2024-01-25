@@ -7,6 +7,9 @@ export interface IGlobalSettingIugu {
   fines: boolean;
   latePaymentFine: number;
   latePaymentFineCents: number;
+  liveApiToken: string;
+  testApiToken: string;
+  userApiToken: string;
   perDayInterest: boolean;
   perDayInterestCents: number;
   perDayInterestValue: number;

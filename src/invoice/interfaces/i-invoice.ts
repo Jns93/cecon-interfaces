@@ -9,7 +9,7 @@ import { IInvoicePayer } from './i-invoice-payer';
 import { IInvoicePix } from './i-invoice-pix';
 
 export interface IInvoice {
-  // #region Properties (42)
+  // #region Properties (43)
 
   addition: number;
   bankSlip: IInvoiceBankSlip | null;
@@ -20,6 +20,7 @@ export interface IInvoice {
   createdAt: Date;
   creditCard: IInvoiceCreditCard | null;
   currency: string;
+  customerId: string | null;
   discount: number;
   dueDateAt: Date;
   email: string;
@@ -28,25 +29,25 @@ export interface IInvoice {
   externalInvoiceUrl: string;
   id: string;
   items: IInvoiceItem[];
-  log: IInvoiceLog[];
+  logs: IInvoiceLog[];
   notes: string;
   notificationUrl: string;
   orderId: string;
+  orders: IOrder[] | null;
   paidAt: Date | null;
   partnerId: string | null;
-  customerId: string | null;
   password: string | null;
   payer: IInvoicePayer;
-  orders: IOrder[] | null;
   paymentMethod: EPaymentType;
   paymentProvider: IPaymentProvider | null;
   phoneNumberNotification: string | null;
   pix: IInvoicePix | null;
   returnExpiredUrl: string;
   returnUrl: string;
+  sandbox: boolean;
   status: EInvoiceStatus;
+  subTotal: number;
   subscriptionId: string;
-  subtotal: number;
   totalAmount: number;
   totalFee: number;
   totalOverPaid: number;
@@ -54,5 +55,5 @@ export interface IInvoice {
   totalRefunded: number;
   updatedAt: Date;
 
-  // #endregion Properties (42)
+  // #endregion Properties (43)
 }
