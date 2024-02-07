@@ -8,6 +8,7 @@ export interface IWaServer {
   stack: string;
   status: EWaServerStatus;
   id: string;
+  tags: string[];
   baseUrl: string;
   globalApiKey: string;
   sessions: number;

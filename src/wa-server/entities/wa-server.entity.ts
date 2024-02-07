@@ -11,6 +11,7 @@ export class WaServerEntity implements IWaServer {
   public id: string = '';
   public installIds: string[] = [];
   public name: string = '';
+  public tags: string[] = [];
   public sessions: number = 0;
   public stack: string = '';
   public status: EWaServerStatus = EWaServerStatus.STOPPED;
