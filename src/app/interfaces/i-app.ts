@@ -7,7 +7,7 @@ import { EAppType } from '../enums/app-type.enum';
 import { EAppHeaderType } from '../enums/header-type.enum';
 
 export interface IApp {
-  // #region Properties (29)
+  // #region Properties (30)
 
   active: boolean;
   activeInstalls: number;
@@ -19,15 +19,14 @@ export interface IApp {
   categories: EAppCategory[];
   createdBy: string;
   description: string;
-  instanceNumberAllowed: number;
   downloadUrl: string;
   features: string[];
   headerImage: string;
   headerType: EAppHeaderType;
   headerVideo: string;
   iconUrl: string;
-  type: EAppType;
   id: string;
+  instanceNumberAllowed: number;
   /**
    * Intervalo de tempo para o preço
    * @example
@@ -47,17 +46,18 @@ export interface IApp {
    * Indica se o app é gratuito ou não
    */
   mode: EAppMode;
-  production: boolean;
   name: string;
   os: EOs[];
   platforms: EPlatform[];
   price: number;
+  production: boolean;
   ratings: IRating[];
   tags: string[];
   totalInstalls: number;
   trialTime: number;
+  type: EAppType;
   versionCode: number;
   versionName: string;
 
-  // #endregion Properties (29)
+  // #endregion Properties (30)
 }

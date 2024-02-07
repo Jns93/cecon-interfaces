@@ -1,11 +1,13 @@
 import { IBillingOrder } from '../../billing-order';
+import { ICompany } from '../../company';
 import { EBillingStatus } from '../enums';
 import { IBilling, IBillingPayment, IBillingTotal } from '../interfaces';
 import { BillingTotalEntity } from './billing-total.entity';
 
 export class BillingEntity implements IBilling {
-  // #region Properties (8)
+  // #region Properties (12)
 
+  public company: ICompany | null = null;
   public createdAt: Date = new Date();
   public dueDateAt: Date = new Date();
   public id: string = '';
@@ -15,7 +17,7 @@ export class BillingEntity implements IBilling {
   public total: IBillingTotal = new BillingTotalEntity();
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (8)
+  // #endregion Properties (12)
 
   // #region Constructors (1)
 
