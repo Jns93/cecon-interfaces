@@ -1,3 +1,3 @@
-import { INatigo, IRabbit } from '../interfaces';
+import { INatiWa, INatigo, IRabbit } from '../interfaces';
 
-export type AppConfigType = null | INatigo | IRabbit;
+export type AppConfigType = null | INatigo | IRabbit | INatiWa;
