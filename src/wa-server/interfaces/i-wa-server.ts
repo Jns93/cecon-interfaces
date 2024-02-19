@@ -1,3 +1,4 @@
+import { IEvolutionInstance } from '../../evolution';
 import { EWaServerStatus } from '../enums';
 
 export interface IWaServer {
@@ -11,6 +12,6 @@ export interface IWaServer {
   tags: string[];
   baseUrl: string;
   globalApiKey: string;
+  instances: IEvolutionInstance[];
   sessions: number;
-  installIds: string[];
 }

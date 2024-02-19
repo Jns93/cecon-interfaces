@@ -8,15 +8,16 @@ export interface IInstallation {
   app: IInstallationApp;
   createdAt: Date;
   customConfig: AppConfigType;
-  expirationDate: Date;
   featureId: string;
+  containerId: string;
+  companyId: string;
+  partnerId: string;
+  customerId: string;
+  deviceId: string;
   id: string;
-  lastCheckAt: Date;
   status: ESubscriptionStatus;
   subscriptionId: string;
   tags: string[];
-  trialEndDate: Date;
-  trialStartDate: Date;
   updatedAt: Date;
 
   // #endregion Properties (13)

@@ -6,7 +6,7 @@ import { SubscriptionBaseItemEntity } from './subscription-base-item.entity';
 import { SubscriptionBaseLogEntity } from './subscription-base-log.entity';
 
 export class SubscriptionBaseEntity implements ISubscriptionBase {
-  // #region Properties (25)
+  // #region Properties (23)
 
   public amount: number = 0;
   public cancellationReason: string = '';
@@ -32,7 +32,7 @@ export class SubscriptionBaseEntity implements ISubscriptionBase {
   public tags: string[] = [];
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (25)
+  // #endregion Properties (23)
 
   // #region Constructors (1)
 

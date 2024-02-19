@@ -24,7 +24,9 @@ export interface IApp {
   headerImage: string;
   headerType: EAppHeaderType;
   headerVideo: string;
+  isUnique: boolean;
   iconUrl: string;
+  allowDefaultDevice: boolean;
   id: string;
   instanceNumberAllowed: number;
   /**

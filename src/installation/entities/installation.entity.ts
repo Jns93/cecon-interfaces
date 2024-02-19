@@ -4,23 +4,24 @@ import { IInstallation } from '../interfaces/i-installation';
 import { InstallationAppEntity } from './installation-app.entity';
 
 export class InstallationEntity implements IInstallation {
-  // #region Properties (13)
+  // #region Properties (14)
 
   public app: InstallationAppEntity = new InstallationAppEntity();
+  public companyId: string = '';
+  public containerId: string = '';
   public createdAt: Date = new Date();
   public customConfig: AppConfigType = null;
-  public expirationDate: Date = new Date();
+  public customerId: string = '';
+  public deviceId: string = '';
   public featureId: string = '';
   public id: string = '';
-  public lastCheckAt: Date = new Date();
+  public partnerId: string = '';
   public status: ESubscriptionStatus = ESubscriptionStatus.PLACED;
   public subscriptionId: string = '';
   public tags: string[] = [];
-  public trialEndDate: Date = new Date();
-  public trialStartDate: Date = new Date();
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (13)
+  // #endregion Properties (14)
 
   // #region Constructors (1)
 

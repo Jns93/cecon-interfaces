@@ -8,7 +8,7 @@ import { EAppMode } from '../enums/mode.enum';
 import { IApp } from '../interfaces/i-app';
 
 export class AppEntity implements IApp {
-  // #region Properties (30)
+  // #region Properties (32)
 
   public active: boolean = false;
   public activeInstalls: number = 0;
@@ -16,6 +16,7 @@ export class AppEntity implements IApp {
    * Indica se permite adicionar a assinatura
    */
   public allowAddSubscription: boolean = false;
+  public allowDefaultDevice: boolean = false;
   public carousel: CarouselImageEntity[] = [];
   public categories: EAppCategory[] = [];
   public createdBy: string = '';
@@ -43,6 +44,7 @@ export class AppEntity implements IApp {
    * Mensal, Semanal, Diário
    */
   public intervalType: EIntervalType = EIntervalType.MONTHS;
+  public isUnique: boolean = false;
   public mode: EAppMode = EAppMode.NONE;
   public name: string = '';
   /**
@@ -60,7 +62,7 @@ export class AppEntity implements IApp {
   public versionCode: number = 1;
   public versionName: string = '';
 
-  // #endregion Properties (30)
+  // #endregion Properties (32)
 
   // #region Constructors (1)
 

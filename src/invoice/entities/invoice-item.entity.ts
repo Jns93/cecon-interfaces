@@ -1,8 +1,9 @@
 import { IInvoiceItem } from '../interfaces';
 
 export class InvoiceItemEntity implements IInvoiceItem {
-  // #region Properties (8)
+  // #region Properties (9)
 
+  public companyId: string = '';
   public createdAt: Date = new Date();
   public description: string = '';
   public isRefunded: boolean = false;
@@ -12,7 +13,7 @@ export class InvoiceItemEntity implements IInvoiceItem {
   public unitPrice: number = 0;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (8)
+  // #endregion Properties (9)
 
   // #region Constructors (1)
 

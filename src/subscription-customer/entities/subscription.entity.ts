@@ -5,7 +5,7 @@ import { ISubscriptionCustomer } from '../interfaces/i-subscription';
 import { SubscriptionCustomerProfileEntity } from './subscription-customer.entity';
 
 export class SubscriptionCustomerEntity extends SubscriptionBaseEntity implements ISubscriptionCustomer {
-  // #region Properties (8)
+  // #region Properties (9)
 
   public amountUsed: number = 0;
   public creditLimit: number = 0;
@@ -16,7 +16,7 @@ export class SubscriptionCustomerEntity extends SubscriptionBaseEntity implement
   public preferedDueDate: number = 7;
   public profile: SubscriptionCustomerProfileEntity = new SubscriptionCustomerProfileEntity();
 
-  // #endregion Properties (8)
+  // #endregion Properties (9)
 
   // #region Constructors (1)
 

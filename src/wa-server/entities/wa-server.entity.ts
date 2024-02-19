@@ -1,21 +1,26 @@
+import { IEvolutionInstance } from '../../evolution';
 import { EWaServerStatus } from '../enums';
 import { IWaServer } from '../interfaces';
 
 export class WaServerEntity implements IWaServer {
-  // #region Properties (11)
+  // #region Properties (12)
 
   public active: boolean = false;
   public baseUrl: string = '';
   public createdAt: Date = new Date();
   public globalApiKey: string = '';
   public id: string = '';
-  public installIds: string[] = [];
+  public instances: IEvolutionInstance[] = [];
   public name: string = '';
-  public tags: string[] = [];
   public sessions: number = 0;
   public stack: string = '';
   public status: EWaServerStatus = EWaServerStatus.STOPPED;
+  public tags: string[] = [];
   public updatedAt: Date = new Date();
+
+  // #endregion Properties (12)
+
+  // #region Constructors (1)
 
   constructor(data?: Partial<WaServerEntity>) {
     if (data) {
@@ -26,5 +31,6 @@ export class WaServerEntity implements IWaServer {
       }
     }
   }
-  // #endregion Properties (11)
+
+  // #endregion Constructors (1)
 }

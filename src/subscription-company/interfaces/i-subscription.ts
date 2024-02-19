@@ -3,15 +3,15 @@ import { ISubscriptionBase } from '../../subscription-base/interfaces/i-subscrip
 import { ISubscriptionCompanyProfile } from './i-subscription-company';
 
 export interface ISubscriptionCompany extends ISubscriptionBase {
-  // #region Properties (30)
+  // #region Properties (7)
 
   appId: string;
   appName: string;
-  profile: ISubscriptionCompanyProfile;
   features: IFeature[];
   partnerId: string | null;
   planId: string;
   planName: string;
+  profile: ISubscriptionCompanyProfile;
 
-  // #endregion Properties (30)
+  // #endregion Properties (7)
 }

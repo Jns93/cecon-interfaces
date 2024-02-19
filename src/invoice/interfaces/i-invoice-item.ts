@@ -1,14 +1,15 @@
 export interface IInvoiceItem {
-  // #region Properties (8)
+  // #region Properties (9)
 
-  description: string;
-  quantity: number;
-  isRefunded: boolean;
-  unitPrice: number;
-  totalPrice: number;
-  reference: string | null;
+  companyId: string;
   createdAt: Date;
+  description: string;
+  isRefunded: boolean;
+  quantity: number;
+  reference: string | null;
+  totalPrice: number;
+  unitPrice: number;
   updatedAt: Date;
 
-  // #endregion Properties (8)
+  // #endregion Properties (9)
 }

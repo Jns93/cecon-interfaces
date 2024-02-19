@@ -4,17 +4,17 @@ import { ISubscriptionCompany } from '../interfaces/i-subscription';
 import { SubscriptionCompanyProfileEntity } from './subscription-company.entity';
 
 export class SubscriptionCompanyEntity extends SubscriptionBaseEntity implements ISubscriptionCompany {
-  // #region Properties (7)
+  // #region Properties (9)
 
   public appId: string = '';
   public appName: string = '';
-  public profile: SubscriptionCompanyProfileEntity = new SubscriptionCompanyProfileEntity();
   public features: FeatureEntity[] = [];
   public partnerId: string | null = '';
   public planId: string = '';
   public planName: string = '';
+  public profile: SubscriptionCompanyProfileEntity = new SubscriptionCompanyProfileEntity();
 
-  // #endregion Properties (7)
+  // #endregion Properties (9)
 
   // #region Constructors (1)
 

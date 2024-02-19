@@ -1,12 +1,15 @@
 import { IEvolutionInstance } from '../interfaces';
 
 export class EvolutionInstanceEntity implements IEvolutionInstance {
-  // #region Properties (2)
+  // #region Properties (7)
 
+  public apikey: string = '';
   public instanceName: string = '';
+  public instanceId: string = '';
+  public serverUrl: string = '';
   public status: string = '';
 
-  // #endregion Properties (2)
+  // #endregion Properties (7)
 
   // #region Constructors (1)
 
