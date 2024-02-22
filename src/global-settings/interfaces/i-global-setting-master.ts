@@ -1,5 +1,5 @@
 export interface IGlobalSettingMaster {
-  // #region Properties (7)
+  // #region Properties (14)
 
   billingDays: number;
   deleteInvoicesPlacedDays: number;
@@ -10,6 +10,11 @@ export interface IGlobalSettingMaster {
   subscriptionsCustomerSuspendDays: number;
   subscriptionsExpireDays: number;
   subscriptionsSuspendDays: number;
+  waServerApikey: string;
+  waServerBaseUrl: string;
+  waServerGlobalKey: string;
+  waServerInstanceName: string;
+  waServerNumber: string;
 
-  // #endregion Properties (7)
+  // #endregion Properties (14)
 }

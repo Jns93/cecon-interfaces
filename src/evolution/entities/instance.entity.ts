@@ -1,15 +1,20 @@
-import { IEvolutionInstance } from '../interfaces';
+import { IEvolutionChatWoot, IEvolutionInstance } from '../interfaces';
 
 export class EvolutionInstanceEntity implements IEvolutionInstance {
-  // #region Properties (7)
+  // #region Properties (10)
 
   public apikey: string = '';
-  public instanceName: string = '';
+  public chatwoot: IEvolutionChatWoot | null = null;
   public instanceId: string = '';
+  public instanceName: string = '';
+  public owner: string | null = '';
+  public profileName: string | null = '';
+  public profilePictureUrl: string | null = '';
+  public profileStatus: string | null = '';
   public serverUrl: string = '';
   public status: string = '';
 
-  // #endregion Properties (7)
+  // #endregion Properties (10)
 
   // #region Constructors (1)
 

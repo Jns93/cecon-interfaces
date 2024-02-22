@@ -1,12 +1,14 @@
 import { IEvolutionQrcode } from '../interfaces';
 
 export class EvolutionQrcodeEntity implements IEvolutionQrcode {
-  // #region Properties (2)
+  // #region Properties (4)
 
   public base64: string | null = null;
   public code: string | null = null;
+  public count: number = 0;
+  public pairingCode: string | null = null;
 
-  // #endregion Properties (2)
+  // #endregion Properties (4)
 
   // #region Constructors (1)
 
