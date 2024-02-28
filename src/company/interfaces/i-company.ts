@@ -20,7 +20,7 @@ export interface ICompany {
   createdAt: Date;
   deliveryArea: IDeliveryArea[];
   deliveryAreaFixed?: IDeliveryAreaFixed | null;
-  phoneNumberNotification: string | null;
+  phoneNumbersNotification: string[];
   doc: string;
   docType: EDocType;
   email: string;
@@ -29,6 +29,9 @@ export interface ICompany {
   imageUrl: string | null;
   internationalCode: string;
   logoUrl: string | null;
+  /**@deprecated
+   * Use phoneNumberNotification instead
+   */
   messagerChannels: IMessagerChannel[];
   name: string;
   origin: IOrigin;

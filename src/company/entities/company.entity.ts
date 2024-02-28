@@ -32,7 +32,7 @@ export class CompanyEntity implements ICompany {
   public origin: OriginEntity = new OriginEntity();
   public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public phoneNumber: string = '';
-  public phoneNumberNotification: string | null = null;
+  public phoneNumbersNotification: string[] = [];
   public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();

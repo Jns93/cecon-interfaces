@@ -1,5 +1,5 @@
 import { CustomVariableEntity, EIntervalType, EPaymentType, PaymentEntity } from '../../general';
-import { InvoiceEntity } from '../../invoice';
+import { IInvoice } from '../../invoice';
 import { ESubscriptionStatus } from '../enums';
 import { ISubscriptionBase } from '../interfaces/i-subscription-base';
 import { SubscriptionBaseItemEntity } from './subscription-base-item.entity';
@@ -16,14 +16,14 @@ export class SubscriptionBaseEntity implements ISubscriptionBase {
   public id: string = '';
   public interval: number = 0;
   public intervalType: EIntervalType = EIntervalType.MONTHS;
-  public invoices: InvoiceEntity[] = [];
+  public invoices: IInvoice[] = [];
   public items: SubscriptionBaseItemEntity[] = [];
   public logs: SubscriptionBaseLogEntity[] = [];
   public notes: string = '';
   public payment: PaymentEntity = new PaymentEntity();
   public paymentType: EPaymentType = EPaymentType.NONE;
-  public phoneNumberNotification: string = '';
-  public recentInvoices: InvoiceEntity[] = [];
+  public phoneNumbersNotification: string[] = [];
+  public recentInvoices: IInvoice[] = [];
   public renewPaymentDate: Date = new Date();
   public renovatedAt: Date = new Date();
   public startsAt: Date = new Date();

@@ -23,7 +23,7 @@ export class CustomerEntity implements ICustomer {
   public name: string = '';
   public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public phoneNumber: string = '';
-  public phoneNumberNotification: string | null = null;
+  public phoneNumbersNotification: string[] = [];
   public phoneNumberVerified: boolean = false;
   public phoneNumberVerifiedApp: EAppType | null = null;
   public phoneNumberVerifiedAt: Date | null = null;

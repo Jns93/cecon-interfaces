@@ -23,7 +23,7 @@ export interface ICustomer {
   limit: number;
   name: string;
   phoneNumber: string;
-  phoneNumberNotification: string | null;
+  phoneNumbersNotification: string[];
   phoneNumberVerified: boolean;
   phoneNumberVerifiedAt: Date | null;
   phoneNumberVerifiedApp: EAppType | null;
