@@ -1,4 +1,4 @@
-import { IOrder } from "src/order";
+import { IOrder } from "../../../order";
 
 export interface IDelivererMobyo {
     cellPhone: string;
