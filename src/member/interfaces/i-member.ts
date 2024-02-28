@@ -10,6 +10,8 @@ export interface IMember extends IBase {
   name: string;
   partnerId: string;
   phoneNumber: string;
+  phoneNumberVerified: boolean;
+  phoneNumberVerifiedAt: Date | null;
   photoUrl: string;
   rule: MemberRulesEnum;
   type: MemberTypeEnum;

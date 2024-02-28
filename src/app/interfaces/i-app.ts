@@ -53,6 +53,7 @@ export interface IApp {
   platforms: EPlatform[];
   price: number;
   production: boolean;
+  secrets: string;
   ratings: IRating[];
   tags: string[];
   totalInstalls: number;

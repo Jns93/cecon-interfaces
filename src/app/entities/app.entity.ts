@@ -8,7 +8,7 @@ import { EAppMode } from '../enums/mode.enum';
 import { IApp } from '../interfaces/i-app';
 
 export class AppEntity implements IApp {
-  // #region Properties (32)
+  // #region Properties (33)
 
   public active: boolean = false;
   public activeInstalls: number = 0;
@@ -55,6 +55,7 @@ export class AppEntity implements IApp {
   public price: number = 0;
   public production: boolean = false;
   public ratings: RatingEntity[] = [];
+  public secrets: string = '';
   public tags: string[] = [];
   public totalInstalls: number = 0;
   public trialTime = 0;
@@ -62,7 +63,7 @@ export class AppEntity implements IApp {
   public versionCode: number = 1;
   public versionName: string = '';
 
-  // #endregion Properties (32)
+  // #endregion Properties (33)
 
   // #region Constructors (1)
 

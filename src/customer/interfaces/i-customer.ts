@@ -1,3 +1,4 @@
+import { EAppType } from '../../app';
 import { EDocType, IAddress, IDeliveryArea, IDeliveryAreaFixed, IPaymentProvider } from '../../general';
 import { ISubscriptionCustomer } from '../../subscription-customer';
 import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
@@ -23,6 +24,11 @@ export interface ICustomer {
   name: string;
   phoneNumber: string;
   phoneNumberNotification: string | null;
+  phoneNumberVerified: boolean;
+  phoneNumberVerifiedAt: Date | null;
+  phoneNumberVerifiedApp: EAppType | null;
+  token: number | null;
+  tokenExpiresAt: number | null;
   sandbox: boolean;
   subscription: ISubscriptionCustomer | null;
   status: ECustomerStatus;

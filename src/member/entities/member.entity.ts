@@ -3,7 +3,7 @@ import { MemberRulesEnum, MemberTypeEnum } from '../enums';
 import { IMember } from '../interfaces';
 
 export class MemberEntity extends BaseEntity implements IMember {
-  // #region Properties (13)
+  // #region Properties (14)
 
   public active: boolean = true;
   public companyName: string = '';
@@ -12,13 +12,15 @@ export class MemberEntity extends BaseEntity implements IMember {
   public name: string = '';
   public partnerId: string = '';
   public phoneNumber: string = '';
+  public phoneNumberVerified: boolean = false;
+  public phoneNumberVerifiedAt: Date | null = null;
   public photoUrl: string = '';
   public rule: MemberRulesEnum = MemberRulesEnum.USER;
   public tags: string[] = [];
   public type: MemberTypeEnum = MemberTypeEnum.CLIENT;
   public uid: string = '';
 
-  // #endregion Properties (13)
+  // #endregion Properties (14)
 
   // #region Constructors (1)
 

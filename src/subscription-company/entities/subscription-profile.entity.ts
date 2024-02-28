@@ -1,4 +1,4 @@
-import { ISubscriptionCompanyProfile } from '../interfaces/i-subscription-company';
+import { ISubscriptionCompanyProfile } from '../interfaces/i-subscription-profile';
 
 export class SubscriptionCompanyProfileEntity implements ISubscriptionCompanyProfile {
   // #region Properties (6)

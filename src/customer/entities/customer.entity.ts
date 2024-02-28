@@ -1,10 +1,11 @@
+import { EAppType } from '../../app';
 import { AddressEntity, DeliveryAreaEntity, DeliveryAreaFixedEntity, EDocType, PaymentProviderEntity } from '../../general';
 import { ISubscriptionCustomer } from '../../subscription-customer';
 import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 import { ICustomer } from '../interfaces';
 
 export class CustomerEntity implements ICustomer {
-  // #region Properties (23)
+  // #region Properties (28)
 
   public address: AddressEntity = new AddressEntity();
   public blockedReason: string | null = null;
@@ -23,14 +24,19 @@ export class CustomerEntity implements ICustomer {
   public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public phoneNumber: string = '';
   public phoneNumberNotification: string | null = null;
+  public phoneNumberVerified: boolean = false;
+  public phoneNumberVerifiedApp: EAppType | null = null;
+  public phoneNumberVerifiedAt: Date | null = null;
   public sandbox: boolean = false;
   public status: ECustomerStatus = ECustomerStatus.WAITING_CREDIT_ANALYSIS;
   public subscription: ISubscriptionCustomer | null = null;
   public tags: string[] = [];
+  public token: number | null = null;
+  public tokenExpiresAt: number | null = null;
   public type: ECustomerType = ECustomerType.SINGLE;
   public updatedAt: Date = new Date();
 
-  // #endregion Properties (23)
+  // #endregion Properties (28)
 
   // #region Constructors (1)
 
