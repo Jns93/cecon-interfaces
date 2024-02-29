@@ -8,6 +8,7 @@ import {
   IOrigin,
   IPaymentProvider,
 } from '../../general';
+import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
 
 export interface ICompany {
   // #region Properties (25)
@@ -34,7 +35,7 @@ export interface ICompany {
    */
   messagerChannels: IMessagerChannel[];
   name: string;
-  usedTrialsApps: { id: string; activedAt: Date }[];
+  usedTrialsPlans: ICompanyTrialPlansUsed[];
   origin: IOrigin;
   paymentProvider: IPaymentProvider;
   phoneNumber: string;

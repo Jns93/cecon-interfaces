@@ -6,7 +6,7 @@ import { MessagerChannelEntity } from '../../general/entities/messager-channel.e
 import { MobyoApiConfigEntity } from '../../general/entities/mobyo-apiconfig.entity';
 import { OriginEntity } from '../../general/entities/origin.entity';
 import { PaymentProviderEntity } from '../../general/entities/payment-provider.entity';
-import { ICompany } from '../interfaces';
+import { ICompany, ICompanyTrialPlansUsed } from '../interfaces';
 
 export class CompanyEntity implements ICompany {
   // #region Properties (27)
@@ -36,7 +36,7 @@ export class CompanyEntity implements ICompany {
   public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
-  public usedTrialsApps: { id: string; activedAt: Date }[] = [];
+  public usedTrialsPlans: ICompanyTrialPlansUsed[] = [];
   public version: string = '1.0.0';
 
   // #endregion Properties (27)

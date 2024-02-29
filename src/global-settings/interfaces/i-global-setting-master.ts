@@ -1,20 +1,21 @@
 export interface IGlobalSettingMaster {
-  // #region Properties (14)
+  // #region Properties (15)
 
-  billingDays: number;
   deleteInvoicesPlacedDays: number;
-  deleteSubscriptionsPlacedDays: number;
+  deleteSubscriptionsCompanyPlacedDays: number;
+  deleteSubscriptionsCustomerPlacedDays: number;
   subscriptionSuspendedTimes: number;
-  subscriptionsCancelDays: number;
+  subscriptionsCompanyBillingDays: number;
+  subscriptionsCompanyCancelDays: number;
+  subscriptionsCompanyExpireDays: number;
+  subscriptionsCompanySuspendDays: number;
   subscriptionsCustomerBillingDays: number;
   subscriptionsCustomerSuspendDays: number;
-  subscriptionsExpireDays: number;
-  subscriptionsSuspendDays: number;
   waServerApikey: string;
   waServerBaseUrl: string;
   waServerGlobalKey: string;
   waServerInstanceName: string;
   waServerNumber: string;
 
-  // #endregion Properties (14)
+  // #endregion Properties (15)
 }

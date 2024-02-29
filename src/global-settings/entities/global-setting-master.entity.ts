@@ -1,24 +1,25 @@
 import { IGlobalSettingMaster } from '../interfaces/i-global-setting-master';
 
 export class GlobalSettingMasterEntity implements IGlobalSettingMaster {
-  // #region Properties (14)
+  // #region Properties (20)
 
-  public billingDays: number = 10;
   public deleteInvoicesPlacedDays: number = 10;
-  public deleteSubscriptionsPlacedDays: number = 10;
+  public deleteSubscriptionsCompanyPlacedDays: number = 2;
+  public deleteSubscriptionsCustomerPlacedDays: number = 2;
   public subscriptionSuspendedTimes: number = 3;
-  public subscriptionsCancelDays: number = 3;
+  public subscriptionsCompanyBillingDays: number = 6;
+  public subscriptionsCompanyCancelDays: number = 1;
+  public subscriptionsCompanyExpireDays: number = 1;
+  public subscriptionsCompanySuspendDays: number = 1;
   public subscriptionsCustomerBillingDays: number = 7;
   public subscriptionsCustomerSuspendDays: number = 1;
-  public subscriptionsExpireDays: number = 1;
-  public subscriptionsSuspendDays: number = 1;
   public waServerApikey: string = '';
   public waServerBaseUrl: string = '';
   public waServerGlobalKey: string = '';
   public waServerInstanceName: string = '';
   public waServerNumber: string = '';
 
-  // #endregion Properties (14)
+  // #endregion Properties (20)
 
   // #region Constructors (1)
 
