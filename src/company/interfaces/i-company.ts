@@ -34,6 +34,7 @@ export interface ICompany {
    */
   messagerChannels: IMessagerChannel[];
   name: string;
+  usedTrialsApps: { id: string; activedAt: Date }[];
   origin: IOrigin;
   paymentProvider: IPaymentProvider;
   phoneNumber: string;

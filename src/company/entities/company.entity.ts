@@ -9,7 +9,7 @@ import { PaymentProviderEntity } from '../../general/entities/payment-provider.e
 import { ICompany } from '../interfaces';
 
 export class CompanyEntity implements ICompany {
-  // #region Properties (26)
+  // #region Properties (27)
 
   public active: boolean = false;
   public address: AddressEntity = new AddressEntity();
@@ -36,9 +36,10 @@ export class CompanyEntity implements ICompany {
   public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
+  public usedTrialsApps: { id: string; activedAt: Date }[] = [];
   public version: string = '1.0.0';
 
-  // #endregion Properties (26)
+  // #endregion Properties (27)
 
   // #region Constructors (1)
 
