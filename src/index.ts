@@ -34,6 +34,7 @@ export * from './subscription-base';
 export * from './subscription-company';
 export * from './subscription-customer';
 export * from './token';
+export * from './verifier-token';
 export * from './viacep';
 export * from './voucher';
 export * from './wa-server';
