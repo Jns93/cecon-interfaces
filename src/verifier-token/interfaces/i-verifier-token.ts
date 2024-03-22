@@ -5,6 +5,7 @@ export interface IVerifierToken {
   expiresAt: number;
   id: string;
   receiver: string;
+  message: string;
   value: string;
   verified: boolean;
   verifiedAt: number;

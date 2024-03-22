@@ -4,9 +4,10 @@ import { ISubscriptionCustomer } from '../../subscription-customer';
 import { ECustomerInterval, ECustomerStatus, ECustomerType } from '../enums';
 
 export interface ICustomer {
-  // #region Properties (19)
+  // #region Properties (31)
 
   address: IAddress;
+  blockedReason: string | null;
   createdAt: Date;
   deliveryArea: IDeliveryArea[];
   deliveryAreaFixed?: IDeliveryAreaFixed | null;
@@ -14,26 +15,27 @@ export interface ICustomer {
   docType: EDocType;
   email: string;
   fullName: string;
-  blockedReason: string | null;
   id: string;
-  type: ECustomerType;
   imageUrl: string | null;
   interval: ECustomerInterval;
-  paymentProvider: IPaymentProvider;
   limit: number;
   name: string;
+  password: string;
+  paymentProvider: IPaymentProvider;
   phoneNumber: string;
-  phoneNumbersNotification: string[];
   phoneNumberVerified: boolean;
-  phoneNumberVerifiedAt: Date | null;
   phoneNumberVerifiedApp: EAppType | null;
-  token: number | null;
-  tokenExpiresAt: number | null;
+  phoneNumberVerifiedAt: Date | null;
+  phoneNumbersNotification: string[];
+  refreshToken: string | null;
   sandbox: boolean;
-  subscription: ISubscriptionCustomer | null;
   status: ECustomerStatus;
+  subscription: ISubscriptionCustomer | null;
   tags: string[];
+  token: string | null;
+  twoStepsVerification: boolean;
+  type: ECustomerType;
   updatedAt: Date;
 
-  // #endregion Properties (19)
+  // #endregion Properties (31)
 }

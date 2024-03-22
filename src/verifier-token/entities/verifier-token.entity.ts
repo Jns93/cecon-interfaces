@@ -1,18 +1,19 @@
 import { IVerifierToken } from '../interfaces/i-verifier-token';
 
 export class VerifierTokenEntity implements IVerifierToken {
-  // #region Properties (8)
+  // #region Properties (9)
 
   public appId: string | null = null;
   public createdAt: number = Date.now();
   public expiresAt: number = Date.now() + 1000 * 60 * 30;
   public id: string = '';
+  public message: string = '';
   public receiver: string = '';
   public value: string = '';
   public verified: boolean = false;
   public verifiedAt: number = 0;
 
-  // #endregion Properties (8)
+  // #endregion Properties (9)
 
   // #region Constructors (1)
 
