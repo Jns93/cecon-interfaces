@@ -1,3 +1,4 @@
+export { EFcmSkill } from '../../fcm-token-message/enums/skill.enum';
 export { EBankSlipStatus } from './bank-slip-status.enum';
 export { EBooleanString } from './boolean-string.enum';
 export { EDocType } from './doc-type.enum';

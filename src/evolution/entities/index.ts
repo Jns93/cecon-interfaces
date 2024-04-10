@@ -1,4 +1,5 @@
 export { EvolutionChatWootEntity } from './chatwoot.entity';
+export { EvolutionDatabaseQueueEntity } from './evolution-database-queue.entity';
 export { EvolutionEntity } from './evolution.entity';
 export { EvolutionHashEntity } from './hash.entity';
 export { EvolutionInstanceEntity } from './instance.entity';

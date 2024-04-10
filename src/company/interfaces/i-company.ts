@@ -8,6 +8,7 @@ import {
   IOrigin,
   IPaymentProvider,
 } from '../../general';
+import { ICompanyTrialPlansUsed } from './i-company-trial-useds';
 
 export interface ICompany {
   // #region Properties (25)
@@ -20,7 +21,7 @@ export interface ICompany {
   createdAt: Date;
   deliveryArea: IDeliveryArea[];
   deliveryAreaFixed?: IDeliveryAreaFixed | null;
-  phoneNumberNotification: string | null;
+  phoneNumbersNotification: string[];
   doc: string;
   docType: EDocType;
   email: string;
@@ -29,8 +30,12 @@ export interface ICompany {
   imageUrl: string | null;
   internationalCode: string;
   logoUrl: string | null;
+  /**@deprecated
+   * Use phoneNumberNotification instead
+   */
   messagerChannels: IMessagerChannel[];
   name: string;
+  usedTrialsPlans: ICompanyTrialPlansUsed[];
   origin: IOrigin;
   paymentProvider: IPaymentProvider;
   phoneNumber: string;

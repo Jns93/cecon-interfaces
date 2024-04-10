@@ -6,10 +6,10 @@ import { MessagerChannelEntity } from '../../general/entities/messager-channel.e
 import { MobyoApiConfigEntity } from '../../general/entities/mobyo-apiconfig.entity';
 import { OriginEntity } from '../../general/entities/origin.entity';
 import { PaymentProviderEntity } from '../../general/entities/payment-provider.entity';
-import { ICompany } from '../interfaces';
+import { ICompany, ICompanyTrialPlansUsed } from '../interfaces';
 
 export class CompanyEntity implements ICompany {
-  // #region Properties (26)
+  // #region Properties (27)
 
   public active: boolean = false;
   public address: AddressEntity = new AddressEntity();
@@ -32,13 +32,14 @@ export class CompanyEntity implements ICompany {
   public origin: OriginEntity = new OriginEntity();
   public paymentProvider: PaymentProviderEntity = new PaymentProviderEntity();
   public phoneNumber: string = '';
-  public phoneNumberNotification: string | null = null;
+  public phoneNumbersNotification: string[] = [];
   public sandbox: boolean = false;
   public tags: string[] = [];
   public updatedAt: Date = new Date();
+  public usedTrialsPlans: ICompanyTrialPlansUsed[] = [];
   public version: string = '1.0.0';
 
-  // #endregion Properties (26)
+  // #endregion Properties (27)
 
   // #region Constructors (1)
 

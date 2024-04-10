@@ -41,7 +41,7 @@ export class InvoiceEntity implements IInvoice {
   public payer: InvoicePayerEntity = new InvoicePayerEntity();
   public paymentMethod: EPaymentType = EPaymentType.NONE;
   public paymentProvider: PaymentProviderEntity | null = null;
-  public phoneNumberNotification: string | null = null;
+  public phoneNumbersNotification: string[] = [];
   public pix: InvoicePixEntity | null = null;
   public returnExpiredUrl: string = '';
   public returnUrl: string = '';

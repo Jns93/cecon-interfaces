@@ -40,7 +40,7 @@ export interface IInvoice {
   payer: IInvoicePayer;
   paymentMethod: EPaymentType;
   paymentProvider: IPaymentProvider | null;
-  phoneNumberNotification: string | null;
+  phoneNumbersNotification: string[];
   pix: IInvoicePix | null;
   returnExpiredUrl: string;
   returnUrl: string;

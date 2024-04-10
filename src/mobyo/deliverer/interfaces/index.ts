@@ -1,1 +1,1 @@
-export { IDelivererMobyo } from './i-deliverer';
+export { IDelivererMobyo } from './i-deliverer-mobyo';

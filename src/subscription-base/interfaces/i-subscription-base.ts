@@ -21,7 +21,7 @@ export interface ISubscriptionBase {
   notes: string;
   payment: IPayment;
   paymentType: EPaymentType;
-  phoneNumberNotification: string;
+  phoneNumbersNotification: string[];
   recentInvoices: IInvoice[];
   renewPaymentDate: Date;
   renovatedAt: Date;
